@@ -1,6 +1,7 @@
 import time as t
 from datetime import datetime
 import InfoMapa as Map
+from InfoMapa import load
 import os
 import math
 import copy
@@ -30,6 +31,8 @@ print(f"Current date: {day}/{month}/{year}")
 
 def main():
     mapa = Map()
+    load("")
+    
     
 
 
