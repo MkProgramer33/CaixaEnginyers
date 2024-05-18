@@ -1,3 +1,6 @@
+import pandas as pd
+ 
+
 class Mapa:
     """
     Clase que contiene la información de un mapa
@@ -71,3 +74,8 @@ class Route:
 
 
     
+def load(fitxer):
+    
+    # leemos la info del excel
+    data = pd.read_excel('DatosMunicipios.xlsx')
+    print(data)
