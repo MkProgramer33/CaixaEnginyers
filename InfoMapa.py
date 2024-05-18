@@ -145,7 +145,7 @@ def mostrar_mapa(lista_municipios):
     mapa = folium.Map(location=[40, -3], zoom_start=6)
 
     # Generar una lista de colores aleatorios para cada grupo
-    colores = ['red', 'green', 'red', 'orange', 'purple', 'gray', 'black', 'pink', 'lightblue', 'lightgreen']
+    colores = ['red', 'green', 'purple', 'orange', 'lightgreen', 'gray', 'black', 'pink', 'lightblue']
 
     # Iterar sobre cada grupo de municipios y asignar un color aleatorio a cada uno
     for idx, municipios in enumerate(lista_municipios):
