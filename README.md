@@ -131,7 +131,7 @@ Marta Gimenez Gonzalez - marta.gimenez.gonzalez1@gmail.com
 Pau Dominguez - p2004dr@gmail.com
 Sergi Juarez - sergijp22@gmail.com
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/MkProgramer33/CaixaEnginyers)
+Project Link: [Caixa d'enginyers](https://github.com/MkProgramer33/CaixaEnginyers)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
