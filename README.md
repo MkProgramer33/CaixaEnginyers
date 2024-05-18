@@ -19,7 +19,7 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-[![LinkedIn Mikel][linkedin-shield]][linkedin-url] 
+Mikel Garzón:  [![LinkedIn][linkedin-shield]][linkedin-url] 
 
 
 
