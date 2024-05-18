@@ -120,6 +120,7 @@ def get_bloque(mapa, fecha_str):
     mes = fecha.month
     año = fecha.year
     contador=0
+    contador_dias_laborables=0
     bloque=1
     num_dias_mes = calendar.monthrange(año, mes)[1]
     
@@ -127,13 +128,17 @@ def get_bloque(mapa, fecha_str):
     for dia in range(1, num_dias_mes + 1):
         dia_actual = datetime(año, mes, dia)
         if dia_actual.weekday() < 5:  # lunes a viernes son días laborables
+            contador_dias_laborables=0
             contador=contador+1
             if contador<5:
                 if dia == fecha.day:
                     return bloque
             else:
-                bloque=bloque+1
-                contador=0
+                if contador_dias_laborables<=20:
+                    bloque=bloque+1
+                    contador=0
+                else:
+                    bloque=4
                 
 
 """
