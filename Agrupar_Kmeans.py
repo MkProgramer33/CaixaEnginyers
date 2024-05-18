@@ -1,4 +1,3 @@
-import InfoMapa as map
 from sklearn.cluster import KMeans
 import numpy as np
 
@@ -27,10 +26,12 @@ def agrupar_municipios(paradas, num_grupos):
 
     labels = kmeans.predict(coordenadas)
     
-    grupos = [[] for _ in range(num_grupos)]
+    grupos = [{} for _ in range(num_grupos)]
 
     for i, label in enumerate(labels):
-        grupos[label].append((codINE_validos[i], coordenadas[i]))
+        codINE = codINE_validos[i]
+        municipio_info = paradas[codINE]
+        grupos[label][codINE] = municipio_info
 
     return grupos
 
