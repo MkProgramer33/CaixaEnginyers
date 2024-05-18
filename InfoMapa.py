@@ -21,11 +21,20 @@ class Mapa:
         self.paradas = {}
         self.conexiones = {}
 
-    def add_parada(self, codINE, municipio, poblacion, bloque, estancia_minima, lote):
-        self.paradas[codINE] = {'municipio': municipio, 'poblacion': poblacion, 'bloque': int(bloque), 'estancia_minima': estancia_minima, 'lote': int(lote)}
+    def add_parada(self, codINE, municipio, poblacion, bloque, estancia_minima, lote, lon, lat):
+        self.paradas[codINE] = {'municipio': municipio, 'poblacion': poblacion, 'bloque': int(bloque), 'estancia_minima': estancia_minima, 'lote': int(lote), 'longitud': lon, 'latitud': lat}
 
     def add_conexion(self, conexiones):
         self.conexiones = conexiones
+    
+    # Devuelve el número de bloque para una parada dada por su codINE.
+    def get_bloque(self, codINE):
+        parada={}
+        parada = self.paradas.get(codINE)
+        if parada:
+            return parada['bloque']
+        else:
+            raise ValueError(f"No se encontró una parada con codINE: {codINE}")
 
 
 
@@ -90,13 +99,26 @@ def load(fitxer, mapa):
                         data['Pob.'][i], 
                         data['BLOC'][i], 
                         data['Estancia Minima'][i], 
-                        data['LOTE'][i])
+                        data['LOTE'][i],
+                        data['LONG'][i],
+                        data['LAT'][i])
 
 """
-para implimentarlo:
+para implimentar load:
     
     mapa = Mapa()
     load('DatosMunicipios.xlsx', mapa)
     print(mapa.paradas)
+    
+"""
+
+"""
+para implimentarlo get_bloque:
+    
+    mapa=Mapa()
+    codINE = '8242'
+    load('DatosMunicipios.xlsx', mapa)
+    bloque = mapa.get_bloque(codINE)
+    print(f"El número de bloque para codINE {codINE} es: {bloque}")
     
 """
