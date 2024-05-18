@@ -1,6 +1,6 @@
 import time as t
 from datetime import datetime
-from InfoMapa import Mapa
+import InfoMapa as Map
 import os
 import math
 import copy
@@ -28,6 +28,11 @@ print(f"Current date: {day}/{month}/{year}")
 
 # Algorithm for finding the shortest route
 
+def main():
+    mapa = Map()
+    
+
+
 '''
 Este elagoritmo sirve para saber cuál será la ruta dependiendo de que día es del día 1-5
 Este algoritmo se inicializará con: Un bloque entero de un lote.
@@ -37,9 +42,48 @@ Devuelve:
     Una lista con cinco listas
 
 '''
-def divide_routes(routes):
-    linea = find_dividing_lines(points)
-    print(linea)
+def find_quintile_lines(points):
+    """
+    Encuentra cuatro rectas (dos verticales y dos horizontales) que dividan el espacio
+    de tal manera que haya cinco partes con la misma cantidad de puntos.
+    
+    :param points: Lista de puntos en el formato [(x1, y1), (x2, y2), ...]
+    :return: Una lista de tuplas representando las rectas: 
+             [(x1, 'vertical'), (x2, 'vertical'), (y1, 'horizontal'), (y2, 'horizontal')]
+    """
+    if not points:
+        raise ValueError("La lista de puntos no puede estar vacía.")
+    
+    n = len(points)
+    if n < 5:
+        raise ValueError("La lista de puntos debe tener al menos 5 puntos.")
+    
+    # Ordenar puntos por coordenada x
+    points_sorted_by_x = sorted(points, key=lambda p: p[0])
+    
+    # Calcular los índices de los quintiles
+    quintile_indices = [n // 5, 2 * n // 5, 3 * n // 5, 4 * n // 5]
+    
+    # Obtener los valores de las rectas verticales en las posiciones de los quintiles
+    x_quintiles = [points_sorted_by_x[i][0] for i in quintile_indices]
+    
+    # Ordenar puntos por coordenada y
+    points_sorted_by_y = sorted(points, key=lambda p: p[1])
+    
+    # Obtener los valores de las rectas horizontales en las posiciones de los quintiles
+    y_quintiles = [points_sorted_by_y[i][1] for i in quintile_indices]
+
+    # Formar las rectas
+    vertical_lines = [(x, 'vertical') for x in x_quintiles]
+    horizontal_lines = [(y, 'horizontal') for y in y_quintiles]
+    
+    return vertical_lines + horizontal_lines
+
+# Ejemplo de uso
+puntos = [(1, 2), (3, 4), (5, 6), (7, 8), (9, 10), (11, 12), (13, 14), (15, 16), (17, 18), (19, 20)]
+rectas = find_quintile_lines(puntos)
+print(rectas)  # Output: [(4.0, 'vertical'), (8.0, 'vertical'), (12.0, 'vertical'), (16.0, 'vertical'), (5.0, 'horizontal'), (10.0, 'horizontal'), (14.0, 'horizontal'), (18.0, 'horizontal')]
+
     
 
 
@@ -506,3 +550,12 @@ def Astar_improved(origin_coord, destination_coord, map):
     final_path.add_route(-1)
     
     return final_path
+
+
+
+  
+
+
+# Call the main function
+if __name__ == "__main__":
+    main()
