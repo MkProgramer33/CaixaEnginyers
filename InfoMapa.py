@@ -7,8 +7,8 @@ class Mapa:
     Clase que contiene la información de un mapa
 
     self.parada: diccionario de diccionarios con formato:
-            {codINE: {"municipio": value, "población": num_value, 
-                      "bloque": num_bloque, "estancia_minima": value, "lote": value}
+            {codINE: {"municipio": value, "población": num_value, "bloque": num_bloque, 
+                "estancia_minima": value, "lote": value, "longitud": value, "latitud":value}
 
     self.conexiones: diccionario de diccionarios con fromato:
             {
@@ -37,7 +37,7 @@ class Mapa:
 class Route:
     """
     Clase que tiene la información de la ruta desde una parada de inicio hasta una de fin.
-    
+
     """
 
     def __init__(self, route):
@@ -107,8 +107,3 @@ para implimentar load:
     print(mapa.paradas)
     
 """
-
-mapa = Mapa()
-load('DatosMunicipios.xlsx', mapa)
-print(mapa.paradas)
-

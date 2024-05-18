@@ -8,6 +8,12 @@ df = pd.read_excel('./DatosMunicipios.xlsx')
 # Inicializar el geolocalizador
 geolocator = Nominatim(user_agent="Pau")
 
+
+location = geolocator.geocode('Riudellots de la Selva')
+print(location.longitude, location.latitude)
+
+'''
+
 # Función para obtener la latitud y longitud
 def obtener_coordenadas(municipi):
     try:
@@ -34,3 +40,5 @@ df['LAT'] = latitudes
 
 # Guardar el archivo modificado
 df.to_excel('DatosMunicipios1.xlsx', index=False)
+
+'''
