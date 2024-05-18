@@ -30,10 +30,10 @@ class Mapa:
         self.conexiones = conexiones
  
     def get_municipiosBloque(self, bloque):
-        municipios = []  # lista para almacenar los municipios correspondientes al bloque
-        for parada_info in self.paradas.values():
+        municipios = {}
+        for codINE, parada_info in self.paradas.items():
             if parada_info['bloque'] == bloque:
-                municipios.append(parada_info['municipio'])
+                municipios[codINE] = parada_info
         return municipios
 
 
