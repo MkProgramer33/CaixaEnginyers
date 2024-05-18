@@ -34,7 +34,9 @@ def agrupar_municipios(paradas, num_grupos):
 
     return grupos
 
+'''
 mapa = map.Mapa()
 map.load('DatosMunicipios.xlsx', mapa)
-grupos = agrupar_municipios(mapa.get_municipiosBloque(1), 5)
+grupos = agrupar_municipios(mapa.get_municipiosBloque(2), 5)
 print(len(grupos[0]), ",", len(grupos[1]), ",", len(grupos[2]), ",", len(grupos[3]), ",", len(grupos[4]))
+'''
