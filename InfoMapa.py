@@ -1,7 +1,8 @@
 import pandas as pd
 from datetime import datetime
 import calendar
- 
+import folium
+import random
 
 class Mapa:
     """
@@ -9,7 +10,7 @@ class Mapa:
 
     self.parada: diccionario de diccionarios con formato:
             {codINE: {"municipio": value, "población": num_value, 
-                      "bloque": num_bloque, "estancia_minima": value, "lote": value}
+                      "bloque": num_bloque, "estancia_minima": value, "lote": value, 'longitud': lon, 'latitud': lat"}
 
     self.conexiones: diccionario de diccionarios con fromato:
             {
@@ -140,13 +141,44 @@ def get_bloque(mapa, fecha_str):
                 else:
                     bloque=4
                 
+def mostrar_mapa(lista_municipios):
+    mapa = folium.Map(location=[40, -3], zoom_start=6)
 
-"""
-para implimentar get_bloque:
-    
-    mapa = Mapa()
-    fecha_str='15/05/2024'
-    bloque=get_bloque(mapa, fecha_str)
-    print(bloque)
-    
-"""
+    # Generar una lista de colores aleatorios para cada grupo
+    colores = ['red', 'green', 'red', 'orange', 'purple', 'gray', 'black', 'pink', 'lightblue', 'lightgreen']
+
+    # Iterar sobre cada grupo de municipios y asignar un color aleatorio a cada uno
+    for idx, municipios in enumerate(lista_municipios):
+        print(colores[idx])
+        print(len(municipios))
+        color_grupo = colores[idx]  # Obtener el color para este grupo
+        for codINE, info in municipios.items():
+            if 'latitud' in info and 'longitud' in info and not pd.isnull(info['longitud']) and not pd.isnull(info['latitud']):
+                folium.CircleMarker(
+                    location=[info['latitud'], info['longitud']],
+                    radius=10,
+                    color=color_grupo,
+                    fill=True,
+                    fill_color=color_grupo,
+                    fill_opacity=0.6,
+                    popup=f"Municipio: {info['municipio']}<br>Población: {info['poblacion']}<br>Bloque: {info['bloque']}",
+                    tooltip=info['municipio']
+                ).add_to(mapa)
+
+                folium.Marker(
+                    location=[info['latitud'], info['longitud']],
+                    icon=folium.DivIcon(
+                        html=f'<div style="font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;">{info["municipio"]}</div>'
+                    )
+                ).add_to(mapa)
+
+    mapa.save("mapa_municipios.html")
+    print("Mapa guardado como mapa_municipios.html")
+
+
+
+mapa = Mapa()
+import Agrupar_Kmeans as agrupar_kmeans
+load('DatosMunicipios.xlsx', mapa)
+grupos = agrupar_kmeans.agrupar_municipios(mapa.paradas, 5)
+mostrar_mapa(grupos)
