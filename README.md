@@ -30,9 +30,8 @@
   <p align="center">
     Descripción
    
-    <br />
-    <br />
-    <br />
+  
+    
   </p>
 </div>
 
