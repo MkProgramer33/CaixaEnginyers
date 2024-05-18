@@ -6,7 +6,7 @@ class Mapa:
     Clase que contiene la información de un mapa
 
     self.parada: diccionario de diccionarios con formato:
-            {codINE: {"nombre": value, "municipio": value, "x": coord_x, "y": coord_y, "población": num_value, 
+            {codINE: {"municipio": value, "población": num_value, 
                       "bloque": num_bloque, "estancia_minima": value, "lote": value}
 
     self.conexiones: diccionario de diccionarios con fromato:
@@ -21,9 +21,8 @@ class Mapa:
         self.paradas = {}
         self.conexiones = {}
 
-    def add_parada(self, codINE, nombre, municipio, x, y, poblacion, bloque, estancia_minima, lote):
-        self.parada[codINE] = {'nombre': nombre, 'municipio': municipio, 'x': x, 'y': y, 'poblacion': poblacion, 'bloque': int(bloque), 
-                               'estancia_minima': int(estancia_minima),  'lote': int(lote) }
+    def add_parada(self, codINE, municipio, poblacion, bloque, estancia_minima, lote):
+        self.paradas[codINE] = {'municipio': municipio, 'poblacion': poblacion, 'bloque': int(bloque), 'estancia_minima': estancia_minima, 'lote': int(lote)}
 
     def add_conexion(self, conexiones):
         self.conexiones = conexiones
@@ -74,8 +73,30 @@ class Route:
 
 
     
-def load(fitxer):
-    
+def load(fitxer, mapa):
+        
     # leemos la info del excel
-    data = pd.read_excel('DatosMunicipios.xlsx')
-    print(data)
+    data = pd.read_excel(fitxer)
+    
+    required_columns = ['codINE', 'Municipi', 'Pob.', 'BLOC', 'Estancia Minima', 'LOTE']
+    for column in required_columns:
+        if column not in data.columns:
+            raise ValueError(f"Falta la columna requerida: {column}")
+    
+    # codINE, municipio, x, y, poblacion, bloque, estancia_minima, lote
+    for i, codigo in enumerate(data['codINE']):
+        mapa.add_parada(codigo, 
+                        data['Municipi'][i], 
+                        data['Pob.'][i], 
+                        data['BLOC'][i], 
+                        data['Estancia Minima'][i], 
+                        data['LOTE'][i])
+
+"""
+para implimentarlo:
+    
+    mapa = Mapa()
+    load('DatosMunicipios.xlsx', mapa)
+    print(mapa.paradas)
+    
+"""
