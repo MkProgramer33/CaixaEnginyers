@@ -1,7 +1,8 @@
 import pandas as pd
 from datetime import datetime
 import calendar
- 
+import folium
+import random
 
 class Mapa:
     """
@@ -9,7 +10,7 @@ class Mapa:
 
     self.parada: diccionario de diccionarios con formato:
             {codINE: {"municipio": value, "población": num_value, 
-                      "bloque": num_bloque, "estancia_minima": value, "lote": value}
+                      "bloque": num_bloque, "estancia_minima": value, "lote": value, 'longitud': lon, 'latitud': lat"}
 
     self.conexiones: diccionario de diccionarios con fromato:
             {
@@ -30,10 +31,10 @@ class Mapa:
         self.conexiones = conexiones
  
     def get_municipiosBloque(self, bloque):
-        municipios = []  # lista para almacenar los municipios correspondientes al bloque
-        for parada_info in self.paradas.values():
+        municipios = {}
+        for codINE, parada_info in self.paradas.items():
             if parada_info['bloque'] == bloque:
-                municipios.append(parada_info['municipio'])
+                municipios[codINE] = parada_info
         return municipios
 
 
@@ -140,30 +141,44 @@ def get_bloque(mapa, fecha_str):
                 else:
                     bloque=4
                 
+def mostrar_mapa(lista_municipios):
+    mapa = folium.Map(location=[40, -3], zoom_start=6)
 
-"""
-para implimentar get_bloque:
-    
-    mapa = Mapa()
-    fecha_str='15/05/2024'
-    bloque=get_bloque(mapa, fecha_str)
-    print(bloque)
-    
-"""
+    # Generar una lista de colores aleatorios para cada grupo
+    colores = ['red', 'green', 'purple', 'orange', 'blue', 'gray', 'black', 'pink', 'lightblue']
+
+    # Iterar sobre cada grupo de municipios y asignar un color aleatorio a cada uno
+    for idx, municipios in enumerate(lista_municipios):
+        print(colores[idx])
+        print(len(municipios))
+        color_grupo = colores[idx]  # Obtener el color para este grupo
+        for codINE, info in municipios.items():
+            if 'latitud' in info and 'longitud' in info and not pd.isnull(info['longitud']) and not pd.isnull(info['latitud']):
+                folium.CircleMarker(
+                    location=[info['latitud'], info['longitud']],
+                    radius=10,
+                    color=color_grupo,
+                    fill=True,
+                    fill_color=color_grupo,
+                    fill_opacity=0.6,
+                    popup=f"Municipio: {info['municipio']}<br>Población: {info['poblacion']}<br>Bloque: {info['bloque']}",
+                    tooltip=info['municipio']
+                ).add_to(mapa)
+
+                folium.Marker(
+                    location=[info['latitud'], info['longitud']],
+                    icon=folium.DivIcon(
+                        html=f'<div style="font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;">{info["municipio"]}</div>'
+                    )
+                ).add_to(mapa)
+
+    mapa.save("mapa_municipios.html")
+    print("Mapa guardado como mapa_municipios.html")
 
 
-# devuelve la longitud y latitud de una parada a partir de su código INE.
-def get_lon_lat(mapa, codINE):
-
-    if codINE in dict(mapa.paradas):
-        return (mapa.paradas[codINE]['longitud'], mapa.paradas[codINE]['latitud'])    
-    else:
-         return None
-     
 
 mapa = Mapa()
-codINE = str('43003')
+import Agrupar_Kmeans as agrupar_kmeans
 load('DatosMunicipios.xlsx', mapa)
-lon_lat = get_lon_lat(mapa, codINE)
-print(f"Coordenadas para codINE {codINE}: {lon_lat}")
-
+grupos = agrupar_kmeans.agrupar_municipios(mapa.paradas, 5)
+mostrar_mapa(grupos)
