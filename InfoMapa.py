@@ -155,14 +155,14 @@ para implimentar get_bloque:
 # devuelve la longitud y latitud de una parada a partir de su código INE.
 def get_lon_lat(mapa, codINE):
 
-    if codINE in mapa.paradas:
+    if codINE in dict(mapa.paradas):
         return (mapa.paradas[codINE]['longitud'], mapa.paradas[codINE]['latitud'])    
     else:
          return None
      
 
 mapa = Mapa()
-codINE = '43003'
+codINE = str('43003')
 load('DatosMunicipios.xlsx', mapa)
 lon_lat = get_lon_lat(mapa, codINE)
 print(f"Coordenadas para codINE {codINE}: {lon_lat}")
