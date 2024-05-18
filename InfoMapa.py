@@ -1,5 +1,6 @@
 import pandas as pd
 from datetime import datetime
+import calendar
  
 
 class Mapa:
@@ -27,10 +28,13 @@ class Mapa:
 
     def add_conexion(self, conexiones):
         self.conexiones = conexiones
-    
-    # Devuelve el número de bloque según el dia en el que esté.
-    def get_bloque(self, fecha_str):
-        pass
+ 
+    def get_municipiosBloque(self, bloque):
+        municipios = []  # lista para almacenar los municipios correspondientes al bloque
+        for parada_info in self.paradas.values():
+            if parada_info['bloque'] == bloque:
+                municipios.append(parada_info['municipio'])
+        return municipios
 
 
 
@@ -108,7 +112,36 @@ para implimentar load:
     
 """
 
-mapa = Mapa()
-load('DatosMunicipios.xlsx', mapa)
-print(mapa.paradas)
+# devuelve el número de bloque según el dia en el que esté.
+def get_bloque(mapa, fecha_str):
 
+    # convertimos la cadena de fecha en un objeto datetime
+    fecha = datetime.strptime(fecha_str, '%d/%m/%Y')
+    mes = fecha.month
+    año = fecha.year
+    contador=0
+    bloque=1
+    num_dias_mes = calendar.monthrange(año, mes)[1]
+    
+    # recorre todos los días del mes
+    for dia in range(1, num_dias_mes + 1):
+        dia_actual = datetime(año, mes, dia)
+        if dia_actual.weekday() < 5:  # lunes a viernes son días laborables
+            contador=contador+1
+            if contador<5:
+                if dia == fecha.day:
+                    return bloque
+            else:
+                bloque=bloque+1
+                contador=0
+                
+
+"""
+para implimentar get_bloque:
+    
+    mapa = Mapa()
+    fecha_str='15/05/2024'
+    bloque=get_bloque(mapa, fecha_str)
+    print(bloque)
+    
+"""
