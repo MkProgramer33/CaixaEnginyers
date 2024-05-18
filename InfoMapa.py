@@ -1,3 +1,5 @@
+import pandas as pd
+
 class Mapa:
     """
     Clase que contiene la información de un mapa
@@ -180,7 +182,4 @@ para implimentar load:
     
 """
 
-mapa = Mapa()
-load('DatosMunicipios.xlsx', mapa)
-print(mapa.paradas)
 

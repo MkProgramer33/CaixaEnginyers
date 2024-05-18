@@ -1,10 +1,11 @@
 import time as t
 from datetime import datetime
-import InfoMapa as Map
+from InfoMapa import Mapa
 from InfoMapa import load
 import os
 import math
 import copy
+import numpy as np
 
 '''
 # Get the current date and time
@@ -30,11 +31,25 @@ print(f"Current date: {day}/{month}/{year}")
 # Algorithm for finding the shortest route
 
 def main():
-    mapa = Map()
-    load("")
-    
-    
+    mapa = Mapa()
+    load("DatosMunicipios.xlsx", mapa)
+    points = []
+    for key, value in mapa.paradas.items():
+        points.append((value['latitud'], value['longitud']))
+    central, lines = find_dividing_lines(mapa.paradas)
+    grupo = divide_points(points, central, lines)
 
+
+    for i, grupo in enumerate(grupo):
+        print(f"Grupo {i + 1}: {grupo}")
+    
+'''
+Función que te devuelve el centroide de este lugar en función de que cordenadas tiene
+'''
+
+def find_central_point(points):
+
+    return [2.8022296,41.8954981]
 
 '''
 Este elagoritmo sirve para saber cuál será la ruta dependiendo de que día es del día 1-5
@@ -45,14 +60,13 @@ Devuelve:
     Una lista con cinco listas
 
 '''
-def find_quintile_lines(points):
+def find_dividing_lines(points):
     """
-    Encuentra cuatro rectas (dos verticales y dos horizontales) que dividan el espacio
-    de tal manera que haya cinco partes con la misma cantidad de puntos.
+    Encuentra cuatro rectas que parten del punto central y dividen el espacio
+    en 5 partes iguales en términos de cantidad de puntos.
     
     :param points: Lista de puntos en el formato [(x1, y1), (x2, y2), ...]
-    :return: Una lista de tuplas representando las rectas: 
-             [(x1, 'vertical'), (x2, 'vertical'), (y1, 'horizontal'), (y2, 'horizontal')]
+    :return: Una lista de tuplas representando las rectas en el formato (angle, 'line')
     """
     if not points:
         raise ValueError("La lista de puntos no puede estar vacía.")
@@ -61,70 +75,76 @@ def find_quintile_lines(points):
     if n < 5:
         raise ValueError("La lista de puntos debe tener al menos 5 puntos.")
     
-    # Ordenar puntos por coordenada x
-    points_sorted_by_x = sorted(points, key=lambda p: p[0])
+    # Encontrar el punto central
+    central_point = find_central_point(points)
     
-    # Calcular los índices de los quintiles
+    # Calcular los ángulos para cada punto respecto al punto central
+    angles = []
+    for key, value in points.items():
+        x = value['latitud']
+        y = value['longitud']
+        angle = np.arctan2(y - central_point[1], x - central_point[0])
+        angles.append((angle, (x, y)))
+    
+    # Ordenar los puntos según sus ángulos
+    angles.sort()
+    
+    # Dividir los puntos en 5 grupos iguales
     quintile_indices = [n // 5, 2 * n // 5, 3 * n // 5, 4 * n // 5]
     
-    # Obtener los valores de las rectas verticales en las posiciones de los quintiles
-    x_quintiles = [points_sorted_by_x[i][0] for i in quintile_indices]
+    # Obtener los ángulos que dividen los grupos
+    dividing_angles = [angles[i][0] for i in quintile_indices]
     
-    # Ordenar puntos por coordenada y
-    points_sorted_by_y = sorted(points, key=lambda p: p[1])
-    
-    # Obtener los valores de las rectas horizontales en las posiciones de los quintiles
-    y_quintiles = [points_sorted_by_y[i][1] for i in quintile_indices]
-
     # Formar las rectas
-    vertical_lines = [(x, 'vertical') for x in x_quintiles]
-    horizontal_lines = [(y, 'horizontal') for y in y_quintiles]
+    lines = [(angle, 'line') for angle in dividing_angles]
     
-    return vertical_lines + horizontal_lines
-
-# Ejemplo de uso
-puntos = [(1, 2), (3, 4), (5, 6), (7, 8), (9, 10), (11, 12), (13, 14), (15, 16), (17, 18), (19, 20)]
-rectas = find_quintile_lines(puntos)
-print(rectas)  # Output: [(4.0, 'vertical'), (8.0, 'vertical'), (12.0, 'vertical'), (16.0, 'vertical'), (5.0, 'horizontal'), (10.0, 'horizontal'), (14.0, 'horizontal'), (18.0, 'horizontal')]
-
-    
+    return central_point, lines
 
 
-def find_dividing_lines(points):
+
+import numpy as np
+
+def calculate_angle(p, central_point):
     """
-    Encuentra dos rectas (una vertical y una horizontal) que dividan el espacio
-    de tal manera que cada lado de cada recta tenga la misma cantidad de puntos.
+    Calcula el ángulo de un punto respecto al punto central.
     
-    :param points: Lista de puntos en el formato [municipis..(x,y)]
-    :return: Una tupla ((x_mediana, 'vertical'), (y_mediana, 'horizontal'))
+    :param p: Punto en el formato (x, y)
+    :param central_point: Punto central en el formato (cx, cy)
+    :return: Ángulo en radianes
     """
+    return np.arctan2(p[1] - central_point[1], p[0] - central_point[0])
+
+def divide_points(points, central_point, lines):
+    """
+    Divide una lista de puntos en 5 grupos según 4 líneas divisoras que parten del punto central.
     
-    # Ordenar puntos por coordenada x
-    points_sorted_by_x = sorted(points, key=lambda p: p[0])
+    :param points: Lista de puntos en el formato [(x1, y1), (x2, y2), ...]
+    :param central_point: Punto central en el formato (cx, cy)
+    :param lines: Lista de líneas en el formato [(angle1, 'line'), (angle2, 'line'), ...]
+    :return: Lista de 5 listas de puntos, cada una representando un grupo
+    """
+    # Calcular los ángulos de las líneas divisoras
+    line_angles = [line[0] for line in lines]
     
-    # Encontrar la mediana en x
-    n = len(points_sorted_by_x)
-    if n % 2 == 0:
-        x_mediana = (points_sorted_by_x[n//2 - 1][0] + points_sorted_by_x[n//2][0]) / 2
-    else:
-        x_mediana = points_sorted_by_x[n//2][0]
-
-    # Ordenar puntos por coordenada y
-    points_sorted_by_y = sorted(points, key=lambda p: p[1])
+    # Calcular los ángulos de cada punto respecto al punto central
+    points_with_angles = [(p, calculate_angle(p, central_point)) for p in points]
     
-    # Encontrar la mediana en y
-    if n % 2 == 0:
-        y_mediana = (points_sorted_by_y[n//2 - 1][1] + points_sorted_by_y[n//2][1]) / 2
-    else:
-        y_mediana = points_sorted_by_y[n//2][1]
+    # Ordenar los puntos por sus ángulos
+    points_with_angles.sort(key=lambda x: x[1])
+    
+    # Dividir los puntos en 5 grupos según los ángulos de las líneas divisoras
+    groups = [[] for _ in range(5)]
+    current_group = 0
+    for p, angle in points_with_angles:
+        # Si el ángulo del punto supera el ángulo de la línea divisoria actual, avanzar al siguiente grupo
+        while current_group < 4 and angle > line_angles[current_group]:
+            current_group += 1
+        groups[current_group].append(p)
+    
+    return groups
 
-    return [x_mediana, y_mediana]
 
 
-# Ejemplo de uso
-puntos = [(1, 2), (3, 4), (5, 6), (7, 8), (9, 10)]
-rectas = find_dividing_lines(puntos)
-print(rectas)  # Output: ((5.0, 'vertical'), (6.0, 'horizontal'))
 
 
 
