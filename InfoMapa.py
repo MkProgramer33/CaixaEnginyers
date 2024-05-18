@@ -30,71 +30,7 @@ class Mapa:
     
     # Devuelve el número de bloque según el dia en el que esté.
     def get_bloque(self, fecha_str):
-        
-        # diccionario para traducir los días de la semana del inglés al español
-        dias_semana = {
-            0: 'Lunes',
-            1: 'Martes',
-            2: 'Miércoles',
-            3: 'Jueves',
-            4: 'Viernes',
-            5: 'Sábado',
-            6: 'Domingo'
-        }
-        
-        # bloques de servicio por rango de días laborables
-        bloques_servicio = {
-            range(1, 6): 'Bloc 1',
-            range(6, 11): 'Bloc 2',
-            range(11, 16): 'Bloc 3',
-            range(16, 21): 'Bloc 4'
-        }
-        
-        # convertir la cadena de fecha en un objeto datetime
-        fecha = datetime.strptime(fecha_str, '%d/%m/%Y')
-
-        dia_semana = fecha.weekday()
-        dia = dias_semana[dia_semana]
-        
-        
-        # Verificar si el día es laborable (lunes a viernes)
-        if dia_semana > 4:
-            return f"La fecha {fecha_str} corresponde a: {dias_semana[dia_semana]}, que no es un día laborable."
-        
-        parada={}
-        parada = self.paradas.get(codINE)
-        if parada:
-            return parada['bloque']
-        else:
-            raise ValueError(f"No se encontró una parada con codINE: {codINE}")
-            
-    
-    
-        # Verificar si el día es laborable (lunes a viernes)
-        if dia_semana > 4:
-            return f"La fecha {fecha_str} corresponde a: {dias_semana[dia_semana]}, que no es un día laborable."
-    
-        # Calcular el número de días laborables desde el inicio del mes
-        dia_mes = fecha.day
-        contador_dias_laborables = 0
-        for dia in range(1, dia_mes + 1):
-            dia_actual = datetime(fecha.year, fecha.month, dia)
-            if dia_actual.weekday() < 5:  # Lunes a viernes son días laborables
-                contador_dias_laborables += 1
-    
-        # Determinar el bloque de servicio correspondiente
-        for rango, bloque in bloques_servicio.items():
-            if contador_dias_laborables in rango:
-                return f"La fecha {fecha_str} corresponde a: {dias_semana[dia_semana]} y el bloque de servicio es: {bloque}"
-    
-        return "No se pudo determinar el bloque de servicio."
-            
-   
-
-# Ejemplo de uso
-fecha1 = '18/05/2024'  # Reemplaza con la fecha que desees
-dia_semana = get_bloque(fecha)
-print(f"La fecha {fecha} corresponde a: {dia_semana}")
+        pass
 
 
 
@@ -147,7 +83,7 @@ def load(fitxer, mapa):
     # leemos la info del excel
     data = pd.read_excel(fitxer)
     
-    required_columns = ['codINE', 'Municipi', 'Pob.', 'BLOC', 'Estancia Minima', 'LOTE']
+    required_columns = ['codINE', 'Municipi', 'Pob.', 'BLOC', 'Estancia Minima', 'LOTE', 'LONG', 'LAT']
     for column in required_columns:
         if column not in data.columns:
             raise ValueError(f"Falta la columna requerida: {column}")
@@ -172,13 +108,7 @@ para implimentar load:
     
 """
 
-"""
-para implimentarlo get_bloque:
-    
-    mapa=Mapa()
-    codINE = '8242'
-    load('DatosMunicipios.xlsx', mapa)
-    bloque = mapa.get_bloque(codINE)
-    print(f"El número de bloque para codINE {codINE} es: {bloque}")
-    
-"""
+mapa = Mapa()
+load('DatosMunicipios.xlsx', mapa)
+print(mapa.paradas)
+
