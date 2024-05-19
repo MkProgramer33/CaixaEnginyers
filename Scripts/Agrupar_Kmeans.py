@@ -2,7 +2,8 @@ from sklearn.cluster import KMeans
 import numpy as np
 
 '''
-Este elagoritmo sirve para saber cuál será la ruta dependiendo de que día es del día 1-5
+Este elagoritmo sirve para saber cuál será los municipios por los que passarà la ruta
+dependiendo de que día es del día 1-5 utilizando el algoritmo Kmeans.
 Recivirá:
     - Una lista de municipios con sus cordenadas
 Devuelve:

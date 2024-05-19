@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6ffb1e476b8b56423ca039f618a3f14a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6ffb1e476b8b56423ca039f618a3f14a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6ffb1e476b8b56423ca039f618a3f14a = L.map(
+                "map_6ffb1e476b8b56423ca039f618a3f14a",
+                {
+                    center: [40.0, -3.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_faa01f7d09e9c49704875ac993012647 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_faa01f7d09e9c49704875ac993012647.addTo(map_6ffb1e476b8b56423ca039f618a3f14a);
+        
+    
+            var circle_marker_1d7e0f95a9052ac8ec3e76baf2574b99 = L.circleMarker(
+                [41.6794647, 2.0579669],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6ffb1e476b8b56423ca039f618a3f14a);
+        
+    
+        var popup_22e9851849cf322c4c22b16b3c8d0fed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ecb9df86a67316a58a6403d3ffc5947 = $(`<div id="html_5ecb9df86a67316a58a6403d3ffc5947" style="width: 100.0%; height: 100.0%;">Municipio: Sant Llorenç Savall<br>Bloque: 1</div>`)[0];
+                popup_22e9851849cf322c4c22b16b3c8d0fed.setContent(html_5ecb9df86a67316a58a6403d3ffc5947);
+            
+        
+
+        circle_marker_1d7e0f95a9052ac8ec3e76baf2574b99.bindPopup(popup_22e9851849cf322c4c22b16b3c8d0fed)
+        ;
+
+        
+    
+    
+            circle_marker_1d7e0f95a9052ac8ec3e76baf2574b99.bindTooltip(
+                `<div>
+                     Sant Llorenç Savall
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_73f15d6b6e4c358cb63c4692a50ebe8d = L.marker(
+                [41.6794647, 2.0579669],
+                {}
+            ).addTo(map_6ffb1e476b8b56423ca039f618a3f14a);
+        
+    
+            var div_icon_8cbe066001d6b989dc8272b5fe64c9b4 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eSant Lloren\u00e7 Savall\u003c/div\u003e"});
+            marker_73f15d6b6e4c358cb63c4692a50ebe8d.setIcon(div_icon_8cbe066001d6b989dc8272b5fe64c9b4);
+        
+    
+            var circle_marker_d161ddeff0099e17ddf4c9e1ae476d72 = L.circleMarker(
+                [41.6794647, 2.0579669],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6ffb1e476b8b56423ca039f618a3f14a);
+        
+    
+        var popup_4466dd18d64ed0955dab86a2d5b91dd0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6cc6e0b26e35dfe754deb8fc8d176a93 = $(`<div id="html_6cc6e0b26e35dfe754deb8fc8d176a93" style="width: 100.0%; height: 100.0%;">Municipio: Sant Llorenç Savall<br>Bloque: 1</div>`)[0];
+                popup_4466dd18d64ed0955dab86a2d5b91dd0.setContent(html_6cc6e0b26e35dfe754deb8fc8d176a93);
+            
+        
+
+        circle_marker_d161ddeff0099e17ddf4c9e1ae476d72.bindPopup(popup_4466dd18d64ed0955dab86a2d5b91dd0)
+        ;
+
+        
+    
+    
+            circle_marker_d161ddeff0099e17ddf4c9e1ae476d72.bindTooltip(
+                `<div>
+                     Sant Llorenç Savall
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_382a8ce8f08327b1e28b2bc3809cb929 = L.marker(
+                [41.6794647, 2.0579669],
+                {}
+            ).addTo(map_6ffb1e476b8b56423ca039f618a3f14a);
+        
+    
+            var div_icon_fa100824a9ea940261b659860da2c767 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eSant Lloren\u00e7 Savall\u003c/div\u003e"});
+            marker_382a8ce8f08327b1e28b2bc3809cb929.setIcon(div_icon_fa100824a9ea940261b659860da2c767);
+        
+    
+            var circle_marker_97427848db297af61a3028cacf145ad2 = L.circleMarker(
+                [41.6937007, 2.1164334],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6ffb1e476b8b56423ca039f618a3f14a);
+        
+    
+        var popup_c66120cd3dd6050ee95f76ea345cc8c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_37e1f442cc54160ced123ffab6be4d95 = $(`<div id="html_37e1f442cc54160ced123ffab6be4d95" style="width: 100.0%; height: 100.0%;">Municipio: Gallifa<br>Bloque: 1</div>`)[0];
+                popup_c66120cd3dd6050ee95f76ea345cc8c8.setContent(html_37e1f442cc54160ced123ffab6be4d95);
+            
+        
+
+        circle_marker_97427848db297af61a3028cacf145ad2.bindPopup(popup_c66120cd3dd6050ee95f76ea345cc8c8)
+        ;
+
+        
+    
+    
+            circle_marker_97427848db297af61a3028cacf145ad2.bindTooltip(
+                `<div>
+                     Gallifa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c9c2d6c5b85d0c7e8b7725458f76fc15 = L.marker(
+                [41.6937007, 2.1164334],
+                {}
+            ).addTo(map_6ffb1e476b8b56423ca039f618a3f14a);
+        
+    
+            var div_icon_9d4129ce2b6471f4820dcb4ba35c04e9 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eGallifa\u003c/div\u003e"});
+            marker_c9c2d6c5b85d0c7e8b7725458f76fc15.setIcon(div_icon_9d4129ce2b6471f4820dcb4ba35c04e9);
+        
+    
+            var circle_marker_8c24e0e59570d90b6cdfe608c6935cad = L.circleMarker(
+                [41.6937007, 2.1164334],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6ffb1e476b8b56423ca039f618a3f14a);
+        
+    
+        var popup_a84f724d1b6b79a5e1e5054c8653a777 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d9b5b32a2f7f16f32ee08fe00618bfd8 = $(`<div id="html_d9b5b32a2f7f16f32ee08fe00618bfd8" style="width: 100.0%; height: 100.0%;">Municipio: Gallifa<br>Bloque: 1</div>`)[0];
+                popup_a84f724d1b6b79a5e1e5054c8653a777.setContent(html_d9b5b32a2f7f16f32ee08fe00618bfd8);
+            
+        
+
+        circle_marker_8c24e0e59570d90b6cdfe608c6935cad.bindPopup(popup_a84f724d1b6b79a5e1e5054c8653a777)
+        ;
+
+        
+    
+    
+            circle_marker_8c24e0e59570d90b6cdfe608c6935cad.bindTooltip(
+                `<div>
+                     Gallifa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9054cb65fed7b995d1c9126c99654d2c = L.marker(
+                [41.6937007, 2.1164334],
+                {}
+            ).addTo(map_6ffb1e476b8b56423ca039f618a3f14a);
+        
+    
+            var div_icon_06a726118f9c215d38845704ac40bf00 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eGallifa\u003c/div\u003e"});
+            marker_9054cb65fed7b995d1c9126c99654d2c.setIcon(div_icon_06a726118f9c215d38845704ac40bf00);
+        
+    
+            var circle_marker_d96035055e5155c93b232da7cfe44ef0 = L.circleMarker(
+                [41.9807659, 2.1750391],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6ffb1e476b8b56423ca039f618a3f14a);
+        
+    
+        var popup_2e586ed20ec97f319d3cf0561c6ecb06 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5840bc4ead76ea2018c59077108e24be = $(`<div id="html_5840bc4ead76ea2018c59077108e24be" style="width: 100.0%; height: 100.0%;">Municipio: Far d'Empordà<br>Bloque: 1</div>`)[0];
+                popup_2e586ed20ec97f319d3cf0561c6ecb06.setContent(html_5840bc4ead76ea2018c59077108e24be);
+            
+        
+
+        circle_marker_d96035055e5155c93b232da7cfe44ef0.bindPopup(popup_2e586ed20ec97f319d3cf0561c6ecb06)
+        ;
+
+        
+    
+    
+            circle_marker_d96035055e5155c93b232da7cfe44ef0.bindTooltip(
+                `<div>
+                     Far d'Empordà
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b524bd08f36470f7b4ee5c60cbfff5b8 = L.marker(
+                [41.9807659, 2.1750391],
+                {}
+            ).addTo(map_6ffb1e476b8b56423ca039f618a3f14a);
+        
+    
+            var div_icon_3188e973f5e271c16a09f0b6d8803c04 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eFar d\u0027Empord\u00e0\u003c/div\u003e"});
+            marker_b524bd08f36470f7b4ee5c60cbfff5b8.setIcon(div_icon_3188e973f5e271c16a09f0b6d8803c04);
+        
+    
+            var circle_marker_8b50f94b60f54421ffa73a9748855f21 = L.circleMarker(
+                [41.9807659, 2.1750391],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6ffb1e476b8b56423ca039f618a3f14a);
+        
+    
+        var popup_7ff1f27895a22b5625f19f7c4b09ec86 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a483273a786ee657da7268747bf0066 = $(`<div id="html_0a483273a786ee657da7268747bf0066" style="width: 100.0%; height: 100.0%;">Municipio: Far d'Empordà<br>Bloque: 1</div>`)[0];
+                popup_7ff1f27895a22b5625f19f7c4b09ec86.setContent(html_0a483273a786ee657da7268747bf0066);
+            
+        
+
+        circle_marker_8b50f94b60f54421ffa73a9748855f21.bindPopup(popup_7ff1f27895a22b5625f19f7c4b09ec86)
+        ;
+
+        
+    
+    
+            circle_marker_8b50f94b60f54421ffa73a9748855f21.bindTooltip(
+                `<div>
+                     Far d'Empordà
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_04c80b9576f48d45205a4311f7333240 = L.marker(
+                [41.9807659, 2.1750391],
+                {}
+            ).addTo(map_6ffb1e476b8b56423ca039f618a3f14a);
+        
+    
+            var div_icon_0de6f75a625b0d1c9f3da6aba4b87ef0 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eFar d\u0027Empord\u00e0\u003c/div\u003e"});
+            marker_04c80b9576f48d45205a4311f7333240.setIcon(div_icon_0de6f75a625b0d1c9f3da6aba4b87ef0);
+        
+    
+            var circle_marker_78eb9aa386b6455bab34e3d57a23edba = L.circleMarker(
+                [41.736093, 1.9780786],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6ffb1e476b8b56423ca039f618a3f14a);
+        
+    
+        var popup_ca2218c011fd5c0ec29f9907b03c5512 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b484df8fa00133139ba0d1b9d059e1a8 = $(`<div id="html_b484df8fa00133139ba0d1b9d059e1a8" style="width: 100.0%; height: 100.0%;">Municipio: Talamanca<br>Bloque: 1</div>`)[0];
+                popup_ca2218c011fd5c0ec29f9907b03c5512.setContent(html_b484df8fa00133139ba0d1b9d059e1a8);
+            
+        
+
+        circle_marker_78eb9aa386b6455bab34e3d57a23edba.bindPopup(popup_ca2218c011fd5c0ec29f9907b03c5512)
+        ;
+
+        
+    
+    
+            circle_marker_78eb9aa386b6455bab34e3d57a23edba.bindTooltip(
+                `<div>
+                     Talamanca
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b140fa8df4641805f803306278470ed0 = L.marker(
+                [41.736093, 1.9780786],
+                {}
+            ).addTo(map_6ffb1e476b8b56423ca039f618a3f14a);
+        
+    
+            var div_icon_786d0e8dbb1bf9ec1f3d4aaa9efa79b7 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eTalamanca\u003c/div\u003e"});
+            marker_b140fa8df4641805f803306278470ed0.setIcon(div_icon_786d0e8dbb1bf9ec1f3d4aaa9efa79b7);
+        
+    
+            var circle_marker_290d7e978863942faecbe53ed35a99b6 = L.circleMarker(
+                [41.6998219, 1.9764684],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6ffb1e476b8b56423ca039f618a3f14a);
+        
+    
+        var popup_e16f64c99805422cc7e4f964bbe78b06 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c938c06d867c7839a0befdd39e3b1417 = $(`<div id="html_c938c06d867c7839a0befdd39e3b1417" style="width: 100.0%; height: 100.0%;">Municipio: Mura<br>Bloque: 1</div>`)[0];
+                popup_e16f64c99805422cc7e4f964bbe78b06.setContent(html_c938c06d867c7839a0befdd39e3b1417);
+            
+        
+
+        circle_marker_290d7e978863942faecbe53ed35a99b6.bindPopup(popup_e16f64c99805422cc7e4f964bbe78b06)
+        ;
+
+        
+    
+    
+            circle_marker_290d7e978863942faecbe53ed35a99b6.bindTooltip(
+                `<div>
+                     Mura
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_34d98c93a527b2f00fa594cc5bac0107 = L.marker(
+                [41.6998219, 1.9764684],
+                {}
+            ).addTo(map_6ffb1e476b8b56423ca039f618a3f14a);
+        
+    
+            var div_icon_a746128282946357c8e1ad37d625474e = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eMura\u003c/div\u003e"});
+            marker_34d98c93a527b2f00fa594cc5bac0107.setIcon(div_icon_a746128282946357c8e1ad37d625474e);
+        
+    
+            var poly_line_11873842740420815a908bae20c50ae1 = L.polyline(
+                [[41.6794647, 2.0579669], [41.6794647, 2.0579669], [41.6937007, 2.1164334], [41.6937007, 2.1164334], [41.9807659, 2.1750391], [41.9807659, 2.1750391], [41.736093, 1.9780786], [41.6998219, 1.9764684]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_6ffb1e476b8b56423ca039f618a3f14a);
+        
+</script>
+</html>
