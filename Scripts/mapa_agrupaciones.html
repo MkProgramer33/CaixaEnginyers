@@ -1,0 +1,3231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_08dc488dba9912500f8144dc0884749b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_08dc488dba9912500f8144dc0884749b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_08dc488dba9912500f8144dc0884749b = L.map(
+                "map_08dc488dba9912500f8144dc0884749b",
+                {
+                    center: [40.0, -3.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 9,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e9f1ca71bfcf448f5480f59ee85fad3f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_e9f1ca71bfcf448f5480f59ee85fad3f.addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var circle_marker_1df6883544626ac17f8e723054659244 = L.circleMarker(
+                [42.1732143, 2.9904591],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_eb1a9721dde6b56dd8aa292afb186a13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d3cb1e5be851e6a9ab8cbef361108665 = $(`<div id="html_d3cb1e5be851e6a9ab8cbef361108665" style="width: 100.0%; height: 100.0%;">Municipio: Sant Miquel de Fluvià<br>Población: 808.0<br>Bloque: 1</div>`)[0];
+                popup_eb1a9721dde6b56dd8aa292afb186a13.setContent(html_d3cb1e5be851e6a9ab8cbef361108665);
+            
+        
+
+        circle_marker_1df6883544626ac17f8e723054659244.bindPopup(popup_eb1a9721dde6b56dd8aa292afb186a13)
+        ;
+
+        
+    
+    
+            circle_marker_1df6883544626ac17f8e723054659244.bindTooltip(
+                `<div>
+                     Sant Miquel de Fluvià
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cae42b4b0b1a6cc4d5ec36f35751fa32 = L.marker(
+                [42.1732143, 2.9904591],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_441e5fdacd6abcbb0220dba61f8fc16f = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eSant Miquel de Fluvi\u00e0\u003c/div\u003e"});
+            marker_cae42b4b0b1a6cc4d5ec36f35751fa32.setIcon(div_icon_441e5fdacd6abcbb0220dba61f8fc16f);
+        
+    
+            var circle_marker_36d9c928c029cf3793129f87df6006eb = L.circleMarker(
+                [42.174492, 3.0402489],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_c48323ac1c376bc11c71cde5d633dc18 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ef3a3514dd2c33b4eff439d4016b868 = $(`<div id="html_6ef3a3514dd2c33b4eff439d4016b868" style="width: 100.0%; height: 100.0%;">Municipio: Torroella de Fluvià<br>Población: 741.0<br>Bloque: 1</div>`)[0];
+                popup_c48323ac1c376bc11c71cde5d633dc18.setContent(html_6ef3a3514dd2c33b4eff439d4016b868);
+            
+        
+
+        circle_marker_36d9c928c029cf3793129f87df6006eb.bindPopup(popup_c48323ac1c376bc11c71cde5d633dc18)
+        ;
+
+        
+    
+    
+            circle_marker_36d9c928c029cf3793129f87df6006eb.bindTooltip(
+                `<div>
+                     Torroella de Fluvià
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6a7f740ab8ba4acd1b28c633cab143fb = L.marker(
+                [42.174492, 3.0402489],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_c1090f065a9c678a6542b64ecdcf11e8 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eTorroella de Fluvi\u00e0\u003c/div\u003e"});
+            marker_6a7f740ab8ba4acd1b28c633cab143fb.setIcon(div_icon_c1090f065a9c678a6542b64ecdcf11e8);
+        
+    
+            var circle_marker_5d442e15d81b80c3b530edb82cc5e6d0 = L.circleMarker(
+                [42.1437984, 2.9550356],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_d01e5d132b9f267ce4b899e761578f9f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_312a5c2088536daf1715ff6f66eddb98 = $(`<div id="html_312a5c2088536daf1715ff6f66eddb98" style="width: 100.0%; height: 100.0%;">Municipio: Vilaür<br>Población: 162.0<br>Bloque: 1</div>`)[0];
+                popup_d01e5d132b9f267ce4b899e761578f9f.setContent(html_312a5c2088536daf1715ff6f66eddb98);
+            
+        
+
+        circle_marker_5d442e15d81b80c3b530edb82cc5e6d0.bindPopup(popup_d01e5d132b9f267ce4b899e761578f9f)
+        ;
+
+        
+    
+    
+            circle_marker_5d442e15d81b80c3b530edb82cc5e6d0.bindTooltip(
+                `<div>
+                     Vilaür
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e3da9a9176d3517a9213bc600d4536e9 = L.marker(
+                [42.1437984, 2.9550356],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_1c8430048fb5fee0b11fc171519764ae = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eVila\u00fcr\u003c/div\u003e"});
+            marker_e3da9a9176d3517a9213bc600d4536e9.setIcon(div_icon_1c8430048fb5fee0b11fc171519764ae);
+        
+    
+            var circle_marker_5056aa12ff0e814e9516bb0bb0047271 = L.circleMarker(
+                [42.1965528, 3.0571146],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_e53586cc43f502d3f07f8a3337b79d2a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7cb5e2b3d1316de76f769bbe418adee2 = $(`<div id="html_7cb5e2b3d1316de76f769bbe418adee2" style="width: 100.0%; height: 100.0%;">Municipio: Vilamacolum<br>Población: 386.0<br>Bloque: 1</div>`)[0];
+                popup_e53586cc43f502d3f07f8a3337b79d2a.setContent(html_7cb5e2b3d1316de76f769bbe418adee2);
+            
+        
+
+        circle_marker_5056aa12ff0e814e9516bb0bb0047271.bindPopup(popup_e53586cc43f502d3f07f8a3337b79d2a)
+        ;
+
+        
+    
+    
+            circle_marker_5056aa12ff0e814e9516bb0bb0047271.bindTooltip(
+                `<div>
+                     Vilamacolum
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a45be846791b87e0eade98d9c7f9af4a = L.marker(
+                [42.1965528, 3.0571146],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_780c3b6c7acf90eddd7e91a3421ae0c0 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eVilamacolum\u003c/div\u003e"});
+            marker_a45be846791b87e0eade98d9c7f9af4a.setIcon(div_icon_780c3b6c7acf90eddd7e91a3421ae0c0);
+        
+    
+            var circle_marker_18e0cde84b3ce270ef1e407a36af1026 = L.circleMarker(
+                [42.2224982, 2.9268828],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_37eebc80e4769929d2fe0370c8dfbfc8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_75f643addc7c0532bb189e3ad57a6450 = $(`<div id="html_75f643addc7c0532bb189e3ad57a6450" style="width: 100.0%; height: 100.0%;">Municipio: Borrassà<br>Población: 776.0<br>Bloque: 1</div>`)[0];
+                popup_37eebc80e4769929d2fe0370c8dfbfc8.setContent(html_75f643addc7c0532bb189e3ad57a6450);
+            
+        
+
+        circle_marker_18e0cde84b3ce270ef1e407a36af1026.bindPopup(popup_37eebc80e4769929d2fe0370c8dfbfc8)
+        ;
+
+        
+    
+    
+            circle_marker_18e0cde84b3ce270ef1e407a36af1026.bindTooltip(
+                `<div>
+                     Borrassà
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f265baf1cf4b56d03ebc4e90fafd1571 = L.marker(
+                [42.2224982, 2.9268828],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_175c515643b87666d6becd355e286f7d = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eBorrass\u00e0\u003c/div\u003e"});
+            marker_f265baf1cf4b56d03ebc4e90fafd1571.setIcon(div_icon_175c515643b87666d6becd355e286f7d);
+        
+    
+            var circle_marker_3eb9610e4c32515d8468d55b80919da0 = L.circleMarker(
+                [42.2095097, 2.9940216],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_ffe472dd68d306decdf90bf730115204 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a052606ef61b2b456c2e8f6fae8ec3f = $(`<div id="html_7a052606ef61b2b456c2e8f6fae8ec3f" style="width: 100.0%; height: 100.0%;">Municipio: Siurana<br>Población: 178.0<br>Bloque: 1</div>`)[0];
+                popup_ffe472dd68d306decdf90bf730115204.setContent(html_7a052606ef61b2b456c2e8f6fae8ec3f);
+            
+        
+
+        circle_marker_3eb9610e4c32515d8468d55b80919da0.bindPopup(popup_ffe472dd68d306decdf90bf730115204)
+        ;
+
+        
+    
+    
+            circle_marker_3eb9610e4c32515d8468d55b80919da0.bindTooltip(
+                `<div>
+                     Siurana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d98f75893716d826282e5284ec5317a2 = L.marker(
+                [42.2095097, 2.9940216],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_c4670451c4198a12a118c910aac841e0 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eSiurana\u003c/div\u003e"});
+            marker_d98f75893716d826282e5284ec5317a2.setIcon(div_icon_c4670451c4198a12a118c910aac841e0);
+        
+    
+            var circle_marker_2773db776505715fadb1d0ade609c3aa = L.circleMarker(
+                [42.1929222, 2.9539294],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_df5c5e7ecdc12eda4c8069062688b741 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4255c73d4eba7aeccda3f652e9bd03a0 = $(`<div id="html_4255c73d4eba7aeccda3f652e9bd03a0" style="width: 100.0%; height: 100.0%;">Municipio: Garrigàs<br>Población: 458.0<br>Bloque: 1</div>`)[0];
+                popup_df5c5e7ecdc12eda4c8069062688b741.setContent(html_4255c73d4eba7aeccda3f652e9bd03a0);
+            
+        
+
+        circle_marker_2773db776505715fadb1d0ade609c3aa.bindPopup(popup_df5c5e7ecdc12eda4c8069062688b741)
+        ;
+
+        
+    
+    
+            circle_marker_2773db776505715fadb1d0ade609c3aa.bindTooltip(
+                `<div>
+                     Garrigàs
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ed0b15046ffc903285e17edb1416b5c7 = L.marker(
+                [42.1929222, 2.9539294],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_7fc354dbd6b630597ca490611fd8c6d3 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eGarrig\u00e0s\u003c/div\u003e"});
+            marker_ed0b15046ffc903285e17edb1416b5c7.setIcon(div_icon_7fc354dbd6b630597ca490611fd8c6d3);
+        
+    
+            var circle_marker_a053245da0a5a2fa9d3223bfdf2885a0 = L.circleMarker(
+                [42.2424345, 3.0404198],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_f9e18f060568b701175c4725b3fff75d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a92ba1fba16f0dea1a8ff4898625e934 = $(`<div id="html_a92ba1fba16f0dea1a8ff4898625e934" style="width: 100.0%; height: 100.0%;">Municipio: Fortià<br>Población: 778.0<br>Bloque: 1</div>`)[0];
+                popup_f9e18f060568b701175c4725b3fff75d.setContent(html_a92ba1fba16f0dea1a8ff4898625e934);
+            
+        
+
+        circle_marker_a053245da0a5a2fa9d3223bfdf2885a0.bindPopup(popup_f9e18f060568b701175c4725b3fff75d)
+        ;
+
+        
+    
+    
+            circle_marker_a053245da0a5a2fa9d3223bfdf2885a0.bindTooltip(
+                `<div>
+                     Fortià
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f7bd935bae8a1d60d00d2620a7aef919 = L.marker(
+                [42.2424345, 3.0404198],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_78592e1b5de2980ab47ae84cecada38a = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eForti\u00e0\u003c/div\u003e"});
+            marker_f7bd935bae8a1d60d00d2620a7aef919.setIcon(div_icon_78592e1b5de2980ab47ae84cecada38a);
+        
+    
+            var circle_marker_eba21acd98975d96df903f5e1dedf849 = L.circleMarker(
+                [42.2269331, 3.0420591],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_a7b3c04bb2acf01cdd55c502f50a7dca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62b695a4c7a6faaafc1019c8ca496e18 = $(`<div id="html_62b695a4c7a6faaafc1019c8ca496e18" style="width: 100.0%; height: 100.0%;">Municipio: Riumors<br>Población: 244.0<br>Bloque: 1</div>`)[0];
+                popup_a7b3c04bb2acf01cdd55c502f50a7dca.setContent(html_62b695a4c7a6faaafc1019c8ca496e18);
+            
+        
+
+        circle_marker_eba21acd98975d96df903f5e1dedf849.bindPopup(popup_a7b3c04bb2acf01cdd55c502f50a7dca)
+        ;
+
+        
+    
+    
+            circle_marker_eba21acd98975d96df903f5e1dedf849.bindTooltip(
+                `<div>
+                     Riumors
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8a87c44f3b838e02a9a7f558847924e7 = L.marker(
+                [42.2269331, 3.0420591],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_1d46e22516d82a2cd66c5df20a77c3c7 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eRiumors\u003c/div\u003e"});
+            marker_8a87c44f3b838e02a9a7f558847924e7.setIcon(div_icon_1d46e22516d82a2cd66c5df20a77c3c7);
+        
+    
+            var circle_marker_da568b1166c904fe8d54622cccf94fb3 = L.circleMarker(
+                [42.2333519, 2.9523456],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_cde924f0608d4492d518b716474e1eb7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0164258f8b9ab98580e25f1c643ecd5f = $(`<div id="html_0164258f8b9ab98580e25f1c643ecd5f" style="width: 100.0%; height: 100.0%;">Municipio: Santa Llogaia d'Àlguema<br>Población: 379.0<br>Bloque: 1</div>`)[0];
+                popup_cde924f0608d4492d518b716474e1eb7.setContent(html_0164258f8b9ab98580e25f1c643ecd5f);
+            
+        
+
+        circle_marker_da568b1166c904fe8d54622cccf94fb3.bindPopup(popup_cde924f0608d4492d518b716474e1eb7)
+        ;
+
+        
+    
+    
+            circle_marker_da568b1166c904fe8d54622cccf94fb3.bindTooltip(
+                `<div>
+                     Santa Llogaia d'Àlguema
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1c68a02fe97167dc248c987a353bd4c8 = L.marker(
+                [42.2333519, 2.9523456],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_1597348e1e4098545d7a47ee2b945bb1 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eSanta Llogaia d\u0027\u00c0lguema\u003c/div\u003e"});
+            marker_1c68a02fe97167dc248c987a353bd4c8.setIcon(div_icon_1597348e1e4098545d7a47ee2b945bb1);
+        
+    
+            var circle_marker_2e44f585ac40df5bcac4663e7dbebfff = L.circleMarker(
+                [42.2668061, 3.0170438],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_c6654eff09cb26747c808fffe034a98b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a18ec62543b6a0b2dfd56ced8875c1f6 = $(`<div id="html_a18ec62543b6a0b2dfd56ced8875c1f6" style="width: 100.0%; height: 100.0%;">Municipio: Vila-sacra<br>Población: 785.0<br>Bloque: 1</div>`)[0];
+                popup_c6654eff09cb26747c808fffe034a98b.setContent(html_a18ec62543b6a0b2dfd56ced8875c1f6);
+            
+        
+
+        circle_marker_2e44f585ac40df5bcac4663e7dbebfff.bindPopup(popup_c6654eff09cb26747c808fffe034a98b)
+        ;
+
+        
+    
+    
+            circle_marker_2e44f585ac40df5bcac4663e7dbebfff.bindTooltip(
+                `<div>
+                     Vila-sacra
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_672b56e83e58253726cbc115a5a8fd7a = L.marker(
+                [42.2668061, 3.0170438],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_75daea5fb823d4f78bbd494fdb69b1e0 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eVila-sacra\u003c/div\u003e"});
+            marker_672b56e83e58253726cbc115a5a8fd7a.setIcon(div_icon_75daea5fb823d4f78bbd494fdb69b1e0);
+        
+    
+            var circle_marker_90adec7fa215579cf76efbe1c7084c2e = L.circleMarker(
+                [42.3087348, 2.9764243],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_20290c8d968936c1c3968e4183520c73 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa832dbcd38671b913fb04f31878b9de = $(`<div id="html_fa832dbcd38671b913fb04f31878b9de" style="width: 100.0%; height: 100.0%;">Municipio: Cabanes<br>Población: 949.0<br>Bloque: 1</div>`)[0];
+                popup_20290c8d968936c1c3968e4183520c73.setContent(html_fa832dbcd38671b913fb04f31878b9de);
+            
+        
+
+        circle_marker_90adec7fa215579cf76efbe1c7084c2e.bindPopup(popup_20290c8d968936c1c3968e4183520c73)
+        ;
+
+        
+    
+    
+            circle_marker_90adec7fa215579cf76efbe1c7084c2e.bindTooltip(
+                `<div>
+                     Cabanes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4ad21b073167ce0cc052a6dc74d32b98 = L.marker(
+                [42.3087348, 2.9764243],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_7c2c0e29e2aa5de0fb2b8d7704a255e9 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eCabanes\u003c/div\u003e"});
+            marker_4ad21b073167ce0cc052a6dc74d32b98.setIcon(div_icon_7c2c0e29e2aa5de0fb2b8d7704a255e9);
+        
+    
+            var circle_marker_727900c3c464ee198b6f01e25d7a33e3 = L.circleMarker(
+                [42.3161009, 3.1161931],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_d297bdf55af472a690948cb6eb62c9dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d534d2c1afb67715de8d20b8d828931a = $(`<div id="html_d534d2c1afb67715de8d20b8d828931a" style="width: 100.0%; height: 100.0%;">Municipio: Pau<br>Población: 579.0<br>Bloque: 1</div>`)[0];
+                popup_d297bdf55af472a690948cb6eb62c9dc.setContent(html_d534d2c1afb67715de8d20b8d828931a);
+            
+        
+
+        circle_marker_727900c3c464ee198b6f01e25d7a33e3.bindPopup(popup_d297bdf55af472a690948cb6eb62c9dc)
+        ;
+
+        
+    
+    
+            circle_marker_727900c3c464ee198b6f01e25d7a33e3.bindTooltip(
+                `<div>
+                     Pau
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2c53d925e0f04dfe5e3819901403d029 = L.marker(
+                [42.3161009, 3.1161931],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_90f7420f8a16d0064767e8b670d9dcfa = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003ePau\u003c/div\u003e"});
+            marker_2c53d925e0f04dfe5e3819901403d029.setIcon(div_icon_90f7420f8a16d0064767e8b670d9dcfa);
+        
+    
+            var circle_marker_6e0c21eefaa36fd6ed347b11a9cf9225 = L.circleMarker(
+                [42.3078129, 3.070639914063831],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_19d4fbddc7232738e7ebf56a3d1abf48 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b0194fe380438b0926fa079750164e23 = $(`<div id="html_b0194fe380438b0926fa079750164e23" style="width: 100.0%; height: 100.0%;">Municipio: Pedret i Marzà<br>Población: 181.0<br>Bloque: 1</div>`)[0];
+                popup_19d4fbddc7232738e7ebf56a3d1abf48.setContent(html_b0194fe380438b0926fa079750164e23);
+            
+        
+
+        circle_marker_6e0c21eefaa36fd6ed347b11a9cf9225.bindPopup(popup_19d4fbddc7232738e7ebf56a3d1abf48)
+        ;
+
+        
+    
+    
+            circle_marker_6e0c21eefaa36fd6ed347b11a9cf9225.bindTooltip(
+                `<div>
+                     Pedret i Marzà
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d9043065cb2f2d629755a6e0598d83e1 = L.marker(
+                [42.3078129, 3.070639914063831],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_928b6d449c7b3b202784728b8bb5a435 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003ePedret i Marz\u00e0\u003c/div\u003e"});
+            marker_d9043065cb2f2d629755a6e0598d83e1.setIcon(div_icon_928b6d449c7b3b202784728b8bb5a435);
+        
+    
+            var circle_marker_9a7fabcaffa3a6d0bae279010534a255 = L.circleMarker(
+                [42.2499757, 2.9145442],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_0d7a40a97009dc1d65fc7ad5d0a87f1b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d83aaaae451da87740bc757f90593097 = $(`<div id="html_d83aaaae451da87740bc757f90593097" style="width: 100.0%; height: 100.0%;">Municipio: Avinyonet de Puigventós<br>Población: 1676.0<br>Bloque: 1</div>`)[0];
+                popup_0d7a40a97009dc1d65fc7ad5d0a87f1b.setContent(html_d83aaaae451da87740bc757f90593097);
+            
+        
+
+        circle_marker_9a7fabcaffa3a6d0bae279010534a255.bindPopup(popup_0d7a40a97009dc1d65fc7ad5d0a87f1b)
+        ;
+
+        
+    
+    
+            circle_marker_9a7fabcaffa3a6d0bae279010534a255.bindTooltip(
+                `<div>
+                     Avinyonet de Puigventós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f3c62753ef57e49bef858d3efe0bd0c8 = L.marker(
+                [42.2499757, 2.9145442],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_fb74a3c918a5ff00ba2cfbda9383c008 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eAvinyonet de Puigvent\u00f3s\u003c/div\u003e"});
+            marker_f3c62753ef57e49bef858d3efe0bd0c8.setIcon(div_icon_fb74a3c918a5ff00ba2cfbda9383c008);
+        
+    
+            var circle_marker_55648eb6599cbaaeb92720bb7fe5d582 = L.circleMarker(
+                [42.3509939, 2.9723618],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_4f859eb0a1c41f24b9334befeb917bb0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c255a72f12ccd1634814eba1b3af8d5f = $(`<div id="html_c255a72f12ccd1634814eba1b3af8d5f" style="width: 100.0%; height: 100.0%;">Municipio: Masarac<br>Población: 294.0<br>Bloque: 1</div>`)[0];
+                popup_4f859eb0a1c41f24b9334befeb917bb0.setContent(html_c255a72f12ccd1634814eba1b3af8d5f);
+            
+        
+
+        circle_marker_55648eb6599cbaaeb92720bb7fe5d582.bindPopup(popup_4f859eb0a1c41f24b9334befeb917bb0)
+        ;
+
+        
+    
+    
+            circle_marker_55648eb6599cbaaeb92720bb7fe5d582.bindTooltip(
+                `<div>
+                     Masarac
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9bdf58d158e12df9250d421857151df5 = L.marker(
+                [42.3509939, 2.9723618],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_850ff98e5064f077a05bd59fc5570faa = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eMasarac\u003c/div\u003e"});
+            marker_9bdf58d158e12df9250d421857151df5.setIcon(div_icon_850ff98e5064f077a05bd59fc5570faa);
+        
+    
+            var circle_marker_0e0285802ffe646f28fc5f81ce4cdbc7 = L.circleMarker(
+                [42.3595501, 2.9999085],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_b54ea7bd671115c9217ba23f55e8c285 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8879abfe6bcc7777751449e73b2a2f1f = $(`<div id="html_8879abfe6bcc7777751449e73b2a2f1f" style="width: 100.0%; height: 100.0%;">Municipio: Mollet de Peralada<br>Población: 202.0<br>Bloque: 1</div>`)[0];
+                popup_b54ea7bd671115c9217ba23f55e8c285.setContent(html_8879abfe6bcc7777751449e73b2a2f1f);
+            
+        
+
+        circle_marker_0e0285802ffe646f28fc5f81ce4cdbc7.bindPopup(popup_b54ea7bd671115c9217ba23f55e8c285)
+        ;
+
+        
+    
+    
+            circle_marker_0e0285802ffe646f28fc5f81ce4cdbc7.bindTooltip(
+                `<div>
+                     Mollet de Peralada
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a4e6cccea8aa1e9da1cd9fbcf3c8ca14 = L.marker(
+                [42.3595501, 2.9999085],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_a4b5023bc3e8b975aca054b6003d0496 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eMollet de Peralada\u003c/div\u003e"});
+            marker_a4e6cccea8aa1e9da1cd9fbcf3c8ca14.setIcon(div_icon_a4b5023bc3e8b975aca054b6003d0496);
+        
+    
+            var circle_marker_5a063ae5a55116f6f4375c06cd06e11f = L.circleMarker(
+                [42.3893146, 2.9994355],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_b83fe87cf895f02af77c6610ca3a4e96 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b1780d954a82b3f18286cd1b6132e5bd = $(`<div id="html_b1780d954a82b3f18286cd1b6132e5bd" style="width: 100.0%; height: 100.0%;">Municipio: Espolla<br>Población: 408.0<br>Bloque: 1</div>`)[0];
+                popup_b83fe87cf895f02af77c6610ca3a4e96.setContent(html_b1780d954a82b3f18286cd1b6132e5bd);
+            
+        
+
+        circle_marker_5a063ae5a55116f6f4375c06cd06e11f.bindPopup(popup_b83fe87cf895f02af77c6610ca3a4e96)
+        ;
+
+        
+    
+    
+            circle_marker_5a063ae5a55116f6f4375c06cd06e11f.bindTooltip(
+                `<div>
+                     Espolla
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2c82f9b4d094d316f17c00506b06290a = L.marker(
+                [42.3893146, 2.9994355],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_d345991bb1e1b89500d68775b323446e = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eEspolla\u003c/div\u003e"});
+            marker_2c82f9b4d094d316f17c00506b06290a.setIcon(div_icon_d345991bb1e1b89500d68775b323446e);
+        
+    
+            var circle_marker_af0755c2ecb10895fbec4fecf46e23b7 = L.circleMarker(
+                [42.3787458, 3.0283472],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_c9a66e5ebd69f42dac51ae9746219d22 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2193ad3326f1aaf3b8415b914dabeed8 = $(`<div id="html_2193ad3326f1aaf3b8415b914dabeed8" style="width: 100.0%; height: 100.0%;">Municipio: Rabós<br>Población: 210.0<br>Bloque: 1</div>`)[0];
+                popup_c9a66e5ebd69f42dac51ae9746219d22.setContent(html_2193ad3326f1aaf3b8415b914dabeed8);
+            
+        
+
+        circle_marker_af0755c2ecb10895fbec4fecf46e23b7.bindPopup(popup_c9a66e5ebd69f42dac51ae9746219d22)
+        ;
+
+        
+    
+    
+            circle_marker_af0755c2ecb10895fbec4fecf46e23b7.bindTooltip(
+                `<div>
+                     Rabós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dcd8608e727d014e5b9d6be409aa0a52 = L.marker(
+                [42.3787458, 3.0283472],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_05324fbbe6cb03d6ab4d95a4da6cb6bf = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eRab\u00f3s\u003c/div\u003e"});
+            marker_dcd8608e727d014e5b9d6be409aa0a52.setIcon(div_icon_05324fbbe6cb03d6ab4d95a4da6cb6bf);
+        
+    
+            var circle_marker_dedcf7ef5c494438acba1254b2337eaa = L.circleMarker(
+                [42.3743918, 3.067464],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_9d140ad315882fbf9dcc7a735c644b71 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_631c4654848bec5ee22ec30f8645b3fb = $(`<div id="html_631c4654848bec5ee22ec30f8645b3fb" style="width: 100.0%; height: 100.0%;">Municipio: Vilamaniscle<br>Población: 204.0<br>Bloque: 1</div>`)[0];
+                popup_9d140ad315882fbf9dcc7a735c644b71.setContent(html_631c4654848bec5ee22ec30f8645b3fb);
+            
+        
+
+        circle_marker_dedcf7ef5c494438acba1254b2337eaa.bindPopup(popup_9d140ad315882fbf9dcc7a735c644b71)
+        ;
+
+        
+    
+    
+            circle_marker_dedcf7ef5c494438acba1254b2337eaa.bindTooltip(
+                `<div>
+                     Vilamaniscle
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f4d1a9dd17f5b7d8849db857be03d437 = L.marker(
+                [42.3743918, 3.067464],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_13fc71bde0a62ba4dff1f6e007c303cd = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eVilamaniscle\u003c/div\u003e"});
+            marker_f4d1a9dd17f5b7d8849db857be03d437.setIcon(div_icon_13fc71bde0a62ba4dff1f6e007c303cd);
+        
+    
+            var circle_marker_7e28fa7f351003d6dfa8be36ab635443 = L.circleMarker(
+                [42.2185591, 2.9072143],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_a56988d18d7bde4d2e05bc5d30246af8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d9494aa2f941eb52f812f69d395b867 = $(`<div id="html_2d9494aa2f941eb52f812f69d395b867" style="width: 100.0%; height: 100.0%;">Municipio: Ordis<br>Población: 373.0<br>Bloque: 1</div>`)[0];
+                popup_a56988d18d7bde4d2e05bc5d30246af8.setContent(html_2d9494aa2f941eb52f812f69d395b867);
+            
+        
+
+        circle_marker_7e28fa7f351003d6dfa8be36ab635443.bindPopup(popup_a56988d18d7bde4d2e05bc5d30246af8)
+        ;
+
+        
+    
+    
+            circle_marker_7e28fa7f351003d6dfa8be36ab635443.bindTooltip(
+                `<div>
+                     Ordis
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a70a786c5888aa246755985c279aeeec = L.marker(
+                [42.2185591, 2.9072143],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_e65901c124ffaf0bd61e4077a5006817 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eOrdis\u003c/div\u003e"});
+            marker_a70a786c5888aa246755985c279aeeec.setIcon(div_icon_e65901c124ffaf0bd61e4077a5006817);
+        
+    
+            var circle_marker_fc41259e2a0259b7f8f61863af44596d = L.circleMarker(
+                [42.1734468, 2.9646635],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_3129d1be0bac75fdcc80b7fb77f497e6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a0c950aa73d590bbda9e5e36934e8631 = $(`<div id="html_a0c950aa73d590bbda9e5e36934e8631" style="width: 100.0%; height: 100.0%;">Municipio: Palau de Santa Eulàlia<br>Población: 115.0<br>Bloque: 1</div>`)[0];
+                popup_3129d1be0bac75fdcc80b7fb77f497e6.setContent(html_a0c950aa73d590bbda9e5e36934e8631);
+            
+        
+
+        circle_marker_fc41259e2a0259b7f8f61863af44596d.bindPopup(popup_3129d1be0bac75fdcc80b7fb77f497e6)
+        ;
+
+        
+    
+    
+            circle_marker_fc41259e2a0259b7f8f61863af44596d.bindTooltip(
+                `<div>
+                     Palau de Santa Eulàlia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a12537e54f728560f853a258e57ae3af = L.marker(
+                [42.1734468, 2.9646635],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_f53cdd897d1f99c4fcf3f5a437beb6d3 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003ePalau de Santa Eul\u00e0lia\u003c/div\u003e"});
+            marker_a12537e54f728560f853a258e57ae3af.setIcon(div_icon_f53cdd897d1f99c4fcf3f5a437beb6d3);
+        
+    
+            var circle_marker_5fb1296526cdf29a9137bd407207dbc9 = L.circleMarker(
+                [42.1858949, 2.9172363],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_1c11f355cdb0b4f204fca4291a2fe889 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_be04044befb456ff589f351d45a44313 = $(`<div id="html_be04044befb456ff589f351d45a44313" style="width: 100.0%; height: 100.0%;">Municipio: Pontós<br>Población: 274.0<br>Bloque: 1</div>`)[0];
+                popup_1c11f355cdb0b4f204fca4291a2fe889.setContent(html_be04044befb456ff589f351d45a44313);
+            
+        
+
+        circle_marker_5fb1296526cdf29a9137bd407207dbc9.bindPopup(popup_1c11f355cdb0b4f204fca4291a2fe889)
+        ;
+
+        
+    
+    
+            circle_marker_5fb1296526cdf29a9137bd407207dbc9.bindTooltip(
+                `<div>
+                     Pontós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_664975b3cec429a0b7a2bc79ec3585a6 = L.marker(
+                [42.1858949, 2.9172363],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_403d534eef067a662dfcf741f2b62d94 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003ePont\u00f3s\u003c/div\u003e"});
+            marker_664975b3cec429a0b7a2bc79ec3585a6.setIcon(div_icon_403d534eef067a662dfcf741f2b62d94);
+        
+    
+            var circle_marker_6817fda0b4d9f74c349d241fc0581472 = L.circleMarker(
+                [42.2515266, 2.9418008],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_638a9c6f309544f715cee7fa6ebe023c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6dcff052e8f06adf0ba652fc7eb596dc = $(`<div id="html_6dcff052e8f06adf0ba652fc7eb596dc" style="width: 100.0%; height: 100.0%;">Municipio: Vilafant<br>Población: 5562.0<br>Bloque: 1</div>`)[0];
+                popup_638a9c6f309544f715cee7fa6ebe023c.setContent(html_6dcff052e8f06adf0ba652fc7eb596dc);
+            
+        
+
+        circle_marker_6817fda0b4d9f74c349d241fc0581472.bindPopup(popup_638a9c6f309544f715cee7fa6ebe023c)
+        ;
+
+        
+    
+    
+            circle_marker_6817fda0b4d9f74c349d241fc0581472.bindTooltip(
+                `<div>
+                     Vilafant
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b95e84cd32be3a10484f5f217c7bf2b = L.marker(
+                [42.2515266, 2.9418008],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_aad6cc035d856a7080cbf7fb9823549d = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eVilafant\u003c/div\u003e"});
+            marker_6b95e84cd32be3a10484f5f217c7bf2b.setIcon(div_icon_aad6cc035d856a7080cbf7fb9823549d);
+        
+    
+            var circle_marker_361259677490fc4b2979173d92fa90f1 = L.circleMarker(
+                [42.2165982, 2.9708293],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_a1d62532b58d8733ffe1b980b581b7fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_006e31558a9975a1c899e91a20aac1e2 = $(`<div id="html_006e31558a9975a1c899e91a20aac1e2" style="width: 100.0%; height: 100.0%;">Municipio: Vilamalla<br>Población: 1166.0<br>Bloque: 1</div>`)[0];
+                popup_a1d62532b58d8733ffe1b980b581b7fd.setContent(html_006e31558a9975a1c899e91a20aac1e2);
+            
+        
+
+        circle_marker_361259677490fc4b2979173d92fa90f1.bindPopup(popup_a1d62532b58d8733ffe1b980b581b7fd)
+        ;
+
+        
+    
+    
+            circle_marker_361259677490fc4b2979173d92fa90f1.bindTooltip(
+                `<div>
+                     Vilamalla
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3c1e609750aa43f483739226a45db547 = L.marker(
+                [42.2165982, 2.9708293],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_45a94922d9d9d57c1ecb38a806bd10b2 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eVilamalla\u003c/div\u003e"});
+            marker_3c1e609750aa43f483739226a45db547.setIcon(div_icon_45a94922d9d9d57c1ecb38a806bd10b2);
+        
+    
+            var circle_marker_c1c02e40611a338768b49d92850b4eea = L.circleMarker(
+                [41.640666, 1.7900194],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_7b5e239d63176989d5e4439fbccdd09a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd6adae65f45ce90071c029489acbc4e = $(`<div id="html_bd6adae65f45ce90071c029489acbc4e" style="width: 100.0%; height: 100.0%;">Municipio: Marganell<br>Población: 282.0<br>Bloque: 1</div>`)[0];
+                popup_7b5e239d63176989d5e4439fbccdd09a.setContent(html_bd6adae65f45ce90071c029489acbc4e);
+            
+        
+
+        circle_marker_c1c02e40611a338768b49d92850b4eea.bindPopup(popup_7b5e239d63176989d5e4439fbccdd09a)
+        ;
+
+        
+    
+    
+            circle_marker_c1c02e40611a338768b49d92850b4eea.bindTooltip(
+                `<div>
+                     Marganell
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3d2efbcf43014a075e2e78a44bab060e = L.marker(
+                [41.640666, 1.7900194],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_a768e212168fc67eff10b20885e9a1e3 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eMarganell\u003c/div\u003e"});
+            marker_3d2efbcf43014a075e2e78a44bab060e.setIcon(div_icon_a768e212168fc67eff10b20885e9a1e3);
+        
+    
+            var circle_marker_e5e34eaf467d44ad3cd3de51f7b59338 = L.circleMarker(
+                [41.450038, 1.8994527],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_111c4b888786680ef4c80edb1d7e36f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ed4fee4365cbd96f9493b3f2bbaed9b = $(`<div id="html_2ed4fee4365cbd96f9493b3f2bbaed9b" style="width: 100.0%; height: 100.0%;">Municipio: Castellví de Rosanes<br>Población: 2096.0<br>Bloque: 1</div>`)[0];
+                popup_111c4b888786680ef4c80edb1d7e36f9.setContent(html_2ed4fee4365cbd96f9493b3f2bbaed9b);
+            
+        
+
+        circle_marker_e5e34eaf467d44ad3cd3de51f7b59338.bindPopup(popup_111c4b888786680ef4c80edb1d7e36f9)
+        ;
+
+        
+    
+    
+            circle_marker_e5e34eaf467d44ad3cd3de51f7b59338.bindTooltip(
+                `<div>
+                     Castellví de Rosanes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6bf30ec443bf1dd4e6e47c2b49d71b17 = L.marker(
+                [41.450038, 1.8994527],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_74913f3106276fa8e191d189f0b436ab = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eCastellv\u00ed de Rosanes\u003c/div\u003e"});
+            marker_6bf30ec443bf1dd4e6e47c2b49d71b17.setIcon(div_icon_74913f3106276fa8e191d189f0b436ab);
+        
+    
+            var circle_marker_957898c308a2afb8b79e9dc2be50b797 = L.circleMarker(
+                [41.570256, 1.8285814],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_11d902bbb409bbd8669cdc4448be9909 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ecbacf93ab77801777f9d419823db15a = $(`<div id="html_ecbacf93ab77801777f9d419823db15a" style="width: 100.0%; height: 100.0%;">Municipio: Collbató<br>Población: 4726.0<br>Bloque: 1</div>`)[0];
+                popup_11d902bbb409bbd8669cdc4448be9909.setContent(html_ecbacf93ab77801777f9d419823db15a);
+            
+        
+
+        circle_marker_957898c308a2afb8b79e9dc2be50b797.bindPopup(popup_11d902bbb409bbd8669cdc4448be9909)
+        ;
+
+        
+    
+    
+            circle_marker_957898c308a2afb8b79e9dc2be50b797.bindTooltip(
+                `<div>
+                     Collbató
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ce5b45a92c241694fbb5d5b841a8d677 = L.marker(
+                [41.570256, 1.8285814],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_26a701f46d14d6335a32064bf4f0860d = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eCollbat\u00f3\u003c/div\u003e"});
+            marker_ce5b45a92c241694fbb5d5b841a8d677.setIcon(div_icon_26a701f46d14d6335a32064bf4f0860d);
+        
+    
+            var circle_marker_2b4fd767d78ef8cdfbcf6f47d16edf06 = L.circleMarker(
+                [41.6367945, 1.910447],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_29bbe934a677f0b3fa84b41a443fa860 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f0dde2f892bace957388f76258931c3 = $(`<div id="html_3f0dde2f892bace957388f76258931c3" style="width: 100.0%; height: 100.0%;">Municipio: Rellinars<br>Población: 915.0<br>Bloque: 1</div>`)[0];
+                popup_29bbe934a677f0b3fa84b41a443fa860.setContent(html_3f0dde2f892bace957388f76258931c3);
+            
+        
+
+        circle_marker_2b4fd767d78ef8cdfbcf6f47d16edf06.bindPopup(popup_29bbe934a677f0b3fa84b41a443fa860)
+        ;
+
+        
+    
+    
+            circle_marker_2b4fd767d78ef8cdfbcf6f47d16edf06.bindTooltip(
+                `<div>
+                     Rellinars
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_13fe650d804d997437062faede4d5d2c = L.marker(
+                [41.6367945, 1.910447],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_d28745d0c390dda087c70f59c7f80dbc = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eRellinars\u003c/div\u003e"});
+            marker_13fe650d804d997437062faede4d5d2c.setIcon(div_icon_d28745d0c390dda087c70f59c7f80dbc);
+        
+    
+            var circle_marker_2f5f6626bf2d8b3368c202e0ffaead57 = L.circleMarker(
+                [41.5265763, 1.9560471],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_1ee771c2a784e7065ffa8a01746152f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa71b3ef6a787afa0aa1403feb5f1864 = $(`<div id="html_aa71b3ef6a787afa0aa1403feb5f1864" style="width: 100.0%; height: 100.0%;">Municipio: Ullastrell<br>Población: 2139.0<br>Bloque: 1</div>`)[0];
+                popup_1ee771c2a784e7065ffa8a01746152f5.setContent(html_aa71b3ef6a787afa0aa1403feb5f1864);
+            
+        
+
+        circle_marker_2f5f6626bf2d8b3368c202e0ffaead57.bindPopup(popup_1ee771c2a784e7065ffa8a01746152f5)
+        ;
+
+        
+    
+    
+            circle_marker_2f5f6626bf2d8b3368c202e0ffaead57.bindTooltip(
+                `<div>
+                     Ullastrell
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_09b1738512d7f5616f3cee8515f12f3f = L.marker(
+                [41.5265763, 1.9560471],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_0aff925056d1b9a1b3b38a5783314ac3 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eUllastrell\u003c/div\u003e"});
+            marker_09b1738512d7f5616f3cee8515f12f3f.setIcon(div_icon_0aff925056d1b9a1b3b38a5783314ac3);
+        
+    
+            var circle_marker_15caac9511d79752f7409385d217ae80 = L.circleMarker(
+                [41.6657331, 1.6847457],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_266ec5855decd3f3d847f7099b2937cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_11610e68e6d73d3ad7fe38d78c1d1d6a = $(`<div id="html_11610e68e6d73d3ad7fe38d78c1d1d6a" style="width: 100.0%; height: 100.0%;">Municipio: Castellfollit del Boix<br>Población: 460.0<br>Bloque: 1</div>`)[0];
+                popup_266ec5855decd3f3d847f7099b2937cb.setContent(html_11610e68e6d73d3ad7fe38d78c1d1d6a);
+            
+        
+
+        circle_marker_15caac9511d79752f7409385d217ae80.bindPopup(popup_266ec5855decd3f3d847f7099b2937cb)
+        ;
+
+        
+    
+    
+            circle_marker_15caac9511d79752f7409385d217ae80.bindTooltip(
+                `<div>
+                     Castellfollit del Boix
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dca4d218e763de6c77f2fda237858b07 = L.marker(
+                [41.6657331, 1.6847457],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_25254f5edd625a3338e234808babb6dc = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eCastellfollit del Boix\u003c/div\u003e"});
+            marker_dca4d218e763de6c77f2fda237858b07.setIcon(div_icon_25254f5edd625a3338e234808babb6dc);
+        
+    
+            var circle_marker_7b3b6fd3da9368861612b15f8c5bd15d = L.circleMarker(
+                [41.6732765, 1.8378043],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_bcfd52fa5046e308b30dfa98dae4d0ad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8c9e7c30d8b62c6ca96d030b22096ee = $(`<div id="html_c8c9e7c30d8b62c6ca96d030b22096ee" style="width: 100.0%; height: 100.0%;">Municipio: Castellgalí<br>Población: 2236.0<br>Bloque: 1</div>`)[0];
+                popup_bcfd52fa5046e308b30dfa98dae4d0ad.setContent(html_c8c9e7c30d8b62c6ca96d030b22096ee);
+            
+        
+
+        circle_marker_7b3b6fd3da9368861612b15f8c5bd15d.bindPopup(popup_bcfd52fa5046e308b30dfa98dae4d0ad)
+        ;
+
+        
+    
+    
+            circle_marker_7b3b6fd3da9368861612b15f8c5bd15d.bindTooltip(
+                `<div>
+                     Castellgalí
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f4e0c658013b8629f865cbcee083b42f = L.marker(
+                [41.6732765, 1.8378043],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_c814519d127c3dd4a7bc07ab0fe9ad90 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eCastellgal\u00ed\u003c/div\u003e"});
+            marker_f4e0c658013b8629f865cbcee083b42f.setIcon(div_icon_c814519d127c3dd4a7bc07ab0fe9ad90);
+        
+    
+            var circle_marker_abeff862e901a507293639676280dd44 = L.circleMarker(
+                [41.7365708, 1.5745225],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_32969a3b816fda6b19a447f82ebd9a31 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ec46470fcccb2916939526f84051cda = $(`<div id="html_4ec46470fcccb2916939526f84051cda" style="width: 100.0%; height: 100.0%;">Municipio: Sant Pere Sallavinera<br>Población: 167.0<br>Bloque: 1</div>`)[0];
+                popup_32969a3b816fda6b19a447f82ebd9a31.setContent(html_4ec46470fcccb2916939526f84051cda);
+            
+        
+
+        circle_marker_abeff862e901a507293639676280dd44.bindPopup(popup_32969a3b816fda6b19a447f82ebd9a31)
+        ;
+
+        
+    
+    
+            circle_marker_abeff862e901a507293639676280dd44.bindTooltip(
+                `<div>
+                     Sant Pere Sallavinera
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_89ec96631b92e3be057046da10ba7387 = L.marker(
+                [41.7365708, 1.5745225],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_3d745294b83bb33b7d04615d6b88a561 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eSant Pere Sallavinera\u003c/div\u003e"});
+            marker_89ec96631b92e3be057046da10ba7387.setIcon(div_icon_3d745294b83bb33b7d04615d6b88a561);
+        
+    
+            var circle_marker_9fccbb5522f7b2909fbe5b08381c2453 = L.circleMarker(
+                [41.6442397, 1.5701167],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_6a9db8d3251e18ffa44b3e18e626c4ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e6f933e0701975b61b3781334f8b88c = $(`<div id="html_8e6f933e0701975b61b3781334f8b88c" style="width: 100.0%; height: 100.0%;">Municipio: Rubió<br>Población: 244.0<br>Bloque: 1</div>`)[0];
+                popup_6a9db8d3251e18ffa44b3e18e626c4ca.setContent(html_8e6f933e0701975b61b3781334f8b88c);
+            
+        
+
+        circle_marker_9fccbb5522f7b2909fbe5b08381c2453.bindPopup(popup_6a9db8d3251e18ffa44b3e18e626c4ca)
+        ;
+
+        
+    
+    
+            circle_marker_9fccbb5522f7b2909fbe5b08381c2453.bindTooltip(
+                `<div>
+                     Rubió
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1c9f85fb87023fcea688018017bd8ab5 = L.marker(
+                [41.6442397, 1.5701167],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_147c187869a1eb6824b91c518221accb = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eRubi\u00f3\u003c/div\u003e"});
+            marker_1c9f85fb87023fcea688018017bd8ab5.setIcon(div_icon_147c187869a1eb6824b91c518221accb);
+        
+    
+            var circle_marker_b74c443aee8a7d9520722db172578bf9 = L.circleMarker(
+                [41.5981563, 1.7002468],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_6b5525f31d907e022ea7b3d335a25500 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b562d7efdcafea1cfd47ca4315bb09fd = $(`<div id="html_b562d7efdcafea1cfd47ca4315bb09fd" style="width: 100.0%; height: 100.0%;">Municipio: Castellolí<br>Población: 636.0<br>Bloque: 1</div>`)[0];
+                popup_6b5525f31d907e022ea7b3d335a25500.setContent(html_b562d7efdcafea1cfd47ca4315bb09fd);
+            
+        
+
+        circle_marker_b74c443aee8a7d9520722db172578bf9.bindPopup(popup_6b5525f31d907e022ea7b3d335a25500)
+        ;
+
+        
+    
+    
+            circle_marker_b74c443aee8a7d9520722db172578bf9.bindTooltip(
+                `<div>
+                     Castellolí
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7d94ef3593a7b1c3f93a2db84a4fea13 = L.marker(
+                [41.5981563, 1.7002468],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_fe88ec9a7cf9aeb0cd3f01bb3769d89a = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eCastellol\u00ed\u003c/div\u003e"});
+            marker_7d94ef3593a7b1c3f93a2db84a4fea13.setIcon(div_icon_fe88ec9a7cf9aeb0cd3f01bb3769d89a);
+        
+    
+            var circle_marker_2d7ff2a285a22a075b2059c64c0673ae = L.circleMarker(
+                [41.5185604, 1.5755145],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_194e78662424a6f72e2225ca1ed63589 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed6a42befe1cd353574a46a94a6cd6a3 = $(`<div id="html_ed6a42befe1cd353574a46a94a6cd6a3" style="width: 100.0%; height: 100.0%;">Municipio: Orpí<br>Población: 159.0<br>Bloque: 1</div>`)[0];
+                popup_194e78662424a6f72e2225ca1ed63589.setContent(html_ed6a42befe1cd353574a46a94a6cd6a3);
+            
+        
+
+        circle_marker_2d7ff2a285a22a075b2059c64c0673ae.bindPopup(popup_194e78662424a6f72e2225ca1ed63589)
+        ;
+
+        
+    
+    
+            circle_marker_2d7ff2a285a22a075b2059c64c0673ae.bindTooltip(
+                `<div>
+                     Orpí
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_58473b24b02c9006e529fa1eafa8e4d8 = L.marker(
+                [41.5185604, 1.5755145],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_7c402d3a4fbd67769ffc703a18c5a3c0 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eOrp\u00ed\u003c/div\u003e"});
+            marker_58473b24b02c9006e529fa1eafa8e4d8.setIcon(div_icon_7c402d3a4fbd67769ffc703a18c5a3c0);
+        
+    
+            var circle_marker_9c7cfe1004540604b3d2480e8bbeb15d = L.circleMarker(
+                [41.4774648, 1.7042442],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_37a2c744f40ce21c8ed851f77dcff5b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d1c73253cf7fb75614b03e00355e4a86 = $(`<div id="html_d1c73253cf7fb75614b03e00355e4a86" style="width: 100.0%; height: 100.0%;">Municipio: Cabrera d'Anoia<br>Población: 1606.0<br>Bloque: 1</div>`)[0];
+                popup_37a2c744f40ce21c8ed851f77dcff5b5.setContent(html_d1c73253cf7fb75614b03e00355e4a86);
+            
+        
+
+        circle_marker_9c7cfe1004540604b3d2480e8bbeb15d.bindPopup(popup_37a2c744f40ce21c8ed851f77dcff5b5)
+        ;
+
+        
+    
+    
+            circle_marker_9c7cfe1004540604b3d2480e8bbeb15d.bindTooltip(
+                `<div>
+                     Cabrera d'Anoia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4872976fa9a42fbb3b7dd3631e9ecce0 = L.marker(
+                [41.4774648, 1.7042442],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_24b55fcc705c1a05757d4048084e5778 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eCabrera d\u0027Anoia\u003c/div\u003e"});
+            marker_4872976fa9a42fbb3b7dd3631e9ecce0.setIcon(div_icon_24b55fcc705c1a05757d4048084e5778);
+        
+    
+            var circle_marker_4f66c40f28d7d9c7dfa4faf04e23a11d = L.circleMarker(
+                [41.5194769, 1.7082922],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_df8e87cc3a4270929884d1f460ac7123 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e5229f6718e5a62b07448bd0ecaee011 = $(`<div id="html_e5229f6718e5a62b07448bd0ecaee011" style="width: 100.0%; height: 100.0%;">Municipio: Vallbona d'Anoia<br>Población: 1387.0<br>Bloque: 1</div>`)[0];
+                popup_df8e87cc3a4270929884d1f460ac7123.setContent(html_e5229f6718e5a62b07448bd0ecaee011);
+            
+        
+
+        circle_marker_4f66c40f28d7d9c7dfa4faf04e23a11d.bindPopup(popup_df8e87cc3a4270929884d1f460ac7123)
+        ;
+
+        
+    
+    
+            circle_marker_4f66c40f28d7d9c7dfa4faf04e23a11d.bindTooltip(
+                `<div>
+                     Vallbona d'Anoia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f67e543ba963f2cd95f951ae44c79e71 = L.marker(
+                [41.5194769, 1.7082922],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_66e8ca1da2dc2cb96ea58ce3ec0e157f = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eVallbona d\u0027Anoia\u003c/div\u003e"});
+            marker_f67e543ba963f2cd95f951ae44c79e71.setIcon(div_icon_66e8ca1da2dc2cb96ea58ce3ec0e157f);
+        
+    
+            var circle_marker_1015472d213ef8dd25bc559eb7527f18 = L.circleMarker(
+                [41.5319058, 1.6198579],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_753d92f70d38e422dee07d6d93e83492 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1ca3ec9a6b786a6fed23b345819be81 = $(`<div id="html_c1ca3ec9a6b786a6fed23b345819be81" style="width: 100.0%; height: 100.0%;">Municipio: Carme<br>Población: 754.0<br>Bloque: 1</div>`)[0];
+                popup_753d92f70d38e422dee07d6d93e83492.setContent(html_c1ca3ec9a6b786a6fed23b345819be81);
+            
+        
+
+        circle_marker_1015472d213ef8dd25bc559eb7527f18.bindPopup(popup_753d92f70d38e422dee07d6d93e83492)
+        ;
+
+        
+    
+    
+            circle_marker_1015472d213ef8dd25bc559eb7527f18.bindTooltip(
+                `<div>
+                     Carme
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4fd2f7b58abcfb32fd4bf4f43e31b01f = L.marker(
+                [41.5319058, 1.6198579],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_5d5e614aa7d608000d24c5f1ea4ba0d8 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eCarme\u003c/div\u003e"});
+            marker_4fd2f7b58abcfb32fd4bf4f43e31b01f.setIcon(div_icon_5d5e614aa7d608000d24c5f1ea4ba0d8);
+        
+    
+            var circle_marker_dbf04e5a9d0493dc4700cac43116659b = L.circleMarker(
+                [41.5551821, 2.3549387],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_2568772516423811a1accd1fa9130939 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd446f0ce1d404b8dd6ddb9f83d126c4 = $(`<div id="html_cd446f0ce1d404b8dd6ddb9f83d126c4" style="width: 100.0%; height: 100.0%;">Municipio: Òrrius<br>Población: 793.0<br>Bloque: 1</div>`)[0];
+                popup_2568772516423811a1accd1fa9130939.setContent(html_cd446f0ce1d404b8dd6ddb9f83d126c4);
+            
+        
+
+        circle_marker_dbf04e5a9d0493dc4700cac43116659b.bindPopup(popup_2568772516423811a1accd1fa9130939)
+        ;
+
+        
+    
+    
+            circle_marker_dbf04e5a9d0493dc4700cac43116659b.bindTooltip(
+                `<div>
+                     Òrrius
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_377957da143eb532420ce5778bb4530f = L.marker(
+                [41.5551821, 2.3549387],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_3ab32fc33d0433850fd9a2401d51622a = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003e\u00d2rrius\u003c/div\u003e"});
+            marker_377957da143eb532420ce5778bb4530f.setIcon(div_icon_3ab32fc33d0433850fd9a2401d51622a);
+        
+    
+            var circle_marker_be028f5531a6ced058a3e3c0234587a6 = L.circleMarker(
+                [41.5198085, 2.2537044],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_ff4c7a5fad19a110348e079a27db4762 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7be59bde02ed152c07e375834a28cce2 = $(`<div id="html_7be59bde02ed152c07e375834a28cce2" style="width: 100.0%; height: 100.0%;">Municipio: Santa Maria de Martorelles<br>Población: 889.0<br>Bloque: 1</div>`)[0];
+                popup_ff4c7a5fad19a110348e079a27db4762.setContent(html_7be59bde02ed152c07e375834a28cce2);
+            
+        
+
+        circle_marker_be028f5531a6ced058a3e3c0234587a6.bindPopup(popup_ff4c7a5fad19a110348e079a27db4762)
+        ;
+
+        
+    
+    
+            circle_marker_be028f5531a6ced058a3e3c0234587a6.bindTooltip(
+                `<div>
+                     Santa Maria de Martorelles
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1df88c63765ff8d03a5af76790947ff6 = L.marker(
+                [41.5198085, 2.2537044],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_b5cd179aaca0c066a976004d239b6889 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eSanta Maria de Martorelles\u003c/div\u003e"});
+            marker_1df88c63765ff8d03a5af76790947ff6.setIcon(div_icon_b5cd179aaca0c066a976004d239b6889);
+        
+    
+            var circle_marker_5d9388df0e63814523c7a0b7588478b6 = L.circleMarker(
+                [41.6473229, 2.5100384],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_6b45b97f162629e7d143d11525282866 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9967e164c56d5124629b84a78d667848 = $(`<div id="html_9967e164c56d5124629b84a78d667848" style="width: 100.0%; height: 100.0%;">Municipio: Vallgorguina<br>Población: 3144.0<br>Bloque: 1</div>`)[0];
+                popup_6b45b97f162629e7d143d11525282866.setContent(html_9967e164c56d5124629b84a78d667848);
+            
+        
+
+        circle_marker_5d9388df0e63814523c7a0b7588478b6.bindPopup(popup_6b45b97f162629e7d143d11525282866)
+        ;
+
+        
+    
+    
+            circle_marker_5d9388df0e63814523c7a0b7588478b6.bindTooltip(
+                `<div>
+                     Vallgorguina
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0a21b05d35d9e5e7205e872ff30900b9 = L.marker(
+                [41.6473229, 2.5100384],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_5d7d8c9612a306201c48dabe96721250 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eVallgorguina\u003c/div\u003e"});
+            marker_0a21b05d35d9e5e7205e872ff30900b9.setIcon(div_icon_5d7d8c9612a306201c48dabe96721250);
+        
+    
+            var circle_marker_830de9cb2e8476b40bf59bff3beb8fae = L.circleMarker(
+                [41.6530012, 2.4405379],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_15af525dee62f5f9a6d3185a9e7a3aa8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d23cffeda6154214bfb4e0967818579a = $(`<div id="html_d23cffeda6154214bfb4e0967818579a" style="width: 100.0%; height: 100.0%;">Municipio: Vilalba Sasserra<br>Población: 748.0<br>Bloque: 1</div>`)[0];
+                popup_15af525dee62f5f9a6d3185a9e7a3aa8.setContent(html_d23cffeda6154214bfb4e0967818579a);
+            
+        
+
+        circle_marker_830de9cb2e8476b40bf59bff3beb8fae.bindPopup(popup_15af525dee62f5f9a6d3185a9e7a3aa8)
+        ;
+
+        
+    
+    
+            circle_marker_830de9cb2e8476b40bf59bff3beb8fae.bindTooltip(
+                `<div>
+                     Vilalba Sasserra
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a6cc9894aa03f509d6461216af353e14 = L.marker(
+                [41.6530012, 2.4405379],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_90541918a9555b25d6171d2b0834d1b1 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eVilalba Sasserra\u003c/div\u003e"});
+            marker_a6cc9894aa03f509d6461216af353e14.setIcon(div_icon_90541918a9555b25d6171d2b0834d1b1);
+        
+    
+            var circle_marker_7655d941286ed28d715e2725724af9e2 = L.circleMarker(
+                [41.7250261, 2.4640701],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_e9a5192391449e02057ac17fb8fb576e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d455bbf49115b397bae31d9ae849a78 = $(`<div id="html_3d455bbf49115b397bae31d9ae849a78" style="width: 100.0%; height: 100.0%;">Municipio: Campins<br>Población: 557.0<br>Bloque: 1</div>`)[0];
+                popup_e9a5192391449e02057ac17fb8fb576e.setContent(html_3d455bbf49115b397bae31d9ae849a78);
+            
+        
+
+        circle_marker_7655d941286ed28d715e2725724af9e2.bindPopup(popup_e9a5192391449e02057ac17fb8fb576e)
+        ;
+
+        
+    
+    
+            circle_marker_7655d941286ed28d715e2725724af9e2.bindTooltip(
+                `<div>
+                     Campins
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_27eef78df7aedd7ee1017bb57c355414 = L.marker(
+                [41.7250261, 2.4640701],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_53147c2ccfaa46fcfee11eefa476aa08 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eCampins\u003c/div\u003e"});
+            marker_27eef78df7aedd7ee1017bb57c355414.setIcon(div_icon_53147c2ccfaa46fcfee11eefa476aa08);
+        
+    
+            var circle_marker_35598f6b69166904ec1fc4e5b3b2590f = L.circleMarker(
+                [41.7072824, 2.338253622217338],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_71a11b2250d5d1529329f717252d2b0a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_93d1e7598ade8ce4a909f70062006b77 = $(`<div id="html_93d1e7598ade8ce4a909f70062006b77" style="width: 100.0%; height: 100.0%;">Municipio: Cànoves i Samalús<br>Población: 3289.0<br>Bloque: 1</div>`)[0];
+                popup_71a11b2250d5d1529329f717252d2b0a.setContent(html_93d1e7598ade8ce4a909f70062006b77);
+            
+        
+
+        circle_marker_35598f6b69166904ec1fc4e5b3b2590f.bindPopup(popup_71a11b2250d5d1529329f717252d2b0a)
+        ;
+
+        
+    
+    
+            circle_marker_35598f6b69166904ec1fc4e5b3b2590f.bindTooltip(
+                `<div>
+                     Cànoves i Samalús
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_55c867df4b49a98cf5776fb4542ecc8a = L.marker(
+                [41.7072824, 2.338253622217338],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_d322848c261a87457a561a3637614bff = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eC\u00e0noves i Samal\u00fas\u003c/div\u003e"});
+            marker_55c867df4b49a98cf5776fb4542ecc8a.setIcon(div_icon_d322848c261a87457a561a3637614bff);
+        
+    
+            var circle_marker_609c71c0813b0efe2e918b0e1fa4dc99 = L.circleMarker(
+                [41.74716075, 2.439427388776298],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_7621ae4aa43440723c262f6660360035 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_662eacc144df0b5c66c69f39edeab55e = $(`<div id="html_662eacc144df0b5c66c69f39edeab55e" style="width: 100.0%; height: 100.0%;">Municipio: Fogars de Montclús<br>Población: 493.0<br>Bloque: 1</div>`)[0];
+                popup_7621ae4aa43440723c262f6660360035.setContent(html_662eacc144df0b5c66c69f39edeab55e);
+            
+        
+
+        circle_marker_609c71c0813b0efe2e918b0e1fa4dc99.bindPopup(popup_7621ae4aa43440723c262f6660360035)
+        ;
+
+        
+    
+    
+            circle_marker_609c71c0813b0efe2e918b0e1fa4dc99.bindTooltip(
+                `<div>
+                     Fogars de Montclús
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_383f8f034fcbc90d72bd3f3c5f4173dc = L.marker(
+                [41.74716075, 2.439427388776298],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_f93a086e861a1f97e25685d59172c64e = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eFogars de Montcl\u00fas\u003c/div\u003e"});
+            marker_383f8f034fcbc90d72bd3f3c5f4173dc.setIcon(div_icon_f93a086e861a1f97e25685d59172c64e);
+        
+    
+            var circle_marker_b30410eb53bb7d10e9dd82a3a2e1af12 = L.circleMarker(
+                [41.7321147, 2.5018684],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_77b9aa038abfdd18f2819321b52b42bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5bd0bb7f2c094f0aaffca7787a3e881a = $(`<div id="html_5bd0bb7f2c094f0aaffca7787a3e881a" style="width: 100.0%; height: 100.0%;">Municipio: Gualba<br>Población: 1.61<br>Bloque: 1</div>`)[0];
+                popup_77b9aa038abfdd18f2819321b52b42bd.setContent(html_5bd0bb7f2c094f0aaffca7787a3e881a);
+            
+        
+
+        circle_marker_b30410eb53bb7d10e9dd82a3a2e1af12.bindPopup(popup_77b9aa038abfdd18f2819321b52b42bd)
+        ;
+
+        
+    
+    
+            circle_marker_b30410eb53bb7d10e9dd82a3a2e1af12.bindTooltip(
+                `<div>
+                     Gualba
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9c1d2964d7cc1548fc76e6ee574d3ee0 = L.marker(
+                [41.7321147, 2.5018684],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_2651399dbd7d1f036dc94e0c0a80442f = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eGualba\u003c/div\u003e"});
+            marker_9c1d2964d7cc1548fc76e6ee574d3ee0.setIcon(div_icon_2651399dbd7d1f036dc94e0c0a80442f);
+        
+    
+            var circle_marker_c3b8c8da8bd0fb747a7955b2026c107f = L.circleMarker(
+                [41.6843288, 2.3900497],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_85079c6711c8c64919dd65fd8bd0c217 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_adab531465306318142aa9d4d6f7d4a7 = $(`<div id="html_adab531465306318142aa9d4d6f7d4a7" style="width: 100.0%; height: 100.0%;">Municipio: Sant Pere de Vilamajor<br>Población: 4815.0<br>Bloque: 1</div>`)[0];
+                popup_85079c6711c8c64919dd65fd8bd0c217.setContent(html_adab531465306318142aa9d4d6f7d4a7);
+            
+        
+
+        circle_marker_c3b8c8da8bd0fb747a7955b2026c107f.bindPopup(popup_85079c6711c8c64919dd65fd8bd0c217)
+        ;
+
+        
+    
+    
+            circle_marker_c3b8c8da8bd0fb747a7955b2026c107f.bindTooltip(
+                `<div>
+                     Sant Pere de Vilamajor
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_26eb3690adb9fda011fd39f08c1c3893 = L.marker(
+                [41.6843288, 2.3900497],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_0fdfcb34d03e75ad6137b11d5af5a453 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eSant Pere de Vilamajor\u003c/div\u003e"});
+            marker_26eb3690adb9fda011fd39f08c1c3893.setIcon(div_icon_0fdfcb34d03e75ad6137b11d5af5a453);
+        
+    
+            var circle_marker_e344a73c674cfd10825a11049aac9f6f = L.circleMarker(
+                [41.741256, 2.2653485],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_61d81a05805ba9778ec863a94dc69d6c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05fe14b70135b02c83bb5e0397e8f92e = $(`<div id="html_05fe14b70135b02c83bb5e0397e8f92e" style="width: 100.0%; height: 100.0%;">Municipio: Tagamanent<br>Población: 340.0<br>Bloque: 1</div>`)[0];
+                popup_61d81a05805ba9778ec863a94dc69d6c.setContent(html_05fe14b70135b02c83bb5e0397e8f92e);
+            
+        
+
+        circle_marker_e344a73c674cfd10825a11049aac9f6f.bindPopup(popup_61d81a05805ba9778ec863a94dc69d6c)
+        ;
+
+        
+    
+    
+            circle_marker_e344a73c674cfd10825a11049aac9f6f.bindTooltip(
+                `<div>
+                     Tagamanent
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1efe950b281f2c48b893a4cdddb7a22b = L.marker(
+                [41.741256, 2.2653485],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_b174dbf0415a87e5358524777010f8ef = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eTagamanent\u003c/div\u003e"});
+            marker_1efe950b281f2c48b893a4cdddb7a22b.setIcon(div_icon_b174dbf0415a87e5358524777010f8ef);
+        
+    
+            var circle_marker_adaa5801db03af122d3af47029606512 = L.circleMarker(
+                [41.70982185, 2.25364598780679],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_cc3ec8b0d1b4f27794fa3b48aaef2eae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87bcf8a242c827b1d7b9d10689ca9376 = $(`<div id="html_87bcf8a242c827b1d7b9d10689ca9376" style="width: 100.0%; height: 100.0%;">Municipio: Figaró-Montmany<br>Población: 1108.0<br>Bloque: 1</div>`)[0];
+                popup_cc3ec8b0d1b4f27794fa3b48aaef2eae.setContent(html_87bcf8a242c827b1d7b9d10689ca9376);
+            
+        
+
+        circle_marker_adaa5801db03af122d3af47029606512.bindPopup(popup_cc3ec8b0d1b4f27794fa3b48aaef2eae)
+        ;
+
+        
+    
+    
+            circle_marker_adaa5801db03af122d3af47029606512.bindTooltip(
+                `<div>
+                     Figaró-Montmany
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6da3e265304ff7c5c85f5082e0599e02 = L.marker(
+                [41.70982185, 2.25364598780679],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_f33fa5ea583285db899f66ff99979f21 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eFigar\u00f3-Montmany\u003c/div\u003e"});
+            marker_6da3e265304ff7c5c85f5082e0599e02.setIcon(div_icon_f33fa5ea583285db899f66ff99979f21);
+        
+    
+            var circle_marker_bcd01a8f0318dd859fc869a7fbf83ca5 = L.circleMarker(
+                [41.7593697, 2.3952061],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_a79f25182302fc9d91412ff225854af3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e5d707c7bd2e790e2114365dcbf424f3 = $(`<div id="html_e5d707c7bd2e790e2114365dcbf424f3" style="width: 100.0%; height: 100.0%;">Municipio: Montseny<br>Población: 370.0<br>Bloque: 1</div>`)[0];
+                popup_a79f25182302fc9d91412ff225854af3.setContent(html_e5d707c7bd2e790e2114365dcbf424f3);
+            
+        
+
+        circle_marker_bcd01a8f0318dd859fc869a7fbf83ca5.bindPopup(popup_a79f25182302fc9d91412ff225854af3)
+        ;
+
+        
+    
+    
+            circle_marker_bcd01a8f0318dd859fc869a7fbf83ca5.bindTooltip(
+                `<div>
+                     Montseny
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4f91d6b74c1f0744ed470badb76bc9a9 = L.marker(
+                [41.7593697, 2.3952061],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_73145b59f16285d55159dd6be82d334d = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eMontseny\u003c/div\u003e"});
+            marker_4f91d6b74c1f0744ed470badb76bc9a9.setIcon(div_icon_73145b59f16285d55159dd6be82d334d);
+        
+    
+            var circle_marker_2d7abe06655786f396bf2bff5438d699 = L.circleMarker(
+                [41.7040768, 2.4343426],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_9d6786906d8aaa4c0b06a3fe4f23a3db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6826b4ed55d3d30344ebf72432a94717 = $(`<div id="html_6826b4ed55d3d30344ebf72432a94717" style="width: 100.0%; height: 100.0%;">Municipio: Sant Esteve de Palautordera<br>Población: 3043.0<br>Bloque: 1</div>`)[0];
+                popup_9d6786906d8aaa4c0b06a3fe4f23a3db.setContent(html_6826b4ed55d3d30344ebf72432a94717);
+            
+        
+
+        circle_marker_2d7abe06655786f396bf2bff5438d699.bindPopup(popup_9d6786906d8aaa4c0b06a3fe4f23a3db)
+        ;
+
+        
+    
+    
+            circle_marker_2d7abe06655786f396bf2bff5438d699.bindTooltip(
+                `<div>
+                     Sant Esteve de Palautordera
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6f16c40f26ae9df1dd3d16ee9b90403c = L.marker(
+                [41.7040768, 2.4343426],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_abe38a888598bfc1e7d8b6557f67e8a1 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eSant Esteve de Palautordera\u003c/div\u003e"});
+            marker_6f16c40f26ae9df1dd3d16ee9b90403c.setIcon(div_icon_abe38a888598bfc1e7d8b6557f67e8a1);
+        
+    
+            var circle_marker_137e13db61e0003e7d91a011b4bce483 = L.circleMarker(
+                [41.4079859, 2.2091455],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_68648d89f3ae38ea5a1662d67dbce273 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0508c8b16600dcc2dfc24c7612c7b000 = $(`<div id="html_0508c8b16600dcc2dfc24c7612c7b000" style="width: 100.0%; height: 100.0%;">Municipio: Selva de Mar<br>Población: 220.0<br>Bloque: 1</div>`)[0];
+                popup_68648d89f3ae38ea5a1662d67dbce273.setContent(html_0508c8b16600dcc2dfc24c7612c7b000);
+            
+        
+
+        circle_marker_137e13db61e0003e7d91a011b4bce483.bindPopup(popup_68648d89f3ae38ea5a1662d67dbce273)
+        ;
+
+        
+    
+    
+            circle_marker_137e13db61e0003e7d91a011b4bce483.bindTooltip(
+                `<div>
+                     Selva de Mar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_24219fd0334bd0885ef928accd4bbb62 = L.marker(
+                [41.4079859, 2.2091455],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_0d68ccbd558332678050f5a4703cac69 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eSelva de Mar\u003c/div\u003e"});
+            marker_24219fd0334bd0885ef928accd4bbb62.setIcon(div_icon_0d68ccbd558332678050f5a4703cac69);
+        
+    
+            var circle_marker_069041930ee274e6accce0cbd5974f3f = L.circleMarker(
+                [41.694367, 2.5001824],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_d66529a0de870fba47db6a4209dca2ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05b70ccaf03288fce7da02c86ba7369a = $(`<div id="html_05b70ccaf03288fce7da02c86ba7369a" style="width: 100.0%; height: 100.0%;">Municipio: Bruc<br>Población: 2218.0<br>Bloque: 1</div>`)[0];
+                popup_d66529a0de870fba47db6a4209dca2ee.setContent(html_05b70ccaf03288fce7da02c86ba7369a);
+            
+        
+
+        circle_marker_069041930ee274e6accce0cbd5974f3f.bindPopup(popup_d66529a0de870fba47db6a4209dca2ee)
+        ;
+
+        
+    
+    
+            circle_marker_069041930ee274e6accce0cbd5974f3f.bindTooltip(
+                `<div>
+                     Bruc
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_477b89d8f07ed5a4670752aafcdaf6ba = L.marker(
+                [41.694367, 2.5001824],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_7e72cc632d8964d07b60c303abb5e526 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eBruc\u003c/div\u003e"});
+            marker_477b89d8f07ed5a4670752aafcdaf6ba.setIcon(div_icon_7e72cc632d8964d07b60c303abb5e526);
+        
+    
+            var circle_marker_a9853a7ee7ee05f8b660b95857b39f3b = L.circleMarker(
+                [41.3993809, 2.197649],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_f2bbdcfcf680657e11de1473a33bc562 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef905584411bec0bc7207e6af0a4f635 = $(`<div id="html_ef905584411bec0bc7207e6af0a4f635" style="width: 100.0%; height: 100.0%;">Municipio: Llacuna<br>Población: 942.0<br>Bloque: 1</div>`)[0];
+                popup_f2bbdcfcf680657e11de1473a33bc562.setContent(html_ef905584411bec0bc7207e6af0a4f635);
+            
+        
+
+        circle_marker_a9853a7ee7ee05f8b660b95857b39f3b.bindPopup(popup_f2bbdcfcf680657e11de1473a33bc562)
+        ;
+
+        
+    
+    
+            circle_marker_a9853a7ee7ee05f8b660b95857b39f3b.bindTooltip(
+                `<div>
+                     Llacuna
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fc071f067926fab050a6025f2dff7063 = L.marker(
+                [41.3993809, 2.197649],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_2f1d19ff3a4860a88e7d67d4ba47ba73 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eLlacuna\u003c/div\u003e"});
+            marker_fc071f067926fab050a6025f2dff7063.setIcon(div_icon_2f1d19ff3a4860a88e7d67d4ba47ba73);
+        
+    
+            var circle_marker_4246406d191c80cb3be8264aa34bcc64 = L.circleMarker(
+                [41.7642502, 1.4820028],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_f972c348d035187c1045b9f4a995f92b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f7908cf355fad1aea45d1d348b5c630 = $(`<div id="html_7f7908cf355fad1aea45d1d348b5c630" style="width: 100.0%; height: 100.0%;">Municipio: Calonge de Segarra<br>Población: 195.0<br>Bloque: 1</div>`)[0];
+                popup_f972c348d035187c1045b9f4a995f92b.setContent(html_7f7908cf355fad1aea45d1d348b5c630);
+            
+        
+
+        circle_marker_4246406d191c80cb3be8264aa34bcc64.bindPopup(popup_f972c348d035187c1045b9f4a995f92b)
+        ;
+
+        
+    
+    
+            circle_marker_4246406d191c80cb3be8264aa34bcc64.bindTooltip(
+                `<div>
+                     Calonge de Segarra
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_30e371c8366495682391cd49e0837112 = L.marker(
+                [41.7642502, 1.4820028],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_8377aa98002c8ce5c90d8048ff282981 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eCalonge de Segarra\u003c/div\u003e"});
+            marker_30e371c8366495682391cd49e0837112.setIcon(div_icon_8377aa98002c8ce5c90d8048ff282981);
+        
+    
+            var circle_marker_757b50d2e900573595dafa386ce468e2 = L.circleMarker(
+                [41.7762237, 1.4383714],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_2cddcab6bf05ca140064ccc16aff15d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99385cc29d0f76a09d69e5d5a0ee3157 = $(`<div id="html_99385cc29d0f76a09d69e5d5a0ee3157" style="width: 100.0%; height: 100.0%;">Municipio: Castellfollit de Riubregós<br>Población: 159.0<br>Bloque: 1</div>`)[0];
+                popup_2cddcab6bf05ca140064ccc16aff15d8.setContent(html_99385cc29d0f76a09d69e5d5a0ee3157);
+            
+        
+
+        circle_marker_757b50d2e900573595dafa386ce468e2.bindPopup(popup_2cddcab6bf05ca140064ccc16aff15d8)
+        ;
+
+        
+    
+    
+            circle_marker_757b50d2e900573595dafa386ce468e2.bindTooltip(
+                `<div>
+                     Castellfollit de Riubregós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f5a8955b7ffcac0e7f2ee0055a4e69d2 = L.marker(
+                [41.7762237, 1.4383714],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_f73c9bf8b3c646bd9c05d617ded5c198 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eCastellfollit de Riubreg\u00f3s\u003c/div\u003e"});
+            marker_f5a8955b7ffcac0e7f2ee0055a4e69d2.setIcon(div_icon_f73c9bf8b3c646bd9c05d617ded5c198);
+        
+    
+            var circle_marker_530589301000014e05a9ec4800ca6a52 = L.circleMarker(
+                [41.7169947, 1.4211325],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_2c8dd454e070b1d833cb334532e6626a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3980d7349190061ad2b7d5adf0e2c84f = $(`<div id="html_3980d7349190061ad2b7d5adf0e2c84f" style="width: 100.0%; height: 100.0%;">Municipio: Pujalt<br>Población: 204.0<br>Bloque: 1</div>`)[0];
+                popup_2c8dd454e070b1d833cb334532e6626a.setContent(html_3980d7349190061ad2b7d5adf0e2c84f);
+            
+        
+
+        circle_marker_530589301000014e05a9ec4800ca6a52.bindPopup(popup_2c8dd454e070b1d833cb334532e6626a)
+        ;
+
+        
+    
+    
+            circle_marker_530589301000014e05a9ec4800ca6a52.bindTooltip(
+                `<div>
+                     Pujalt
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_36f07836f67bcef7a9c28f5d0412d5cb = L.marker(
+                [41.7169947, 1.4211325],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_5a4ad2bf6090760d03da0063f0838760 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003ePujalt\u003c/div\u003e"});
+            marker_36f07836f67bcef7a9c28f5d0412d5cb.setIcon(div_icon_5a4ad2bf6090760d03da0063f0838760);
+        
+    
+            var circle_marker_247d4446e36afdc57a9f401ec6d1cf60 = L.circleMarker(
+                [41.7021286, 1.4882003],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_5b42cb9ec89018048c7bede4ceadc657 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d068dda3c6b885a6aa68bbb28968e82 = $(`<div id="html_2d068dda3c6b885a6aa68bbb28968e82" style="width: 100.0%; height: 100.0%;">Municipio: Sant Martí Sesgueioles<br>Población: 361.0<br>Bloque: 1</div>`)[0];
+                popup_5b42cb9ec89018048c7bede4ceadc657.setContent(html_2d068dda3c6b885a6aa68bbb28968e82);
+            
+        
+
+        circle_marker_247d4446e36afdc57a9f401ec6d1cf60.bindPopup(popup_5b42cb9ec89018048c7bede4ceadc657)
+        ;
+
+        
+    
+    
+            circle_marker_247d4446e36afdc57a9f401ec6d1cf60.bindTooltip(
+                `<div>
+                     Sant Martí Sesgueioles
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ede212183cbf7d33c4fb45698cdcae63 = L.marker(
+                [41.7021286, 1.4882003],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_685982caa5a9a3056acf798dde7615f1 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eSant Mart\u00ed Sesgueioles\u003c/div\u003e"});
+            marker_ede212183cbf7d33c4fb45698cdcae63.setIcon(div_icon_685982caa5a9a3056acf798dde7615f1);
+        
+    
+            var circle_marker_f9c87ee0924ff462d457ed9423aa7950 = L.circleMarker(
+                [41.5977099, 1.4433782],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_30fc55ab461381386dbdb06f67a4d8aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ebdfef044a057bd52675f4ac89619ac = $(`<div id="html_0ebdfef044a057bd52675f4ac89619ac" style="width: 100.0%; height: 100.0%;">Municipio: Argençola<br>Población: 216.0<br>Bloque: 1</div>`)[0];
+                popup_30fc55ab461381386dbdb06f67a4d8aa.setContent(html_0ebdfef044a057bd52675f4ac89619ac);
+            
+        
+
+        circle_marker_f9c87ee0924ff462d457ed9423aa7950.bindPopup(popup_30fc55ab461381386dbdb06f67a4d8aa)
+        ;
+
+        
+    
+    
+            circle_marker_f9c87ee0924ff462d457ed9423aa7950.bindTooltip(
+                `<div>
+                     Argençola
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0a9755575eab7a4495b3e765b6dee123 = L.marker(
+                [41.5977099, 1.4433782],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_cf630e6da551e3c28b27fc9eb56207b0 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eArgen\u00e7ola\u003c/div\u003e"});
+            marker_0a9755575eab7a4495b3e765b6dee123.setIcon(div_icon_cf630e6da551e3c28b27fc9eb56207b0);
+        
+    
+            var circle_marker_d6b30ad99c1b833a0ebadc6d81f3bdbe = L.circleMarker(
+                [41.6363657, 1.5179333],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_5e8d61aa24aa74b2e47a33592c7c1721 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d07a4246c07e34c7cf5a4e1aaffb5950 = $(`<div id="html_d07a4246c07e34c7cf5a4e1aaffb5950" style="width: 100.0%; height: 100.0%;">Municipio: Copons<br>Población: 333.0<br>Bloque: 1</div>`)[0];
+                popup_5e8d61aa24aa74b2e47a33592c7c1721.setContent(html_d07a4246c07e34c7cf5a4e1aaffb5950);
+            
+        
+
+        circle_marker_d6b30ad99c1b833a0ebadc6d81f3bdbe.bindPopup(popup_5e8d61aa24aa74b2e47a33592c7c1721)
+        ;
+
+        
+    
+    
+            circle_marker_d6b30ad99c1b833a0ebadc6d81f3bdbe.bindTooltip(
+                `<div>
+                     Copons
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c2b408633744c5848e7aa75104fb1bb0 = L.marker(
+                [41.6363657, 1.5179333],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_24a83b12a03026b157cfd1afb8171db4 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eCopons\u003c/div\u003e"});
+            marker_c2b408633744c5848e7aa75104fb1bb0.setIcon(div_icon_24a83b12a03026b157cfd1afb8171db4);
+        
+    
+            var circle_marker_b5614074ac629c2bef32ea1bbd5405cb = L.circleMarker(
+                [41.6014534, 1.547408],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_95970af88c11b497ee51d5cc4037b7d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bc517ed4ed27ee1fa9c2d58fc7706e24 = $(`<div id="html_bc517ed4ed27ee1fa9c2d58fc7706e24" style="width: 100.0%; height: 100.0%;">Municipio: Jorba<br>Población: 806.0<br>Bloque: 1</div>`)[0];
+                popup_95970af88c11b497ee51d5cc4037b7d3.setContent(html_bc517ed4ed27ee1fa9c2d58fc7706e24);
+            
+        
+
+        circle_marker_b5614074ac629c2bef32ea1bbd5405cb.bindPopup(popup_95970af88c11b497ee51d5cc4037b7d3)
+        ;
+
+        
+    
+    
+            circle_marker_b5614074ac629c2bef32ea1bbd5405cb.bindTooltip(
+                `<div>
+                     Jorba
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_479386639a3615226d5153db761188f3 = L.marker(
+                [41.6014534, 1.547408],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_435cd51bbd66b67ebd358ce748241ea1 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eJorba\u003c/div\u003e"});
+            marker_479386639a3615226d5153db761188f3.setIcon(div_icon_435cd51bbd66b67ebd358ce748241ea1);
+        
+    
+            var circle_marker_a1c96c28c321f5fbb2268e315dc16401 = L.circleMarker(
+                [41.6259778, 1.4147627],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_5bb4b477edfc683ac336ba4dec766f1a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26d24d72a1ee89e12e41a33fdb6a3f2e = $(`<div id="html_26d24d72a1ee89e12e41a33fdb6a3f2e" style="width: 100.0%; height: 100.0%;">Municipio: Montmaneu<br>Población: 166.0<br>Bloque: 1</div>`)[0];
+                popup_5bb4b477edfc683ac336ba4dec766f1a.setContent(html_26d24d72a1ee89e12e41a33fdb6a3f2e);
+            
+        
+
+        circle_marker_a1c96c28c321f5fbb2268e315dc16401.bindPopup(popup_5bb4b477edfc683ac336ba4dec766f1a)
+        ;
+
+        
+    
+    
+            circle_marker_a1c96c28c321f5fbb2268e315dc16401.bindTooltip(
+                `<div>
+                     Montmaneu
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c5711581d135f239e7faf10c2ea660ef = L.marker(
+                [41.6259778, 1.4147627],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_b6ec39615015038fa648d311df650574 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eMontmaneu\u003c/div\u003e"});
+            marker_c5711581d135f239e7faf10c2ea660ef.setIcon(div_icon_b6ec39615015038fa648d311df650574);
+        
+    
+            var circle_marker_1d3bfd5fd1be41ea828d5fe502f1d0d9 = L.circleMarker(
+                [41.6559029, 1.4885194],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_babf3ad50d398e7d9488c6194f824ea0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c5a629520146238f2fe03f0b55469352 = $(`<div id="html_c5a629520146238f2fe03f0b55469352" style="width: 100.0%; height: 100.0%;">Municipio: Veciana<br>Población: 182.0<br>Bloque: 1</div>`)[0];
+                popup_babf3ad50d398e7d9488c6194f824ea0.setContent(html_c5a629520146238f2fe03f0b55469352);
+            
+        
+
+        circle_marker_1d3bfd5fd1be41ea828d5fe502f1d0d9.bindPopup(popup_babf3ad50d398e7d9488c6194f824ea0)
+        ;
+
+        
+    
+    
+            circle_marker_1d3bfd5fd1be41ea828d5fe502f1d0d9.bindTooltip(
+                `<div>
+                     Veciana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_072e3860211d412d40b661ef43f8124d = L.marker(
+                [41.6559029, 1.4885194],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_5aa8b330e950c2477ae5f7def70179c9 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eVeciana\u003c/div\u003e"});
+            marker_072e3860211d412d40b661ef43f8124d.setIcon(div_icon_5aa8b330e950c2477ae5f7def70179c9);
+        
+    
+            var circle_marker_eee7da5492ac3f631ab88909baaf236a = L.circleMarker(
+                [41.5174829, 1.4335846],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_aa93811f7f545ce0af7541d70742a548 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d18656cebc13955ab29a9dd19791fe6 = $(`<div id="html_2d18656cebc13955ab29a9dd19791fe6" style="width: 100.0%; height: 100.0%;">Municipio: Bellprat<br>Población: 74.0<br>Bloque: 1</div>`)[0];
+                popup_aa93811f7f545ce0af7541d70742a548.setContent(html_2d18656cebc13955ab29a9dd19791fe6);
+            
+        
+
+        circle_marker_eee7da5492ac3f631ab88909baaf236a.bindPopup(popup_aa93811f7f545ce0af7541d70742a548)
+        ;
+
+        
+    
+    
+            circle_marker_eee7da5492ac3f631ab88909baaf236a.bindTooltip(
+                `<div>
+                     Bellprat
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d642e9b50962b2592621a59f8b6ed415 = L.marker(
+                [41.5174829, 1.4335846],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_2e5eeca888d8b363b4cfdaa2b04b8c2f = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eBellprat\u003c/div\u003e"});
+            marker_d642e9b50962b2592621a59f8b6ed415.setIcon(div_icon_2e5eeca888d8b363b4cfdaa2b04b8c2f);
+        
+    
+            var circle_marker_6f9ae49ecb5f7c24f551eb844cf14447 = L.circleMarker(
+                [41.5004287, 1.5282249],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_96a3820ad7917d07b6fef5fac44cddd4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a05aca70e87ee9ce06d3aac12db5c185 = $(`<div id="html_a05aca70e87ee9ce06d3aac12db5c185" style="width: 100.0%; height: 100.0%;">Municipio: Santa Maria de Miralles<br>Población: 138.0<br>Bloque: 1</div>`)[0];
+                popup_96a3820ad7917d07b6fef5fac44cddd4.setContent(html_a05aca70e87ee9ce06d3aac12db5c185);
+            
+        
+
+        circle_marker_6f9ae49ecb5f7c24f551eb844cf14447.bindPopup(popup_96a3820ad7917d07b6fef5fac44cddd4)
+        ;
+
+        
+    
+    
+            circle_marker_6f9ae49ecb5f7c24f551eb844cf14447.bindTooltip(
+                `<div>
+                     Santa Maria de Miralles
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f44ae33419b6fd4668211b9feb75a31b = L.marker(
+                [41.5004287, 1.5282249],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_92fa22527a13f6d23ae106811b14760c = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eSanta Maria de Miralles\u003c/div\u003e"});
+            marker_f44ae33419b6fd4668211b9feb75a31b.setIcon(div_icon_92fa22527a13f6d23ae106811b14760c);
+        
+    
+            var circle_marker_7f74b93e59093fed39b9f93e5287806e = L.circleMarker(
+                [41.5190356, 1.2913382],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_5e2d04411109165f81bda8cbcf9c709e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2be44bc2c1d287576acb575a3f64e6d = $(`<div id="html_c2be44bc2c1d287576acb575a3f64e6d" style="width: 100.0%; height: 100.0%;">Municipio: Conesa<br>Población: 109.0<br>Bloque: 1</div>`)[0];
+                popup_5e2d04411109165f81bda8cbcf9c709e.setContent(html_c2be44bc2c1d287576acb575a3f64e6d);
+            
+        
+
+        circle_marker_7f74b93e59093fed39b9f93e5287806e.bindPopup(popup_5e2d04411109165f81bda8cbcf9c709e)
+        ;
+
+        
+    
+    
+            circle_marker_7f74b93e59093fed39b9f93e5287806e.bindTooltip(
+                `<div>
+                     Conesa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a7b5fbb4a598ca9ae1e6cbe388f66117 = L.marker(
+                [41.5190356, 1.2913382],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_ba41389b1d0553bb18a11408b5c7a2f2 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eConesa\u003c/div\u003e"});
+            marker_a7b5fbb4a598ca9ae1e6cbe388f66117.setIcon(div_icon_ba41389b1d0553bb18a11408b5c7a2f2);
+        
+    
+            var circle_marker_2df442ed554887b7b5e023faa7505491 = L.circleMarker(
+                [41.5561484, 1.3071491],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_c62e7b44de7a25c16d0d55920b680826 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b4e7b25245f27cff7dd55b63039467e = $(`<div id="html_4b4e7b25245f27cff7dd55b63039467e" style="width: 100.0%; height: 100.0%;">Municipio: Llorac<br>Población: 96.0<br>Bloque: 1</div>`)[0];
+                popup_c62e7b44de7a25c16d0d55920b680826.setContent(html_4b4e7b25245f27cff7dd55b63039467e);
+            
+        
+
+        circle_marker_2df442ed554887b7b5e023faa7505491.bindPopup(popup_c62e7b44de7a25c16d0d55920b680826)
+        ;
+
+        
+    
+    
+            circle_marker_2df442ed554887b7b5e023faa7505491.bindTooltip(
+                `<div>
+                     Llorac
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c8a93ed968d63f4ca6860353254e70b2 = L.marker(
+                [41.5561484, 1.3071491],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_46dea1ba5222d92950b0c1dc6970b4b7 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eLlorac\u003c/div\u003e"});
+            marker_c8a93ed968d63f4ca6860353254e70b2.setIcon(div_icon_46dea1ba5222d92950b0c1dc6970b4b7);
+        
+    
+            var circle_marker_41cf201b57adb517cc5f2a23de7f4d82 = L.circleMarker(
+                [41.5319348, 1.19646],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_16e32014256ac0f98489279543398310 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f88d3d48b7203551a58db3a522a934b2 = $(`<div id="html_f88d3d48b7203551a58db3a522a934b2" style="width: 100.0%; height: 100.0%;">Municipio: Passanant i Belltall<br>Población: 170.0<br>Bloque: 1</div>`)[0];
+                popup_16e32014256ac0f98489279543398310.setContent(html_f88d3d48b7203551a58db3a522a934b2);
+            
+        
+
+        circle_marker_41cf201b57adb517cc5f2a23de7f4d82.bindPopup(popup_16e32014256ac0f98489279543398310)
+        ;
+
+        
+    
+    
+            circle_marker_41cf201b57adb517cc5f2a23de7f4d82.bindTooltip(
+                `<div>
+                     Passanant i Belltall
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_65a033ce370734c71e3ca6d4dd22fee7 = L.marker(
+                [41.5319348, 1.19646],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_4fecc879ed4eefb6c3723b10b3bb1470 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003ePassanant i Belltall\u003c/div\u003e"});
+            marker_65a033ce370734c71e3ca6d4dd22fee7.setIcon(div_icon_4fecc879ed4eefb6c3723b10b3bb1470);
+        
+    
+            var circle_marker_19b8b09d0079e2876bd8dd25224a363d = L.circleMarker(
+                [41.5428139, 1.2997894],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_22b1b39c46cdced87328a4a24e83cfb1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cef60a4a31a07276b2ebea9861d90019 = $(`<div id="html_cef60a4a31a07276b2ebea9861d90019" style="width: 100.0%; height: 100.0%;">Municipio: Savallà del Comtat<br>Población: 52.0<br>Bloque: 1</div>`)[0];
+                popup_22b1b39c46cdced87328a4a24e83cfb1.setContent(html_cef60a4a31a07276b2ebea9861d90019);
+            
+        
+
+        circle_marker_19b8b09d0079e2876bd8dd25224a363d.bindPopup(popup_22b1b39c46cdced87328a4a24e83cfb1)
+        ;
+
+        
+    
+    
+            circle_marker_19b8b09d0079e2876bd8dd25224a363d.bindTooltip(
+                `<div>
+                     Savallà del Comtat
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4b2c365e9cf861a6c16d0954d3efae25 = L.marker(
+                [41.5428139, 1.2997894],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_9beb94645499693d8a95babd18309c66 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eSavall\u00e0 del Comtat\u003c/div\u003e"});
+            marker_4b2c365e9cf861a6c16d0954d3efae25.setIcon(div_icon_9beb94645499693d8a95babd18309c66);
+        
+    
+            var circle_marker_b50853e6264f85f0c041d460713f67f9 = L.circleMarker(
+                [41.5632199, 1.2363297],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_6ffcda4570954265fb746b6617b29ffa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61e29f79685c47f17ae52be288cf43f7 = $(`<div id="html_61e29f79685c47f17ae52be288cf43f7" style="width: 100.0%; height: 100.0%;">Municipio: Vallfogona de Riucorb<br>Población: 89.0<br>Bloque: 1</div>`)[0];
+                popup_6ffcda4570954265fb746b6617b29ffa.setContent(html_61e29f79685c47f17ae52be288cf43f7);
+            
+        
+
+        circle_marker_b50853e6264f85f0c041d460713f67f9.bindPopup(popup_6ffcda4570954265fb746b6617b29ffa)
+        ;
+
+        
+    
+    
+            circle_marker_b50853e6264f85f0c041d460713f67f9.bindTooltip(
+                `<div>
+                     Vallfogona de Riucorb
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0984bf6af5bfc1ff5babd4f597c7d546 = L.marker(
+                [41.5632199, 1.2363297],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_50d846dc11243414f57b22dacad0d61b = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eVallfogona de Riucorb\u003c/div\u003e"});
+            marker_0984bf6af5bfc1ff5babd4f597c7d546.setIcon(div_icon_50d846dc11243414f57b22dacad0d61b);
+        
+    
+            var circle_marker_33ec87690169d4ad836a72613700ea6e = L.circleMarker(
+                [41.4941385, 1.2378499],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_423a540240ddb6bbe3554ab0f90ca8ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0b23aa2f2418ac218481edccae072a6a = $(`<div id="html_0b23aa2f2418ac218481edccae072a6a" style="width: 100.0%; height: 100.0%;">Municipio: Forès<br>Población: 48.0<br>Bloque: 1</div>`)[0];
+                popup_423a540240ddb6bbe3554ab0f90ca8ec.setContent(html_0b23aa2f2418ac218481edccae072a6a);
+            
+        
+
+        circle_marker_33ec87690169d4ad836a72613700ea6e.bindPopup(popup_423a540240ddb6bbe3554ab0f90ca8ec)
+        ;
+
+        
+    
+    
+            circle_marker_33ec87690169d4ad836a72613700ea6e.bindTooltip(
+                `<div>
+                     Forès
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b796c9d554ff4a9b77a3361eef4f8986 = L.marker(
+                [41.4941385, 1.2378499],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_685061d13f13f5b0b110163952f47a4b = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eFor\u00e8s\u003c/div\u003e"});
+            marker_b796c9d554ff4a9b77a3361eef4f8986.setIcon(div_icon_685061d13f13f5b0b110163952f47a4b);
+        
+    
+            var circle_marker_672290000664e7c77f406bf3b013985d = L.circleMarker(
+                [41.4784492, 1.2813851],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_e2d5deb54776d653c0b1cdfc10a051c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_75901f1b66584e07e25b0cc6b25e3aed = $(`<div id="html_75901f1b66584e07e25b0cc6b25e3aed" style="width: 100.0%; height: 100.0%;">Municipio: Rocafort de Queralt<br>Población: 241.0<br>Bloque: 1</div>`)[0];
+                popup_e2d5deb54776d653c0b1cdfc10a051c1.setContent(html_75901f1b66584e07e25b0cc6b25e3aed);
+            
+        
+
+        circle_marker_672290000664e7c77f406bf3b013985d.bindPopup(popup_e2d5deb54776d653c0b1cdfc10a051c1)
+        ;
+
+        
+    
+    
+            circle_marker_672290000664e7c77f406bf3b013985d.bindTooltip(
+                `<div>
+                     Rocafort de Queralt
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_539b5dca62af63e59402370b942c7e43 = L.marker(
+                [41.4784492, 1.2813851],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_2646de6585103d2e33cd0394ff0e1f9a = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eRocafort de Queralt\u003c/div\u003e"});
+            marker_539b5dca62af63e59402370b942c7e43.setIcon(div_icon_2646de6585103d2e33cd0394ff0e1f9a);
+        
+    
+            var circle_marker_4759a08f07eb5a168bd40059b41f1d46 = L.circleMarker(
+                [41.6998219, 1.9764684],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_6a6a83cd24ff4c1ff58bb8814ad01c2c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26086d1b253ccf8bc28dd1191f72aa25 = $(`<div id="html_26086d1b253ccf8bc28dd1191f72aa25" style="width: 100.0%; height: 100.0%;">Municipio: Mura<br>Población: 232.0<br>Bloque: 1</div>`)[0];
+                popup_6a6a83cd24ff4c1ff58bb8814ad01c2c.setContent(html_26086d1b253ccf8bc28dd1191f72aa25);
+            
+        
+
+        circle_marker_4759a08f07eb5a168bd40059b41f1d46.bindPopup(popup_6a6a83cd24ff4c1ff58bb8814ad01c2c)
+        ;
+
+        
+    
+    
+            circle_marker_4759a08f07eb5a168bd40059b41f1d46.bindTooltip(
+                `<div>
+                     Mura
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d99294c2f06daf597bc0ca12c32b7c38 = L.marker(
+                [41.6998219, 1.9764684],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_f871e88ae81e39fe54f63a3315a58fbf = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eMura\u003c/div\u003e"});
+            marker_d99294c2f06daf597bc0ca12c32b7c38.setIcon(div_icon_f871e88ae81e39fe54f63a3315a58fbf);
+        
+    
+            var circle_marker_b43e08b54a3d3a39645b901f0308362e = L.circleMarker(
+                [41.736093, 1.9780786],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_44359b5d2938843004e11ff0a34b8e07 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf8483b20ed625070946c12336247327 = $(`<div id="html_cf8483b20ed625070946c12336247327" style="width: 100.0%; height: 100.0%;">Municipio: Talamanca<br>Población: 219.0<br>Bloque: 1</div>`)[0];
+                popup_44359b5d2938843004e11ff0a34b8e07.setContent(html_cf8483b20ed625070946c12336247327);
+            
+        
+
+        circle_marker_b43e08b54a3d3a39645b901f0308362e.bindPopup(popup_44359b5d2938843004e11ff0a34b8e07)
+        ;
+
+        
+    
+    
+            circle_marker_b43e08b54a3d3a39645b901f0308362e.bindTooltip(
+                `<div>
+                     Talamanca
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c7aaf1fad309ee0bf6eac3bff5bf66c1 = L.marker(
+                [41.736093, 1.9780786],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_4842a53878a017e2b43fc98d7edcf4ae = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eTalamanca\u003c/div\u003e"});
+            marker_c7aaf1fad309ee0bf6eac3bff5bf66c1.setIcon(div_icon_4842a53878a017e2b43fc98d7edcf4ae);
+        
+    
+            var circle_marker_b8445906398fb43b3c340dff89106d23 = L.circleMarker(
+                [41.6794647, 2.0579669],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_3c18f5aaf47c9fc3c5ceda6f3fb869d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e35cea763ea8e9a05c091ae642e46dc = $(`<div id="html_4e35cea763ea8e9a05c091ae642e46dc" style="width: 100.0%; height: 100.0%;">Municipio: Sant Llorenç Savall<br>Población: 2524.0<br>Bloque: 1</div>`)[0];
+                popup_3c18f5aaf47c9fc3c5ceda6f3fb869d5.setContent(html_4e35cea763ea8e9a05c091ae642e46dc);
+            
+        
+
+        circle_marker_b8445906398fb43b3c340dff89106d23.bindPopup(popup_3c18f5aaf47c9fc3c5ceda6f3fb869d5)
+        ;
+
+        
+    
+    
+            circle_marker_b8445906398fb43b3c340dff89106d23.bindTooltip(
+                `<div>
+                     Sant Llorenç Savall
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ebac13a2010213c1bda2780fd9fc670a = L.marker(
+                [41.6794647, 2.0579669],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_c562038739e7cb4e1c441b5715c472c1 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eSant Lloren\u00e7 Savall\u003c/div\u003e"});
+            marker_ebac13a2010213c1bda2780fd9fc670a.setIcon(div_icon_c562038739e7cb4e1c441b5715c472c1);
+        
+    
+            var circle_marker_19ea29a6f3c62f29f92167ce53cab45b = L.circleMarker(
+                [41.6937007, 2.1164334],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_57ee2e88476e2c503febbaca1dc636ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f4a00fea0090d055f30dee43561685b = $(`<div id="html_4f4a00fea0090d055f30dee43561685b" style="width: 100.0%; height: 100.0%;">Municipio: Gallifa<br>Población: 186.0<br>Bloque: 1</div>`)[0];
+                popup_57ee2e88476e2c503febbaca1dc636ee.setContent(html_4f4a00fea0090d055f30dee43561685b);
+            
+        
+
+        circle_marker_19ea29a6f3c62f29f92167ce53cab45b.bindPopup(popup_57ee2e88476e2c503febbaca1dc636ee)
+        ;
+
+        
+    
+    
+            circle_marker_19ea29a6f3c62f29f92167ce53cab45b.bindTooltip(
+                `<div>
+                     Gallifa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1f7211c5309245542478cb9abf088362 = L.marker(
+                [41.6937007, 2.1164334],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_86dec2e3acbb14262b92e631650c5d85 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eGallifa\u003c/div\u003e"});
+            marker_1f7211c5309245542478cb9abf088362.setIcon(div_icon_86dec2e3acbb14262b92e631650c5d85);
+        
+    
+            var circle_marker_e408df948986718c604ca854c7c9e7fe = L.circleMarker(
+                [41.9807659, 2.1750391],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_2686882c51d6c974a02099f7c1f6a6c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a5718fa961a3b4e83e02e83d25487022 = $(`<div id="html_a5718fa961a3b4e83e02e83d25487022" style="width: 100.0%; height: 100.0%;">Municipio: Far d'Empordà<br>Población: 625.0<br>Bloque: 1</div>`)[0];
+                popup_2686882c51d6c974a02099f7c1f6a6c9.setContent(html_a5718fa961a3b4e83e02e83d25487022);
+            
+        
+
+        circle_marker_e408df948986718c604ca854c7c9e7fe.bindPopup(popup_2686882c51d6c974a02099f7c1f6a6c9)
+        ;
+
+        
+    
+    
+            circle_marker_e408df948986718c604ca854c7c9e7fe.bindTooltip(
+                `<div>
+                     Far d'Empordà
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c6942140c5510d30d10124fe0778e15e = L.marker(
+                [41.9807659, 2.1750391],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_aede50145272ff4ed44761ce8d7f7c02 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eFar d\u0027Empord\u00e0\u003c/div\u003e"});
+            marker_c6942140c5510d30d10124fe0778e15e.setIcon(div_icon_aede50145272ff4ed44761ce8d7f7c02);
+        
+    
+            var circle_marker_57db8e7d00412f05b7e7b42c2375f996 = L.circleMarker(
+                [41.9807659, 2.1750391],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_a66d6ad3860dd3faf2ee8cad0251b0e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ac53f1346a498eebcff42a51b4ca6a0 = $(`<div id="html_0ac53f1346a498eebcff42a51b4ca6a0" style="width: 100.0%; height: 100.0%;">Municipio: Prats de Rei<br>Población: 554.0<br>Bloque: 1</div>`)[0];
+                popup_a66d6ad3860dd3faf2ee8cad0251b0e3.setContent(html_0ac53f1346a498eebcff42a51b4ca6a0);
+            
+        
+
+        circle_marker_57db8e7d00412f05b7e7b42c2375f996.bindPopup(popup_a66d6ad3860dd3faf2ee8cad0251b0e3)
+        ;
+
+        
+    
+    
+            circle_marker_57db8e7d00412f05b7e7b42c2375f996.bindTooltip(
+                `<div>
+                     Prats de Rei
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7d927f7aa70bd22997fbd32d24a428b8 = L.marker(
+                [41.9807659, 2.1750391],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_831b98b6e43416a785e55d90894f7644 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003ePrats de Rei\u003c/div\u003e"});
+            marker_7d927f7aa70bd22997fbd32d24a428b8.setIcon(div_icon_831b98b6e43416a785e55d90894f7644);
+        
+    
+            var circle_marker_d98c98504c78efc45dc08c56ea578185 = L.circleMarker(
+                [41.9807659, 2.1750391],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_922f7e75581ea2d64cfa30512a5ae903 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e79eca89260eec6eadffa044f49e6dbb = $(`<div id="html_e79eca89260eec6eadffa044f49e6dbb" style="width: 100.0%; height: 100.0%;">Municipio: Torre de Claramunt<br>Población: 3966.0<br>Bloque: 1</div>`)[0];
+                popup_922f7e75581ea2d64cfa30512a5ae903.setContent(html_e79eca89260eec6eadffa044f49e6dbb);
+            
+        
+
+        circle_marker_d98c98504c78efc45dc08c56ea578185.bindPopup(popup_922f7e75581ea2d64cfa30512a5ae903)
+        ;
+
+        
+    
+    
+            circle_marker_d98c98504c78efc45dc08c56ea578185.bindTooltip(
+                `<div>
+                     Torre de Claramunt
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_907df353893ae1f976ec22e7bb4579fb = L.marker(
+                [41.9807659, 2.1750391],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_216ef01ba0f3c52e4741384736e4f291 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003eTorre de Claramunt\u003c/div\u003e"});
+            marker_907df353893ae1f976ec22e7bb4579fb.setIcon(div_icon_216ef01ba0f3c52e4741384736e4f291);
+        
+    
+            var circle_marker_399072afef8a012df7473e1d99bc1466 = L.circleMarker(
+                [41.9807659, 2.1750391],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+        var popup_dd392490bae59a47ba1d3cbd84f39bb1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_246f2769e927f963b6cc701523dc6c1a = $(`<div id="html_246f2769e927f963b6cc701523dc6c1a" style="width: 100.0%; height: 100.0%;">Municipio: Piles<br>Población: 224.0<br>Bloque: 1</div>`)[0];
+                popup_dd392490bae59a47ba1d3cbd84f39bb1.setContent(html_246f2769e927f963b6cc701523dc6c1a);
+            
+        
+
+        circle_marker_399072afef8a012df7473e1d99bc1466.bindPopup(popup_dd392490bae59a47ba1d3cbd84f39bb1)
+        ;
+
+        
+    
+    
+            circle_marker_399072afef8a012df7473e1d99bc1466.bindTooltip(
+                `<div>
+                     Piles
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7c3d821a2a3c4af5d8707f5b168fb9a8 = L.marker(
+                [41.9807659, 2.1750391],
+                {}
+            ).addTo(map_08dc488dba9912500f8144dc0884749b);
+        
+    
+            var div_icon_a69824f578623043151b5f5dd15f8179 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;\"\u003ePiles\u003c/div\u003e"});
+            marker_7c3d821a2a3c4af5d8707f5b168fb9a8.setIcon(div_icon_a69824f578623043151b5f5dd15f8179);
+        
+</script>
+</html>

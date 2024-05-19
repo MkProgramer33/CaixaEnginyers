@@ -1,0 +1,1592 @@
+{
+    "Bloque 1": {
+        "Día 1": [
+            {
+                "municipio": "Sant Miquel de Fluvià",
+                "poblacion": 808.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.9904591,
+                "latitud": 42.1732143
+            },
+            {
+                "municipio": "Siurana",
+                "poblacion": 178.0,
+                "bloque": 1,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 4,
+                "longitud": 2.9940216,
+                "latitud": 42.2095097
+            },
+            {
+                "municipio": "Palau de Santa Eulàlia",
+                "poblacion": 115.0,
+                "bloque": 1,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 4,
+                "longitud": 2.9646635,
+                "latitud": 42.1734468
+            },
+            {
+                "municipio": "Vilamalla",
+                "poblacion": 1166.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.9708293,
+                "latitud": 42.2165982
+            },
+            {
+                "municipio": "Santa Llogaia d'Àlguema",
+                "poblacion": 379.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.9523456,
+                "latitud": 42.2333519
+            },
+            {
+                "municipio": "Garrigàs",
+                "poblacion": 458.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.9539294,
+                "latitud": 42.1929222
+            },
+            {
+                "municipio": "Pontós",
+                "poblacion": 274.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.9172363,
+                "latitud": 42.1858949
+            },
+            {
+                "municipio": "Borrassà",
+                "poblacion": 776.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.9268828,
+                "latitud": 42.2224982
+            },
+            {
+                "municipio": "Ordis",
+                "poblacion": 373.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.9072143,
+                "latitud": 42.2185591
+            },
+            {
+                "municipio": "Avinyonet de Puigventós",
+                "poblacion": 1676.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.9145442,
+                "latitud": 42.2499757
+            },
+            {
+                "municipio": "Vilafant",
+                "poblacion": 5562.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.9418008,
+                "latitud": 42.2515266
+            },
+            {
+                "municipio": "Cabanes",
+                "poblacion": 949.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.9764243,
+                "latitud": 42.3087348
+            },
+            {
+                "municipio": "Vila-sacra",
+                "poblacion": 785.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 3.0170438,
+                "latitud": 42.2668061
+            },
+            {
+                "municipio": "Pedret i Marzà",
+                "poblacion": 181.0,
+                "bloque": 1,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 4,
+                "longitud": 3.070639914063831,
+                "latitud": 42.3078129
+            },
+            {
+                "municipio": "Fortià",
+                "poblacion": 778.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 3.0404198,
+                "latitud": 42.2424345
+            },
+            {
+                "municipio": "Riumors",
+                "poblacion": 244.0,
+                "bloque": 1,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 4,
+                "longitud": 3.0420591,
+                "latitud": 42.2269331
+            },
+            {
+                "municipio": "Vilamacolum",
+                "poblacion": 386.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 3.0571146,
+                "latitud": 42.1965528
+            },
+            {
+                "municipio": "Torroella de Fluvià",
+                "poblacion": 741.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 3.0402489,
+                "latitud": 42.174492
+            },
+            {
+                "municipio": "Pau",
+                "poblacion": 579.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 3.1161931,
+                "latitud": 42.3161009
+            },
+            {
+                "municipio": "Vilamaniscle",
+                "poblacion": 204.0,
+                "bloque": 1,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 4,
+                "longitud": 3.067464,
+                "latitud": 42.3743918
+            },
+            {
+                "municipio": "Rabós",
+                "poblacion": 210.0,
+                "bloque": 1,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 4,
+                "longitud": 3.0283472,
+                "latitud": 42.3787458
+            },
+            {
+                "municipio": "Mollet de Peralada",
+                "poblacion": 202.0,
+                "bloque": 1,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 4,
+                "longitud": 2.9999085,
+                "latitud": 42.3595501
+            },
+            {
+                "municipio": "Vilaür",
+                "poblacion": 162.0,
+                "bloque": 1,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 4,
+                "longitud": 2.9550356,
+                "latitud": 42.1437984
+            },
+            {
+                "municipio": "Fogars de la Selva",
+                "poblacion": 1564.0,
+                "bloque": 4,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.6728108,
+                "latitud": 41.7342133
+            },
+            {
+                "municipio": "Masarac",
+                "poblacion": 294.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.9723618,
+                "latitud": 42.3509939
+            },
+            {
+                "municipio": "Espolla",
+                "poblacion": 408.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.9994355,
+                "latitud": 42.3893146
+            },
+            {
+                "municipio": "Sant Miquel de Fluvià",
+                "poblacion": 808.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.9904591,
+                "latitud": 42.1732143
+            }
+        ],
+        "Día 2": [
+            {
+                "municipio": "Marganell",
+                "poblacion": 282.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 1.7900194,
+                "latitud": 41.640666
+            },
+            {
+                "municipio": "Castellgalí",
+                "poblacion": 2236.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 1.8378043,
+                "latitud": 41.6732765
+            },
+            {
+                "municipio": "Rellinars",
+                "poblacion": 915.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 1.910447,
+                "latitud": 41.6367945
+            },
+            {
+                "municipio": "Ullastrell",
+                "poblacion": 2139.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 1.9560471,
+                "latitud": 41.5265763
+            },
+            {
+                "municipio": "Castellví de Rosanes",
+                "poblacion": 2096.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 1.8994527,
+                "latitud": 41.450038
+            },
+            {
+                "municipio": "Collbató",
+                "poblacion": 4726.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 1.8285814,
+                "latitud": 41.570256
+            },
+            {
+                "municipio": "Vallbona d'Anoia",
+                "poblacion": 1387.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 2,
+                "longitud": 1.7082922,
+                "latitud": 41.5194769
+            },
+            {
+                "municipio": "Cabrera d'Anoia",
+                "poblacion": 1606.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 2,
+                "longitud": 1.7042442,
+                "latitud": 41.4774648
+            },
+            {
+                "municipio": "Castellfollit del Boix",
+                "poblacion": 460.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 1.6847457,
+                "latitud": 41.6657331
+            },
+            {
+                "municipio": "Sant Pere Sallavinera",
+                "poblacion": 167.0,
+                "bloque": 1,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 2,
+                "longitud": 1.5745225,
+                "latitud": 41.7365708
+            },
+            {
+                "municipio": "Rubió",
+                "poblacion": 244.0,
+                "bloque": 1,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 2,
+                "longitud": 1.5701167,
+                "latitud": 41.6442397
+            },
+            {
+                "municipio": "Carme",
+                "poblacion": 754.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 2,
+                "longitud": 1.6198579,
+                "latitud": 41.5319058
+            },
+            {
+                "municipio": "Orpí",
+                "poblacion": 159.0,
+                "bloque": 1,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 2,
+                "longitud": 1.5755145,
+                "latitud": 41.5185604
+            },
+            {
+                "municipio": "Castellolí",
+                "poblacion": 636.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 2,
+                "longitud": 1.7002468,
+                "latitud": 41.5981563
+            },
+            {
+                "municipio": "Fogars de la Selva",
+                "poblacion": 1564.0,
+                "bloque": 4,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.6728108,
+                "latitud": 41.7342133
+            },
+            {
+                "municipio": "Marganell",
+                "poblacion": 282.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 1.7900194,
+                "latitud": 41.640666
+            }
+        ],
+        "Día 3": [
+            {
+                "municipio": "Òrrius",
+                "poblacion": 793.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 2.3549387,
+                "latitud": 41.5551821
+            },
+            {
+                "municipio": "Santa Maria de Martorelles",
+                "poblacion": 889.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 2.2537044,
+                "latitud": 41.5198085
+            },
+            {
+                "municipio": "Figaró-Montmany",
+                "poblacion": 1108.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 2.25364598780679,
+                "latitud": 41.70982185
+            },
+            {
+                "municipio": "Tagamanent",
+                "poblacion": 340.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 2.2653485,
+                "latitud": 41.741256
+            },
+            {
+                "municipio": "Cànoves i Samalús",
+                "poblacion": 3289.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 2.338253622217338,
+                "latitud": 41.7072824
+            },
+            {
+                "municipio": "Sant Pere de Vilamajor",
+                "poblacion": 4815.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 2.3900497,
+                "latitud": 41.6843288
+            },
+            {
+                "municipio": "Fogars de Montclús",
+                "poblacion": 493.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 2.439427388776298,
+                "latitud": 41.74716075
+            },
+            {
+                "municipio": "Montseny",
+                "poblacion": 370.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 2.3952061,
+                "latitud": 41.7593697
+            },
+            {
+                "municipio": "Fogars de la Selva",
+                "poblacion": 1564.0,
+                "bloque": 4,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.6728108,
+                "latitud": 41.7342133
+            },
+            {
+                "municipio": "Vallgorguina",
+                "poblacion": 3144.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 2.5100384,
+                "latitud": 41.6473229
+            },
+            {
+                "municipio": "Vilalba Sasserra",
+                "poblacion": 748.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 2.4405379,
+                "latitud": 41.6530012
+            },
+            {
+                "municipio": "Campins",
+                "poblacion": 557.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 2.4640701,
+                "latitud": 41.7250261
+            },
+            {
+                "municipio": "Gualba",
+                "poblacion": 1.61,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 2.5018684,
+                "latitud": 41.7321147
+            },
+            {
+                "municipio": "Sant Esteve de Palautordera",
+                "poblacion": 3043.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 2.4343426,
+                "latitud": 41.7040768
+            },
+            {
+                "municipio": "Bruc",
+                "poblacion": 2218.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 2,
+                "longitud": 2.5001824,
+                "latitud": 41.694367
+            },
+            {
+                "municipio": "Selva de Mar",
+                "poblacion": 220.0,
+                "bloque": 1,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 4,
+                "longitud": 2.2091455,
+                "latitud": 41.4079859
+            },
+            {
+                "municipio": "Llacuna",
+                "poblacion": 942.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 2,
+                "longitud": 2.197649,
+                "latitud": 41.3993809
+            },
+            {
+                "municipio": "Òrrius",
+                "poblacion": 793.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 2.3549387,
+                "latitud": 41.5551821
+            }
+        ],
+        "Día 4": [
+            {
+                "municipio": "Calonge de Segarra",
+                "poblacion": 195.0,
+                "bloque": 1,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 2,
+                "longitud": 1.4820028,
+                "latitud": 41.7642502
+            },
+            {
+                "municipio": "Pujalt",
+                "poblacion": 204.0,
+                "bloque": 1,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 2,
+                "longitud": 1.4211325,
+                "latitud": 41.7169947
+            },
+            {
+                "municipio": "Veciana",
+                "poblacion": 182.0,
+                "bloque": 1,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 2,
+                "longitud": 1.4885194,
+                "latitud": 41.6559029
+            },
+            {
+                "municipio": "Copons",
+                "poblacion": 333.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 2,
+                "longitud": 1.5179333,
+                "latitud": 41.6363657
+            },
+            {
+                "municipio": "Sant Martí Sesgueioles",
+                "poblacion": 361.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 2,
+                "longitud": 1.4882003,
+                "latitud": 41.7021286
+            },
+            {
+                "municipio": "Jorba",
+                "poblacion": 806.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 2,
+                "longitud": 1.547408,
+                "latitud": 41.6014534
+            },
+            {
+                "municipio": "Bellprat",
+                "poblacion": 74.0,
+                "bloque": 1,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 2,
+                "longitud": 1.4335846,
+                "latitud": 41.5174829
+            },
+            {
+                "municipio": "Castellfollit de Riubregós",
+                "poblacion": 159.0,
+                "bloque": 1,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 2,
+                "longitud": 1.4383714,
+                "latitud": 41.7762237
+            },
+            {
+                "municipio": "Llorac",
+                "poblacion": 96.0,
+                "bloque": 1,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 2,
+                "longitud": 1.3071491,
+                "latitud": 41.5561484
+            },
+            {
+                "municipio": "Argençola",
+                "poblacion": 216.0,
+                "bloque": 1,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 2,
+                "longitud": 1.4433782,
+                "latitud": 41.5977099
+            },
+            {
+                "municipio": "Montmaneu",
+                "poblacion": 166.0,
+                "bloque": 1,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 2,
+                "longitud": 1.4147627,
+                "latitud": 41.6259778
+            },
+            {
+                "municipio": "Santa Maria de Miralles",
+                "poblacion": 138.0,
+                "bloque": 1,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 2,
+                "longitud": 1.5282249,
+                "latitud": 41.5004287
+            },
+            {
+                "municipio": "Conesa",
+                "poblacion": 109.0,
+                "bloque": 1,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 2,
+                "longitud": 1.2913382,
+                "latitud": 41.5190356
+            },
+            {
+                "municipio": "Savallà del Comtat",
+                "poblacion": 52.0,
+                "bloque": 1,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 2,
+                "longitud": 1.2997894,
+                "latitud": 41.5428139
+            },
+            {
+                "municipio": "Rocafort de Queralt",
+                "poblacion": 241.0,
+                "bloque": 1,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 2,
+                "longitud": 1.2813851,
+                "latitud": 41.4784492
+            },
+            {
+                "municipio": "Fogars de la Selva",
+                "poblacion": 1564.0,
+                "bloque": 4,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.6728108,
+                "latitud": 41.7342133
+            },
+            {
+                "municipio": "Forès",
+                "poblacion": 48.0,
+                "bloque": 1,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 2,
+                "longitud": 1.2378499,
+                "latitud": 41.4941385
+            },
+            {
+                "municipio": "Passanant i Belltall",
+                "poblacion": 170.0,
+                "bloque": 1,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 2,
+                "longitud": 1.19646,
+                "latitud": 41.5319348
+            },
+            {
+                "municipio": "Vallfogona de Riucorb",
+                "poblacion": 89.0,
+                "bloque": 1,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 2,
+                "longitud": 1.2363297,
+                "latitud": 41.5632199
+            },
+            {
+                "municipio": "Calonge de Segarra",
+                "poblacion": 195.0,
+                "bloque": 1,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 2,
+                "longitud": 1.4820028,
+                "latitud": 41.7642502
+            }
+        ],
+        "Día 5": [
+            {
+                "municipio": "Mura",
+                "poblacion": 232.0,
+                "bloque": 1,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 5,
+                "longitud": 1.9764684,
+                "latitud": 41.6998219
+            },
+            {
+                "municipio": "Sant Llorenç Savall",
+                "poblacion": 2524.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 2.0579669,
+                "latitud": 41.6794647
+            },
+            {
+                "municipio": "Talamanca",
+                "poblacion": 219.0,
+                "bloque": 1,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 5,
+                "longitud": 1.9780786,
+                "latitud": 41.736093
+            },
+            {
+                "municipio": "Gallifa",
+                "poblacion": 186.0,
+                "bloque": 1,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 5,
+                "longitud": 2.1164334,
+                "latitud": 41.6937007
+            },
+            {
+                "municipio": "Far d'Empordà",
+                "poblacion": 625.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.1750391,
+                "latitud": 41.9807659
+            },
+            {
+                "municipio": "Prats de Rei",
+                "poblacion": 554.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 2,
+                "longitud": 2.1750391,
+                "latitud": 41.9807659
+            },
+            {
+                "municipio": "Torre de Claramunt",
+                "poblacion": 3966.0,
+                "bloque": 1,
+                "estancia_minima": "1 HORA",
+                "lote": 2,
+                "longitud": 2.1750391,
+                "latitud": 41.9807659
+            },
+            {
+                "municipio": "Piles",
+                "poblacion": 224.0,
+                "bloque": 1,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 2,
+                "longitud": 2.1750391,
+                "latitud": 41.9807659
+            },
+            {
+                "municipio": "Fogars de la Selva",
+                "poblacion": 1564.0,
+                "bloque": 4,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.6728108,
+                "latitud": 41.7342133
+            },
+            {
+                "municipio": "Mura",
+                "poblacion": 232.0,
+                "bloque": 1,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 5,
+                "longitud": 1.9764684,
+                "latitud": 41.6998219
+            }
+        ]
+    },
+    "Bloque 2": {
+        "Día 1": [
+            {
+                "municipio": "Mieres",
+                "poblacion": 341.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.6401122,
+                "latitud": 42.1244124
+            },
+            {
+                "municipio": "Sant Ferriol",
+                "poblacion": 256.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.678302787348615,
+                "latitud": 42.1868577
+            },
+            {
+                "municipio": "Argelaguer",
+                "poblacion": 439.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.6414922,
+                "latitud": 42.2145207
+            },
+            {
+                "municipio": "Tortellà",
+                "poblacion": 823.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.630869,
+                "latitud": 42.233331
+            },
+            {
+                "municipio": "Montagut i Oix",
+                "poblacion": 958.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.5967415,
+                "latitud": 42.2309257
+            },
+            {
+                "municipio": "Sant Jaume de Llierca",
+                "poblacion": 842.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.6074259,
+                "latitud": 42.2119833
+            },
+            {
+                "municipio": "Sales de Llierca",
+                "poblacion": 169.0,
+                "bloque": 2,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 4,
+                "longitud": 2.6499657,
+                "latitud": 42.2358533
+            },
+            {
+                "municipio": "Beuda",
+                "poblacion": 202.0,
+                "bloque": 2,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 4,
+                "longitud": 2.7097379,
+                "latitud": 42.2372601
+            },
+            {
+                "municipio": "Lladó",
+                "poblacion": 827.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.8120781,
+                "latitud": 42.2478898
+            },
+            {
+                "municipio": "Cistella",
+                "poblacion": 307.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.8472717,
+                "latitud": 42.268711
+            },
+            {
+                "municipio": "Vilanant",
+                "poblacion": 401.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.8897248,
+                "latitud": 42.2544997
+            },
+            {
+                "municipio": "Navata",
+                "poblacion": 1465.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.8584815,
+                "latitud": 42.2248425
+            },
+            {
+                "municipio": "Cabanelles",
+                "poblacion": 279.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.8187019,
+                "latitud": 42.2302177
+            },
+            {
+                "municipio": "Terrades",
+                "poblacion": 345.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.8381619,
+                "latitud": 42.3106341
+            },
+            {
+                "municipio": "Albanyà",
+                "poblacion": 180.0,
+                "bloque": 2,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 4,
+                "longitud": 2.7193001,
+                "latitud": 42.3046915
+            },
+            {
+                "municipio": "Maià de Montcal",
+                "poblacion": 462.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.7431144,
+                "latitud": 42.2221769
+            },
+            {
+                "municipio": "Sant Aniol de Finestres",
+                "poblacion": 363.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.608455428082134,
+                "latitud": 42.06944315
+            },
+            {
+                "municipio": "Riudaura",
+                "poblacion": 511.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.4093804,
+                "latitud": 42.1887348
+            },
+            {
+                "municipio": "Fogars de la Selva",
+                "poblacion": 1564.0,
+                "bloque": 4,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.6728108,
+                "latitud": 41.7342133
+            },
+            {
+                "municipio": "Boadella i les Escaules",
+                "poblacion": 258.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.8583208,
+                "latitud": 42.3324603
+            },
+            {
+                "municipio": "Biure",
+                "poblacion": 249.0,
+                "bloque": 2,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 4,
+                "longitud": 2.8949823,
+                "latitud": 42.3380996
+            },
+            {
+                "municipio": "Capmany",
+                "poblacion": 672.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.9206405,
+                "latitud": 42.3732813
+            },
+            {
+                "municipio": "Pont de Molins",
+                "poblacion": 542.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.9304359,
+                "latitud": 42.3148493
+            },
+            {
+                "municipio": "Cantallops",
+                "poblacion": 330.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.9248575,
+                "latitud": 42.4235685
+            },
+            {
+                "municipio": "Sant Llorenç de la Muga",
+                "poblacion": 267.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.7888647,
+                "latitud": 42.3199618
+            },
+            {
+                "municipio": "Mieres",
+                "poblacion": 341.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.6401122,
+                "latitud": 42.1244124
+            }
+        ],
+        "Día 2": [
+            {
+                "municipio": "Mediona",
+                "poblacion": 2517.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 2,
+                "longitud": 1.635018453270908,
+                "latitud": 41.47739425
+            },
+            {
+                "municipio": "Vilobí del Penedès",
+                "poblacion": 1.13,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 2,
+                "longitud": 1.6632965,
+                "latitud": 41.3875574
+            },
+            {
+                "municipio": "Pacs del Penedès",
+                "poblacion": 935.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 2,
+                "longitud": 1.6698611,
+                "latitud": 41.3615067
+            },
+            {
+                "municipio": "Puigdàlber",
+                "poblacion": 555.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 2,
+                "longitud": 1.700349,
+                "latitud": 41.4045506
+            },
+            {
+                "municipio": "Santa Fe del Penedès",
+                "poblacion": 370.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 2,
+                "longitud": 1.7209214,
+                "latitud": 41.3844582
+            },
+            {
+                "municipio": "Sant Cugat Sesgarrigues",
+                "poblacion": 1009.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 2,
+                "longitud": 1.7530702,
+                "latitud": 41.3644619
+            },
+            {
+                "municipio": "Olivella",
+                "poblacion": 4339.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 2,
+                "longitud": 1.8114946,
+                "latitud": 41.3103129
+            },
+            {
+                "municipio": "Olesa de Bonesvalls",
+                "poblacion": 2016.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 2,
+                "longitud": 1.8492996,
+                "latitud": 41.3505032
+            },
+            {
+                "municipio": "Subirats",
+                "poblacion": 3241.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 2,
+                "longitud": 1.811249573840887,
+                "latitud": 41.39516005
+            },
+            {
+                "municipio": "Sant Llorenç d'Hortons",
+                "poblacion": 2503.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 2,
+                "longitud": 1.8253181,
+                "latitud": 41.4681755
+            },
+            {
+                "municipio": "Torrelavit",
+                "poblacion": 1457.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 2,
+                "longitud": 1.7298578,
+                "latitud": 41.4463416
+            },
+            {
+                "municipio": "Fogars de la Selva",
+                "poblacion": 1564.0,
+                "bloque": 4,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.6728108,
+                "latitud": 41.7342133
+            },
+            {
+                "municipio": "Font-rubí",
+                "poblacion": 1446.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 2,
+                "longitud": 1.5878667,
+                "latitud": 41.4365689
+            },
+            {
+                "municipio": "Mediona",
+                "poblacion": 2517.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 2,
+                "longitud": 1.635018453270908,
+                "latitud": 41.47739425
+            }
+        ],
+        "Día 3": [
+            {
+                "municipio": "Aguilar de Segarra",
+                "poblacion": 287.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 1.6316676,
+                "latitud": 41.7394902
+            },
+            {
+                "municipio": "Fonollosa",
+                "poblacion": 1546.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 1.6678299,
+                "latitud": 41.7626001
+            },
+            {
+                "municipio": "Rajadell",
+                "poblacion": 545.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 1.7056275,
+                "latitud": 41.7291916
+            },
+            {
+                "municipio": "Sant Mateu de Bages",
+                "poblacion": 628.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 1.7327386,
+                "latitud": 41.7969781
+            },
+            {
+                "municipio": "Viver i Serrateix",
+                "poblacion": 166.0,
+                "bloque": 2,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 5,
+                "longitud": 1.801484991394025,
+                "latitud": 41.94976665
+            },
+            {
+                "municipio": "Castellnou de Bages",
+                "poblacion": 1431.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 1.8365127,
+                "latitud": 41.8348967
+            },
+            {
+                "municipio": "Calders",
+                "poblacion": 1101.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 1.9916386,
+                "latitud": 41.7892144
+            },
+            {
+                "municipio": "Monistrol de Calders",
+                "poblacion": 742.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 2.0146236,
+                "latitud": 41.7608379
+            },
+            {
+                "municipio": "Castellcir",
+                "poblacion": 778.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 2.1507238,
+                "latitud": 41.7615048
+            },
+            {
+                "municipio": "Sant Quirze Safaja",
+                "poblacion": 672.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 2.1548204,
+                "latitud": 41.7276804
+            },
+            {
+                "municipio": "Estany",
+                "poblacion": 391.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 2.2129022,
+                "latitud": 41.5398446
+            },
+            {
+                "municipio": "Fogars de la Selva",
+                "poblacion": 1564.0,
+                "bloque": 4,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.6728108,
+                "latitud": 41.7342133
+            },
+            {
+                "municipio": "Granera",
+                "poblacion": 80.0,
+                "bloque": 2,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 5,
+                "longitud": 2.0570042,
+                "latitud": 41.7255146
+            },
+            {
+                "municipio": "Aguilar de Segarra",
+                "poblacion": 287.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 1.6316676,
+                "latitud": 41.7394902
+            }
+        ],
+        "Día 4": [
+            {
+                "municipio": "Pontons",
+                "poblacion": 507.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 2,
+                "longitud": 1.5140429,
+                "latitud": 41.4138036
+            },
+            {
+                "municipio": "Torrelles de Foix",
+                "poblacion": 2557.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 2,
+                "longitud": 1.5723453,
+                "latitud": 41.387735
+            },
+            {
+                "municipio": "Masllorenç",
+                "poblacion": 547.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 2,
+                "longitud": 1.4144917,
+                "latitud": 41.270168
+            },
+            {
+                "municipio": "Albinyana",
+                "poblacion": 2581.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 2,
+                "longitud": 1.486748,
+                "latitud": 41.2454739
+            },
+            {
+                "municipio": "Santa Oliva",
+                "poblacion": 3.56,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 2,
+                "longitud": 1.5510139,
+                "latitud": 41.2532889
+            },
+            {
+                "municipio": "Castellet i la Gornal",
+                "poblacion": 2474.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 2,
+                "longitud": 1.5917346,
+                "latitud": 41.2532183
+            },
+            {
+                "municipio": "Fogars de la Selva",
+                "poblacion": 1564.0,
+                "bloque": 4,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.6728108,
+                "latitud": 41.7342133
+            },
+            {
+                "municipio": "Bonastre",
+                "poblacion": 742.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 2,
+                "longitud": 1.4400593,
+                "latitud": 41.2211883
+            },
+            {
+                "municipio": "Salomó",
+                "poblacion": 543.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 2,
+                "longitud": 1.3747378,
+                "latitud": 41.2295948
+            },
+            {
+                "municipio": "Vespella de Gaià",
+                "poblacion": 496.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 2,
+                "longitud": 1.3599407,
+                "latitud": 41.2040993
+            },
+            {
+                "municipio": "Pontons",
+                "poblacion": 507.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 2,
+                "longitud": 1.5140429,
+                "latitud": 41.4138036
+            }
+        ],
+        "Día 5": [
+            {
+                "municipio": "Collsuspina",
+                "poblacion": 398.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 2.174353,
+                "latitud": 41.8260718
+            },
+            {
+                "municipio": "Oristà",
+                "poblacion": 573.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 2.0599756,
+                "latitud": 41.9327257
+            },
+            {
+                "municipio": "Sant Feliu Sasserra",
+                "poblacion": 611.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 2.0213124,
+                "latitud": 41.9447451
+            },
+            {
+                "municipio": "Olvan",
+                "poblacion": 876.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 1.9064046,
+                "latitud": 42.0571091
+            },
+            {
+                "municipio": "Sagàs",
+                "poblacion": 157.0,
+                "bloque": 2,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 5,
+                "longitud": 1.9626051,
+                "latitud": 42.0510214
+            },
+            {
+                "municipio": "Santa Maria de Merlès",
+                "poblacion": 184.0,
+                "bloque": 2,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 5,
+                "longitud": 1.9778885,
+                "latitud": 42.0007572
+            },
+            {
+                "municipio": "Olost",
+                "poblacion": 1206.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 2.0941372,
+                "latitud": 41.9851518
+            },
+            {
+                "municipio": "Vall de Bianya",
+                "poblacion": 1345.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.1750391,
+                "latitud": 41.9807659
+            },
+            {
+                "municipio": "Vajol",
+                "poblacion": 87.0,
+                "bloque": 2,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 4,
+                "longitud": 2.1750391,
+                "latitud": 41.9807659
+            },
+            {
+                "municipio": "Cabanyes",
+                "poblacion": 999.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 2,
+                "longitud": 2.1750391,
+                "latitud": 41.9807659
+            },
+            {
+                "municipio": "Montmell",
+                "poblacion": 1863.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 2,
+                "longitud": 2.1750391,
+                "latitud": 41.9807659
+            },
+            {
+                "municipio": "Sobremunt",
+                "poblacion": 83.0,
+                "bloque": 2,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 5,
+                "longitud": 2.165156,
+                "latitud": 42.0353017
+            },
+            {
+                "municipio": "Alpens",
+                "poblacion": 281.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 2.101673,
+                "latitud": 42.1195348
+            },
+            {
+                "municipio": "Lluçà",
+                "poblacion": 279.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 2.048215820180968,
+                "latitud": 42.0671674
+            },
+            {
+                "municipio": "Perafita",
+                "poblacion": 418.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 2.107122,
+                "latitud": 42.0423757
+            },
+            {
+                "municipio": "Sant Martí d'Albars",
+                "poblacion": 119.0,
+                "bloque": 2,
+                "estancia_minima": "30 MINUTOS",
+                "lote": 5,
+                "longitud": 2.0742512,
+                "latitud": 42.0281258
+            },
+            {
+                "municipio": "Fogars de la Selva",
+                "poblacion": 1564.0,
+                "bloque": 4,
+                "estancia_minima": "1 HORA",
+                "lote": 4,
+                "longitud": 2.6728108,
+                "latitud": 41.7342133
+            },
+            {
+                "municipio": "Collsuspina",
+                "poblacion": 398.0,
+                "bloque": 2,
+                "estancia_minima": "1 HORA",
+                "lote": 5,
+                "longitud": 2.174353,
+                "latitud": 41.8260718
+            }
+        ]
+    }
+}

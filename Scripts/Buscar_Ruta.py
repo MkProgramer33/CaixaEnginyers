@@ -9,6 +9,42 @@ Recivirá:
 Devuelve:
     - Una ruta
 '''
+def nearest_neighbor_algorithm(paradas, municipio):
+    '''
+    Encuentra una ruta aproximada usando el Algoritmo del Vecino Más Cercano.
+    '''
+    if municipio not in paradas.values():
+        key = 8082
+        paradas[key] = municipio[8082]
+    
+    cost_matrix = makeMatrix(paradas)
+    n = len(cost_matrix)
+    visited = [False] * n
+    path = [0]
+    visited[0] = True
+    current_city = 0
+    for _ in range(1, n):
+        nearest_neighbor = find_nearest_neighbor(cost_matrix, current_city, visited)
+        path.append(nearest_neighbor)
+        visited[nearest_neighbor] = True
+        current_city = nearest_neighbor
+
+    path.append(0)  # Volver al punto de partida
+    total_cost = sum(cost_matrix[path[i]][path[i + 1]] for i in range(n))
+
+    keys = list(paradas.keys())
+    px = [paradas[keys[i]] for i in path]
+
+    return px, total_cost
+
+def find_nearest_neighbor(cost_matrix, current_city, visited):
+    nearest_neighbor = -1
+    nearest_cost = float('inf')
+    for j, cost in enumerate(cost_matrix[current_city]):
+        if not visited[j] and cost < nearest_cost:
+            nearest_cost = cost
+            nearest_neighbor = j
+    return nearest_neighbor
 
 def TSP_Algorythm(paradas):
     '''
@@ -53,13 +89,13 @@ def makeMatrix(paradas):
     keys = list(paradas.keys())
 
     for i in range(num_paradas):
+        lat1, lon1 = paradas[keys[i]]['latitud'], paradas[keys[i]]['longitud']
         for j in range(i + 1, num_paradas):
-            lat1, lon1 = paradas[keys[i]]['latitud'], paradas[keys[i]]['longitud']
             lat2, lon2 = paradas[keys[j]]['latitud'], paradas[keys[j]]['longitud']
             try:
                 cost = obtener_tiempo_en_coche([lat1, lon1], [lat2, lon2])
             except:
                 cost = 5000
             matrix[i, j] = matrix[j, i] = cost
-
+    
     return matrix
