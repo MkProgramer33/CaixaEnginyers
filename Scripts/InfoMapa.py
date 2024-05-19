@@ -21,6 +21,7 @@ class Mapa:
     """
 
     def __init__(self):
+        print()
         self.paradas = {}
         self.conexiones = {}
 
@@ -174,11 +175,3 @@ def mostrar_mapa(lista_municipios):
 
     mapa.save("mapa_municipios.html")
     print("Mapa guardado como mapa_municipios.html")
-
-
-
-mapa = Mapa()
-import Agrupar_Kmeans as agrupar_kmeans
-load('DatosMunicipios.xlsx', mapa)
-grupos = agrupar_kmeans.agrupar_municipios(mapa.paradas, 5)
-mostrar_mapa(grupos)

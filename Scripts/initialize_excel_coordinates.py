@@ -4,7 +4,7 @@ from geopy.exc import GeocoderTimedOut
 import time
 
 # Leer el archivo Excel
-df = pd.read_excel('./DatosMunicipios.xlsx')
+df = pd.read_excel('../Data/DatosMunicipios.xlsx')
 
 # Inicializar el geolocalizador
 geolocator = Nominatim(user_agent="Pau")
