@@ -141,12 +141,12 @@ npm start
 
 ### Idea
 
-![Arquitectura](Arquitectura.png)
-![Algorismes_calcul](Algorismes_calcul.png)
-![Algorismes_calcul2](Algorismes_calcul2.png)
-![Linial_Kmeans](Linial_Kmeans.png)
-![Gestio_temps](Gestio_temps.png)
-![Gestio_temps2](Gestio_temps2.png)
+![Arquitectura](./Images/Arquitectura.png)
+![Algorismes_calcul](./Images/Algorismes_calcul.png)
+![Algorismes_calcul2](./Images/Algorismes_calcul2.png)
+![Linial_Kmeans](./Images/Linial_Kmeans.png)
+![Gestio_temps](./Images/Gestio_temps.png)
+![Gestio_temps2](./Images/Gestio_temps2.png)
 
 
 
