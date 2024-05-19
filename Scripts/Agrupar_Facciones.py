@@ -1,72 +1,37 @@
-import time as t
-from datetime import datetime
-from InfoMapa import Mapa
-from InfoMapa import load
-import os
-import math
-import copy
 import numpy as np
 from printLineas import print_dividing_lines
 from DistanciasMapa import obtener_tiempo_en_coche
 from DistanciasMapa import obtener_distancia_en_coche
-import itertools
 
 '''
-# Get the current date and time
-now = datetime.now()
-
-# Extract the time components
-current_time = now.time()
-hour = current_time.hour
-minute = current_time.minute
-second = current_time.second
-
-# Extract the date components
-current_date = now.date()
-day = current_date.day
-month = current_date.month
-year = current_date.year
-
-print(f"Current time: {hour}:{minute}:{second}")
-print(f"Current date: {day}/{month}/{year}")
+Este elagoritmo sirve para saber cuál será los municipios por los que passarà la ruta
+dependiendo de que día es del día 1-5 utilizando un algoritmo que divide el mapa en facciones.
+Recivirá:
+    - Una lista de municipios con sus cordenadas
+Devuelve:
+    - Una lista con ciunco listas de municipios ya agrupados
 '''
-
 
 def agrupar_municipios(paradas):
     if not paradas:
         raise ValueError("El diccionario de paradas está vacío.")
-
-
-
-# Algorithm for finding the shortest route
-
-def main():
-    '''
-    Crea un mapa con la información de los municipios
-    Crea una lista de puntos con las coordenadas de los municipios
-    Encuentra las divisiones de los puntos en días
-    Depende del día de hoy devuelve la ruta del día
-    '''
-
-    mapa = Mapa()
-    load("DatosMunicipios.xlsx", mapa)
+    
     points = []
-    for key, value in mapa.paradas.items():
+    for key, value in paradas.items():
         points.append([(value['latitud'], value['longitud']), key])
-    central, lines = find_dividing_lines(mapa.paradas, [2.15899, 41.38879])
+
+    central, lines = find_dividing_lines(paradas, [2.15899, 41.38879])
     grupo = divide_points(points, central, lines)
-    print(grupo[0])
-    resultad = TSP_Algorythm(grupo[1][:20], mapa)
+
+    lista_municipios = []
+    for municipios in grupo:
+        if municipios:
+            municipio = {}
+            for key in municipios:
+                municipio[key[1]] = paradas[key[1]]
+            lista_municipios.append(municipio)
+    return lista_municipios
     
-    print(resultad)
-    '''
-    for i, grupo in enumerate(grupo):
-        print(f"Grupo {i + 1}: {grupo}")
-    '''
-    
-'''
-Función que te devuelve el centroide de este lugar en función de que cordenadas tiene
-'''
 
 
 def find_dividing_lines(points, central):
@@ -94,8 +59,6 @@ def find_dividing_lines(points, central):
         y = value['longitud']
         angle = np.arctan2(y - central_point[1], x - central_point[0])
         angles.append((angle, (x, y)))
-    
-
     
     # Dividir los puntos en 5 grupos iguales
     quintile_indices = [n // 5, 2 * n // 5, 3 * n // 5, 4 * n // 5]
@@ -242,9 +205,4 @@ def Get_Ruta(points):
 
 
     return 0
-
-# Call the main function
-if __name__ == "__main__":
-    main()
-
  

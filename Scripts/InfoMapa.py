@@ -142,14 +142,14 @@ def get_bloque(mapa, fecha_str):
                 else:
                     bloque=4
                 
-def mostrar_mapa(lista_municipios):
+def mostrar_agrupacions(lista_diccionario_municipios):
     mapa = folium.Map(location=[40, -3], zoom_start=6)
 
     # Generar una lista de colores aleatorios para cada grupo
     colores = ['red', 'green', 'purple', 'orange', 'blue', 'gray', 'black', 'pink', 'lightblue']
 
     # Iterar sobre cada grupo de municipios y asignar un color aleatorio a cada uno
-    for idx, municipios in enumerate(lista_municipios):
+    for idx, municipios in enumerate(lista_diccionario_municipios):
         print(colores[idx])
         print(len(municipios))
         color_grupo = colores[idx]  # Obtener el color para este grupo
@@ -173,5 +173,46 @@ def mostrar_mapa(lista_municipios):
                     )
                 ).add_to(mapa)
 
-    mapa.save("mapa_municipios.html")
-    print("Mapa guardado como mapa_municipios.html")
+    mapa.save("mapa_agrupaciones.html")
+    print("Mapa guardado como mapa_agrupaciones.html")
+
+def mostrar_rutes(lista_municipios):
+    # Inicializar el mapa centrado en una ubicación aproximada de España
+    mapa = folium.Map(location=[40, -3], zoom_start=6)
+
+    # Lista para almacenar las coordenadas de los municipios
+    coordenadas = []
+
+    for municipio in lista_municipios:
+        latitud = municipio['latitud']
+        longitud = municipio['longitud']
+
+        # Añadir un marcador para cada municipio
+        folium.CircleMarker(
+            location=[latitud, longitud],
+            radius=10,
+            color='blue',
+            fill=True,
+            fill_color='blue',
+            fill_opacity=0.6,
+            popup=f"Municipio: {municipio['municipio']}<br>Bloque: {municipio['bloque']}",
+            tooltip=municipio['municipio']
+        ).add_to(mapa)
+
+        # Añadir un marcador con el nombre del municipio
+        folium.Marker(
+            location=[latitud, longitud],
+            icon=folium.DivIcon(
+                html=f'<div style="font-size: 12px; color: black; background-color: white; border: 1px solid black; padding: 2px;">{municipio["municipio"]}</div>'
+            )
+        ).add_to(mapa)
+
+        # Añadir las coordenadas a la lista
+        coordenadas.append((latitud, longitud))
+
+    # Añadir líneas entre los puntos en el orden en que aparecen en la lista
+    folium.PolyLine(coordenadas, color='blue', weight=2.5, opacity=1).add_to(mapa)
+
+    # Guardar el mapa en un archivo HTML
+    mapa.save("mapa_rutas.html")
+    print("Mapa guardado como mapa_rutas.html")

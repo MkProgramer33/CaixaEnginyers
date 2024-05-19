@@ -1,157 +1,20 @@
-import time as t
-from datetime import datetime
-from InfoMapa import Mapa
-from InfoMapa import load
-import os
-import math
-import copy
 import numpy as np
-from printLineas import print_dividing_lines
 from DistanciasMapa import obtener_tiempo_en_coche
 from DistanciasMapa import obtener_distancia_en_coche
-import itertools
 
 '''
-# Get the current date and time
-now = datetime.now()
-
-# Extract the time components
-current_time = now.time()
-hour = current_time.hour
-minute = current_time.minute
-second = current_time.second
-
-# Extract the date components
-current_date = now.date()
-day = current_date.day
-month = current_date.month
-year = current_date.year
-
-print(f"Current time: {hour}:{minute}:{second}")
-print(f"Current date: {day}/{month}/{year}")
+Este elagoritmo sirve para calcular la ruta optima para passar por todos los municipios.
+Recivirá:
+    - Una lista de municipios con sus cordenadas
+Devuelve:
+    - Una ruta
 '''
 
-
-# Algorithm for finding the shortest route
-
-def main():
-    '''
-    Crea un mapa con la información de los municipios
-    Crea una lista de puntos con las coordenadas de los municipios
-    Encuentra las divisiones de los puntos en días
-    Depende del día de hoy devuelve la ruta del día
-    '''
-
-    mapa = Mapa()
-    load("DatosMunicipios.xlsx", mapa)
-    points = []
-    for key, value in mapa.paradas.items():
-        points.append([(value['latitud'], value['longitud']), key])
-    central, lines = find_dividing_lines(mapa.paradas, [2.15899, 41.38879])
-    grupo = divide_points(points, central, lines)
-    print(grupo[0])
-    resultad = TSP_Algorythm(grupo[1][:20], mapa)
-    
-    print(resultad)
-    '''
-    for i, grupo in enumerate(grupo):
-        print(f"Grupo {i + 1}: {grupo}")
-    '''
-    
-'''
-Función que te devuelve el centroide de este lugar en función de que cordenadas tiene
-'''
-
-
-def find_dividing_lines(points, central):
-    """
-    Encuentra cuatro rectas que parten del punto central y dividen el espacio
-    en 5 partes iguales en términos de cantidad de puntos.
-    
-    :param points: Lista de puntos en el formato [(x1, y1), (x2, y2), ...]
-    :return: Una lista de tuplas representando las rectas en el formato (angle, 'line')
-    """
-    if not points:
-        raise ValueError("La lista de puntos no puede estar vacía.")
-    
-    n = len(points)
-    if n < 5:
-        raise ValueError("La lista de puntos debe tener al menos 5 puntos.")
-    
-    # Encontrar el punto central
-    central_point = central
-    
-    # Calcular los ángulos para cada punto respecto al punto central
-    angles = []
-    for key, value in points.items():
-        x = value['latitud']
-        y = value['longitud']
-        angle = np.arctan2(y - central_point[1], x - central_point[0])
-        angles.append((angle, (x, y)))
-    
-
-    
-    # Dividir los puntos en 5 grupos iguales
-    quintile_indices = [n // 5, 2 * n // 5, 3 * n // 5, 4 * n // 5]
-    
-    # Obtener los ángulos que dividen los grupos
-    dividing_angles = [angles[i][0] for i in quintile_indices]
-    
-    # Formar las recta
-    points = return_dictionary_keys(points)
-    lines = [(angle, points[index]) for index, angle in enumerate(dividing_angles)]
-    
-    return central_point, lines
-
-def return_dictionary_keys(dictionary):
-    return list(dictionary.keys())
-
-
-def calculate_angle(p, central_point):
-    """
-    Calcula el ángulo de un punto respecto al punto central.
-    
-    :param p: Punto en el formato (x, y)
-    :param central_point: Punto central en el formato (cx, cy)
-    :return: Ángulo en radianes
-    """
-    return np.arctan2(p[1] - central_point[1], p[0] - central_point[0])
-
-def divide_points(points, central_point, lines):
-    """
-    Divide una lista de puntos en 5 grupos según 4 líneas divisoras que parten del punto central.
-    
-    :param points: Lista de puntos en el formato [(x1, y1), (x2, y2), ...]
-    :param central_point: Punto central en el formato (cx, cy)
-    :param lines: Lista de líneas en el formato [(angle1, 'line'), (angle2, 'line'), ...]
-    :return: Lista de 5 listas de puntos, cada una representando un grupo
-    """
-    # Calcular los ángulos de las líneas divisoras
-    line_angles = lines
-    
-    # Calcular los ángulos de cada punto respecto al punto central
-    points_with_angles = [(p, calculate_angle(p[0], central_point)) for p in points]
-    
-    # Ordenar los puntos por sus ángulos
-    points_with_angles.sort(key=lambda x: x[1])
-    
-    # Dividir los puntos en 5 grupos según los ángulos de las líneas divisoras
-    groups = [[] for _ in range(5)]
-    current_group = 0
-    for p, angle in points_with_angles:
-        # Si el ángulo del punto supera el ángulo de la línea divisoria actual, avanzar al siguiente grupo
-        while current_group < 4 and angle > line_angles[0][current_group]:
-            current_group += 1
-        groups[current_group].append(p)
-    
-    return groups
-
-
-def TSP_Algorythm(nodes, mapa):
+def TSP_Algorythm(paradas):
     '''
     Encuentra el camino más corto desde el punto central hasta todos los puntos de la lista.
     '''
-    cost_matrix = makeMatrix(nodes, mapa)
+    cost_matrix = makeMatrix(paradas)
 
     n = len(cost_matrix)
     # dp[mask][i] guarda el costo mínimo para visitar el conjunto de ciudades representado por mask
@@ -194,52 +57,43 @@ def TSP_Algorythm(nodes, mapa):
     path.append(0)
     path.reverse()
     
+    keys = return_dictionary_keys(paradas)
     px = []
     for i in path:
-        px.append(nodes[i][1])
-    
+        px.append(paradas[keys[i]])
+
+    py.append(pz[0])
     return px, min_cost
 
-    
-
-def makeMatrix(nodes, mapa):
-    
+def makeMatrix(paradas):
+    num_paradas = len(paradas)
     # Create a matrix of zeros
-    matrix = np.zeros((len(nodes), len(nodes)))
-    
+    matrix = np.zeros((num_paradas, num_paradas))
+
+    keys = return_dictionary_keys(paradas)
+
     # Iterate over each node and its connections
-    for i, node1 in enumerate(nodes):
-        for j, node2 in enumerate(nodes):
+    for i, parada1 in enumerate(keys):
+        for j, parada2 in enumerate(keys):
             if j <= i:
                 continue
             # Calculate the cost between the two nodes
             
-            lat1 = mapa.paradas[node1[1]]['latitud']
-            lon1 = mapa.paradas[node1[1]]['longitud']
-            lat2 = mapa.paradas[node2[1]]['latitud']
-            lon2 = mapa.paradas[node2[1]]['longitud']
+            lat1 = paradas[parada1]['latitud']
+            lon1 = paradas[parada1]['longitud']
+            lat2 = paradas[parada2]['latitud']
+            lon2 = paradas[parada2]['longitud']
             try:
                 cost = obtener_tiempo_en_coche([lat1, lon1], [lat2, lon2])
             except:
                 cost = 5000
-            print(node1[1], node2[1], "Costo:", cost)
+            print(paradas[parada1]['municipio'], paradas[parada2]['municipio'], "Costo:", cost)
+
             # Update the matrix with the calculated cost
             matrix[i, j] = cost
             matrix[j, i] = cost
     
     return matrix
 
-
-def Get_Ruta(points):
-    '''
-    Encuentra el camino más corto desde el punto central hasta todos los puntos de la lista.
-    '''
-
-
-    return 0
-
-# Call the main function
-if __name__ == "__main__":
-    main()
-
- 
+def return_dictionary_keys(dictionary):
+    return list(dictionary.keys())
