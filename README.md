@@ -69,7 +69,7 @@ Sergi Jurez:  [![LinkedIn][linkedin-shield]][linkedin-url2]
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Working on it 🫡
+Este es un proyecto que tiene por objetivo cumplir con el reto propuesto por Caixa d'Enginyers. Tratamos de usar toda nuestra genialidad y originalidad en proponer ideas innovadoras que puedan gustar al cliente.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -77,7 +77,12 @@ Working on it 🫡
 
 ### Built With
 
-* [![Electron][Electron.js]][Electron-url]
+* SQL
+* JavaScript
+* Python
+* CSS
+* HTML
+* BASH
 * [![React][React.js]][React-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
