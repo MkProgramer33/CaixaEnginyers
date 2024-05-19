@@ -20,7 +20,8 @@
 -->
 
 Mikel Garzón:  [![LinkedIn][linkedin-shield]][linkedin-url] 
-Sergi Jurez:  [![LinkedIn][linkedin-shield]][[linkedin](https://www.linkedin.com/in/sergijuarez?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)] 
+
+Sergi Jurez:  [![LinkedIn][linkedin-shield]][(https://www.linkedin.com/in/sergijuarez?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)] 
 
 
 <!-- PROJECT LOGO -->
