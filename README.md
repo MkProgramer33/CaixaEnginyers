@@ -98,6 +98,8 @@ Este es un proyecto que tiene por objetivo cumplir con el reto propuesto por Cai
 
 ### Installation
 
+Import BBDD settings. Set mysql connection settings on backend flask app.
+Install dependencies on python and react app.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -109,19 +111,6 @@ Este es un proyecto que tiene por objetivo cumplir con el reto propuesto por Cai
 ...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [X] README
-- [ ] First Window
-- [ ] Python integration
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 
