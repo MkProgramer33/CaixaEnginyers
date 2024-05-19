@@ -21,6 +21,7 @@
 
 Mikel Garzón:  [![LinkedIn][linkedin-shield]][linkedin-url] 
 
+Sergi Jurez:  [![LinkedIn][linkedin-shield]][linkedin-url2]  
 
 
 <!-- PROJECT LOGO -->
@@ -68,7 +69,7 @@ Mikel Garzón:  [![LinkedIn][linkedin-shield]][linkedin-url]
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Working on it 🫡
+Este es un proyecto que tiene por objetivo cumplir con el reto propuesto por Caixa d'Enginyers. Tratamos de usar toda nuestra genialidad y originalidad en proponer ideas innovadoras que puedan gustar al cliente.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -76,7 +77,12 @@ Working on it 🫡
 
 ### Built With
 
-* [![Electron][Electron.js]][Electron-url]
+* SQL
+* JavaScript
+* Python
+* CSS
+* HTML
+* BASH
 * [![React][React.js]][React-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -92,6 +98,8 @@ Working on it 🫡
 
 ### Installation
 
+Import BBDD settings. Set mysql connection settings on backend flask app.
+Install dependencies on python and react app.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -103,19 +111,6 @@ Working on it 🫡
 ...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [X] README
-- [ ] First Window
-- [ ] Python integration
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 
@@ -141,6 +136,7 @@ Project Link: [Caixa d'enginyers](https://github.com/MkProgramer33/CaixaEnginyer
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: www.linkedin.com/in/mikel-garzón-gomes-483218296
+[linkedin-url2]: https://www.linkedin.com/in/sergijuarez?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app
 [instagram-shield]: https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.m.wikipedia.org%2Fwiki%2FArchivo%3AInstagram_logo_2016.svg&psig=AOvVaw0YFs9WhohNCrRNmkgg1lrK&ust=1715371904451000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKDB5rmwgYYDFQAAAAAdAAAAABAE
 [instagram-name]: mikel.gg4
 [product-screenshot]: images/screenshot.png

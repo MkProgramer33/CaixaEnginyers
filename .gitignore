@@ -131,6 +131,10 @@ ENV/
 env.bak/
 venv.bak/
 
+#Frontend node_modules
+/frontApp/routeTracker/node_modules
+
+
 # Spyder project settings
 .spyderproject
 .spyproject
