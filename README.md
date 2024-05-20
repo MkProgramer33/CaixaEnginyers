@@ -29,8 +29,8 @@ Sergi Jurez:  [![LinkedIn][linkedin-shield]][linkedin-url2]
 <h3 align="center">Hackaton Caixa d'Eniginyers</h3>
 
   <p align="center">
-    Descripción
-   
+    
+   Caixa D'Enginyers participó en la Hackathon de 2024 celebrada en la Universidad Autónoma de Barcelona, donde propusieron un reto para resolver un problema de algoritmosy rutas mediante el uso de tecnologías de la informática.
   
     
   </p>
@@ -69,6 +69,7 @@ Sergi Jurez:  [![LinkedIn][linkedin-shield]][linkedin-url2]
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+Este proyecto es una aplicación web basada en React que utiliza bibliotecas de Python para el procesamiento y análisis de datos. Proporciona una interfaz amigable para interactuar con los datos y visualizar los resultados. Antes de ejecutarlo, necesitas tener instalado Node.js y Python, así como las bibliotecas pandas, numpy, matplotlib, scikit-learn y de más.
 Este es un proyecto que tiene por objetivo cumplir con el reto propuesto por Caixa d'Enginyers. Tratamos de usar toda nuestra genialidad y originalidad en proponer ideas innovadoras que puedan gustar al cliente.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -89,17 +90,34 @@ Este es un proyecto que tiene por objetivo cumplir con el reto propuesto por Cai
 
 
 
-<!-- GETTING STARTED -->
-## Getting Started
-
-...
-
 ### Prerequisites
+
+Before running this project, you will need to have the following installed on your machine:
+
+- Node.js (version 12 or higher)
+- Python (version 3.x)
+- Python libraries:
+  - pandas
+  - numpy
+  - matplotlib
+  - scikit-learn
 
 ### Installation
 
-Import BBDD settings. Set mysql connection settings on backend flask app.
-Install dependencies on python and react app.
+1. Clone repository:
+```
+git clone https://github.com/your-username/project-name.git
+```
+
+2. Navigate to the project directory:
+```
+cd project-name
+```
+
+3. Install the Node.js dependencies
+```
+npm install
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -108,11 +126,27 @@ Install dependencies on python and react app.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-...
+1. Start the development server:
+```
+npm start
+````
+
+2. Open your web browser and navigate to http://localhost:3000 to view the application.
+3. Interact with the data by selecting options from the dropdown menus and clicking the "Process Data" button.
+4. View the visualizations of the processed data in the charts and tables below.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+### Idea
+
+![Arquitectura](./Images/Arquitectura.png)
+![Algorismes_calcul](./Images/Algorismes_calcul.png)
+![Algorismes_calcul2](./Images/Algorismes_calcul2.png)
+![Linial_Kmeans](./Images/Linial_Kmeans.png)
+![Gestio_temps](./Images/Gestio_temps.png)
+![Gestio_temps2](./Images/Gestio_temps2.png)
 
 
 
