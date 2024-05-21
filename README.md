@@ -23,7 +23,7 @@ Mikel Garzón:  [![LinkedIn][linkedin-shield]][linkedin-url]
 
 Sergi Jurez:  [![LinkedIn][linkedin-shield]][linkedin-url2]  
 
-Marta Gimenez Jurez:  [![LinkedIn][linkedin-shield]][linkedin-url2]  
+Marta Gimenez :  [![LinkedIn][linkedin-shield]][linkedin-url2]  
 
 
 <!-- PROJECT LOGO -->
