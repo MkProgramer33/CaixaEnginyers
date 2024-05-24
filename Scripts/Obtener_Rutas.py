@@ -33,7 +33,7 @@ def get_lista_rutas(mapa):
     NUM_DIAS = 5
     lista_rutas = []
     contador_paradas = 0
-    for n_persona in range(1, NUM_CAMIONEROS - 1):
+    for n_persona in range(1, NUM_CAMIONEROS + 1):
         grupos = Agrupar_Kmeans.agrupar_municipios(mapa.get_municipiosBloque(n_persona), NUM_DIAS)
         rutas = []
         for grupo in grupos:
