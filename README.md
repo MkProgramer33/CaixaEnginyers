@@ -173,10 +173,10 @@ Project Link: [Caixa d'enginyers](https://github.com/MkProgramer33/CaixaEnginyer
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: www.linkedin.com/in/mikel-garzón-gomes-483218296
+[linkedin-url]: https://www.linkedin.com/in/mikel-garzón-gomes-483218296
 [linkedin-url2]: https://www.linkedin.com/in/sergijuarez?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app
-[linkedin-url3]: www.linkedin.com/in/marta-gimenez-939b45292
-[linkedin-url4]: www.linkedin.com/in/pau-dominguez-ruiz/
+[linkedin-url3]: https://www.linkedin.com/in/marta-gimenez-939b45292
+[linkedin-url4]: https://www.linkedin.com/in/pau-dominguez-ruiz/
 [instagram-shield]: https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.m.wikipedia.org%2Fwiki%2FArchivo%3AInstagram_logo_2016.svg&psig=AOvVaw0YFs9WhohNCrRNmkgg1lrK&ust=1715371904451000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKDB5rmwgYYDFQAAAAAdAAAAABAE
 [instagram-name]: mikel.gg4
 [product-screenshot]: images/screenshot.png
