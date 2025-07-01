@@ -8,6 +8,15 @@ Marta Gimenez : [![LinkedIn](https://img.shields.io/badge/-LinkedIn-black.svg?st
 
 Pau Domínguez : [![LinkedIn](https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge\&logo=linkedin\&colorB=555)](https://www.linkedin.com/in/pau-dominguez-ruiz/)
 
+
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://www.linkedin.com/posts/mikel-garz%C3%B3n-gomes-483218296_hackataejn-innovaciaejn-trabajoenequipo-activity-7295794981770813440-uCI3?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEeUQaMBwFAj6UrsN46YgSaQlYDZ5ogdpP4">
+    <img src="Images/CaixaEnignyers.png" alt="Logo" width="80" height="80">
+  </a>
+
+
 <h4 align="center">Hackaton Caixa d'Eniginyers</h4>
 
 Caixa D'Enginyers participó en la Hackathon de 2024 celebrada en la Universidad Autónoma de Barcelona, donde propusieron un reto para resolver un problema de algoritmosy rutas mediante el uso de tecnologías de la informática.
