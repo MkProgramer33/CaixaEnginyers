@@ -13,7 +13,7 @@ Pau Domínguez : [![LinkedIn](https://img.shields.io/badge/-LinkedIn-black.svg?s
 <br />
 <div align="center">
   <a href="https://www.linkedin.com/posts/mikel-garz%C3%B3n-gomes-483218296_hackataejn-innovaciaejn-trabajoenequipo-activity-7295794981770813440-uCI3?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEeUQaMBwFAj6UrsN46YgSaQlYDZ5ogdpP4">
-    <img src="Images/CaixaEnignyers.png" alt="Logo" width="80" height="80">
+    <img src="Images/CaixaEnignyers.png" alt="Logo" width="350" height="200">
   </a>
 
 
